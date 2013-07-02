@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>mPopup demo</title>
+        <style>
+            .box{
+                border: 1px solid blue;
+                text-align: center;
+            }
+            .hidden{
+                visibility: hidden;
+            }
+            .none{
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <a id="alert" href="javascript:void(0);">Click here to pop up a window</a><br />
+        <a id="open1" href="javascript:void(0);">Click here to pop up Box 1</a><br />
+        <a class="open2" href="javascript:void(0);">Click here to pop up Box 2</a>
+        <div class="box hidden" id="box1">
+            <p>
+                I am box 1.
+            </p>
+            <a class="open2" href="javascript:void(0);">Click me to open box 2!</a>
+        </div>
+        <div class="box none" id="box2">
+            <p>
+                Hi, I am box 2.<br />
+                If you open me from Box 1, I will in front of box 1.
+            </p>
+            <a class="close" href="javascript:void(0);">Click here to close me</a>
+       </div>
+    </body>
+    <script type="text/javascript" src="../lib/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="../source/jquery.mpopup.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            /*
+             * Pass a string
+             */
+            $('#alert').click(function(){
+                $.mPopup('Hello word!!! I have no any style.');
+            });
+
+            var box1 = $('#box1');
+            $('#open1').click(function(){
+                $.mPopup(box1,{
+                    padding: 0         
+                });
+            });
+
+            var box2 = $('#box2');
+            $('.open2').click(function(){
+                $.mPopup(box2,{
+                    padding: 0,        
+                    closeClass: ['close']
+                });
+            });
+        });
+    </script>
+</html>
