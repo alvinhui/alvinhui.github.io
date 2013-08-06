@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <title>前端工程师面试题</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <script type="text/javascript" src="http://files.cnblogs.com/darkangle/list.js"></script>
+    <style>
+*{padding:0;margin:0;}
+a{outline:none;text-decoration:none;}
+body{font: 14px/1.5 arial}
+.w960{width:560px;margin:0 auto;}
+.hd{background: #059ed3;color:#fff;}
+.hd,.ft{padding:5px;}
+.ft{background:#ccc;text-align:right;}
+.row{padding:5px;border-bottom:solid 1px #eee;}
+.row div{display:inline}
+.row a{float:right;}
+.ft a{color:green;font-weight:bold}
+code{display:block;border:solid 1px #666;padding:10px;background:#ffffc0;}
+h3{margin:10px 0;color:#ff9900;}
+input{border:solid 1px #c0c0c0;line-height:1.5em;height:1.5em}
+    </style>
+</head>
+<body>
+<div class="w960">
+<h3>第一题：请使用Javascript实现以下动态效果</h3>
+<p>可以使用任何你喜欢的方式和库，尽量使用你认为优雅的实现，并在代码完成说简要说明此方案的优点和不足。<p>
+<div id="datalist">
+  <div class="hd">现在一共有：<strong class="item_count"></strong> 个条目</div>
+  <div class="list">
+    <div class="row"><div>这是第一条</div><a href="javascript:;">修改</a></div>
+    <div class="row"><div>这是第二条</div><a href="javascript:;">修改</a></div>
+    <div class="row"><div>花儿为什么这样红？</div><a href="javascript:;">修改</a></div>
+    <div class="row"><div>你知道小月月是哪个不？</div><a href="javascript:;">修改</a></div>
+    <div class="row"><div>人生就是一个杯具</div><a href="javascript:;">修改</a></div>
+  </div>
+  <div class="ft"><a href="javascript:;">新增条目</a></div>
+</div>
+<h3>第二题：请说明要输出正确的myName的值要如何修改程序?并解释原因</h3>
+<code>
+foo = function(){
+    this.myName = "Foo function.";
+}
+foo.prototype.sayHello = function(){
+    alert(this.myName);
+}
+foo.prototype.bar = function(){
+    setTimeout(this.sayHello, 1000);
+}
+var f = new foo;
+f.bar();
+</code>
+<h3>第三题：请按下列要求写出相应的 Html 和 CSS </h3>
+<p>现有并列的三列布局结构，从左至右依次为 A, B, C, 宽度分别为180px, 600px, 180px。要求在不改变 Html 结构的情况下用CSS实现：ABC，CBA，BAC 三种布局及在CBA排列下使B宽度自适应（三列总宽度100%），不能使用针对浏览器的CSS Hack.</p>
+</div>
+<script type="text/javascript">
+m();
+</script>
