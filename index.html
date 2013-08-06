@@ -1,1 +1,7 @@
-Test
+<!doctype html>
+<script>
+  var id = parseInt(location.search.substring(1))
+  location.replace(
+      'https://github.com/lifesinger/lifesinger.github.com/issues' +
+          (id ? '/' + id : '?labels=blog'))
+</script>
