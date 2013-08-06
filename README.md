@@ -1,2 +1,1 @@
-alvinhui.github.io
-==================
+Thanks Github!
