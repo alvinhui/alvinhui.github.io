@@ -16,7 +16,6 @@
 ### DOM结构
 
 1. 两个节点可能存在的关系：
-
     * 父子
     * 兄弟
 
@@ -148,13 +147,13 @@
 `cloneNode()` 方法创建指定节点的副本。
 `cloneNode()` 方法有一个参数（true 或 false）。该参数指示被复制的节点是否包括原节点的所有属性和子节点。
 
-    ```javascript
-    eP2.setAttribute('data-name', 'value');
-    var eP2Clone = eP2.cloneNode();
-    var eP2CloneAll = eP2.cloneNode(true);
-    console.log(eP2Clone);
-    console.log(eP2CloneAll);
-    ```
+```javascript
+eP2.setAttribute('data-name', 'value');
+var eP2Clone = eP2.cloneNode();
+var eP2CloneAll = eP2.cloneNode(true);
+console.log(eP2Clone);
+console.log(eP2CloneAll);
+```
 
 #### 查找节点
 
@@ -332,7 +331,7 @@ Javascript与HTML之间的交互是通过事件实现的。事件，就是文档
     4. eventPhase属性
 
         事件的eventPhase属性，可以用来确定事件当前正位于事件流的哪个阶段；如果是在捕获阶段调用程序，那么eventPhase等于1；如果事件处理程序处于目标对象上，则eventPhase等于2；如果是在冒泡阶段调用事件处理，则eventPhase等于3。
-        
+
         ```html
         <button id="btn4">Click Me</button>
         <script>
