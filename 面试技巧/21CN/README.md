@@ -1,5 +1,4 @@
 1. 说明下面代码的运行结果和做简单的说明。
-
 ```javascript
 var name = 'alvin';
 function echo(){
@@ -12,7 +11,6 @@ echo();
 ```
 
 2. 什么是闭包？使用javascript实现下面代码：点击li后alert出当前的index值
-
 ```html
 <ul id="target">
     <li>1</li>

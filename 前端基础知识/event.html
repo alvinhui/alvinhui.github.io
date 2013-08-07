@@ -12,9 +12,13 @@
         }
         </script>
         <input type="button" value="Click Me" onClick="showMessage()">
-        <input id="btn" type="button" value="Click Me">
+        <input id="btn" type="button" value="Btn">
 
         <script type="text/javascript">
+            /*
+             * Part 1 - 使用事件
+             */
+
             //DOM 0
             var ele = document.getElementById('btn');
             ele.onclick = function(){
@@ -39,6 +43,70 @@
 
             //删除一个监听
             btn.removeEventListener('click', handleClick, false);
+
+
+            /*
+             * Part 2 - 事件对象
+             */
+            var ele = document.getElementById('btn');
+            ele.onclick = function(event){
+                alert(event.type);
+            };
+            btn.addEventListener('click', function(event){
+                alert(event.type);
+            }, false);
+        </script>
+
+
+        <!-- currentTarget,target -->
+        <input id="btn2" type="button" value="Btn2">
+        <script type="text/javascript">
+        document.body.onclick = function(event){
+            alert(event.currentTarget === document.body);//true
+            alert(this === document.body);//true
+            alert(event.target === document.getElementById('btn2'));//true
+        };
+        </script>
+
+
+        <!-- preventDefault() -->
+        <a href="http://alvinhui.github.io/" id="myLink">Alvin的github</a>
+        <script type="text/javascript">
+        document.getElementById('myLink').onclick = function(event){
+            event.preventDefault();
+        };
+        </script>
+
+
+        <!-- stopPropagation() -->
+        <button id="btn3">Btn3</button>
+        <script>
+            var btn = document.getElementById('btn3');
+            btn.onclick = function(event){
+                alert('Clicked!');
+                event.stopPropagation();
+            };
+            document.body.onclick = function(){
+                alert('Body clicked!');//点击btn时不会输出，因为冒泡没有传播到body
+            };
+        </script>
+
+
+        <!-- eventPhase -->
+        <button id="btn4">Btn4</button>
+        <script>
+        var btn = document.getElementById("btn4");
+        btn.onclick = function(event){
+            alert(event.eventPhase);   //2
+        };
+
+        document.body.addEventListener("click", function(event){
+            alert(event.eventPhase);   //1
+        }, true);
+
+        document.body.onclick = function(event){
+            alert(event.eventPhase);   //3
+        };
         </script>
     </body>
 </html>
