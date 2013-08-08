@@ -567,48 +567,48 @@ XMLHttpRequest（以下简称XMR）是一组API函数集，可被JavaScript、JS
 
     默认情况下，在发送XHR请求的同时，还会发送下列头部信息：
 
-        * Accept: 浏览器能够处理的内容类型
-        * Accept-Charset: 浏览器能够显示的字符集
-        * Accept-Encoding: 浏览器能够处理的压缩编码
-        * Accept-Language: 浏览器当前设置的语言
-        * Cookie: 当前页面设置的任何Cookie
-        * Host：发出请求的页面所在的域
-        * Referer：发出请求的页面的URL
-        * User-Agent: 浏览器的用户代理字符串
+    * Accept: 浏览器能够处理的内容类型
+    * Accept-Charset: 浏览器能够显示的字符集
+    * Accept-Encoding: 浏览器能够处理的压缩编码
+    * Accept-Language: 浏览器当前设置的语言
+    * Cookie: 当前页面设置的任何Cookie
+    * Host：发出请求的页面所在的域
+    * Referer：发出请求的页面的URL
+    * User-Agent: 浏览器的用户代理字符串
 
     每个HTTP请求和响应都会带有响应的头部信息，XHR对象提供了操作这两种头部信息的方法。
 
-        1. setRequestHeader()
+    1. setRequestHeader()
 
-            使用`setRequestHeader()`方法可以设置自定义的请求头部信息。
+        使用`setRequestHeader()`方法可以设置自定义的请求头部信息。
 
-            ```javascript
-            var xhr = createXHR();      
-            xhr.open("get", "example.php", true);
-            //要成功发送请求头部信息，必须在open()方法之后且调用send()之前调用setRequestHeader()
-            xhr.setRequestHeader("MyHeader", "MyValue");
-            xhr.send(null);
-            ```        
+        ```javascript
+        var xhr = createXHR();      
+        xhr.open("get", "example.php", true);
+        //要成功发送请求头部信息，必须在open()方法之后且调用send()之前调用setRequestHeader()
+        xhr.setRequestHeader("MyHeader", "MyValue");
+        xhr.send(null);
+        ```        
 
-        2. getResponseHeader(), getAllResponseHeaders()   
-        
-            调用XHR对象的`getResponseHeader()`方法并传入头部字段名称，可以取得响应的响应头部信息。<br>
-            调用`getAllResponseHeaders()`方法则可以取得一个包含所有头部信息的长字符串。
+    2. getResponseHeader(), getAllResponseHeaders()   
+    
+        调用XHR对象的`getResponseHeader()`方法并传入头部字段名称，可以取得响应的响应头部信息。<br>
+        调用`getAllResponseHeaders()`方法则可以取得一个包含所有头部信息的长字符串。
 
-            ```javascript
-            var xhr = createXHR();        
-            xhr.onreadystatechange = function(event){
-                if (xhr.readyState == 4){
-                    if ((xhr.status >= 200 && xhr.status < 300) || xhr.status == 304){
-                        alert(xhr.getAllResponseHeaders());
-                    } else {
-                        alert("Request was unsuccessful: " + xhr.status);
-                    }
+        ```javascript
+        var xhr = createXHR();        
+        xhr.onreadystatechange = function(event){
+            if (xhr.readyState == 4){
+                if ((xhr.status >= 200 && xhr.status < 300) || xhr.status == 304){
+                    alert(xhr.getAllResponseHeaders());
+                } else {
+                    alert("Request was unsuccessful: " + xhr.status);
                 }
-            };
-            xhr.open("get", "example.php", true);
-            xhr.send(null);
-            ```
+            }
+        };
+        xhr.open("get", "example.php", true);
+        xhr.send(null);
+        ```
 
 5. Get请求和Post请求
 
