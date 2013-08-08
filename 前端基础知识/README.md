@@ -484,7 +484,7 @@ XMLHttpRequest（以下简称XMR）是一组API函数集，可被JavaScript、JS
 
 #### 使用
 
-1. `open()`
+1. open()
 
     在使用XHR对象时，要调用的第一个方法是`open()`，它接受3个参数：要发送的请求的类型（'get', 'post'等），请求的URL和标示是否异步发送请求的布尔值。
 
@@ -496,7 +496,7 @@ XMLHttpRequest（以下简称XMR）是一组API函数集，可被JavaScript、JS
     URL是相对于执行代码的当前页面（也可以使用绝对路径）；open方法不会真正发送请求，而只是启动一个请求以备发送。<br>
     __注意__：只能向同一个域中使用相同端口和协议的URL发送请求，如果URL与启动请求的页面有任何差别，都会引发安全错误。
 
-2. `send()`
+2. send()
 
     要发送特定的请求，必须调用`send()`方法：
 
@@ -577,7 +577,7 @@ XMLHttpRequest（以下简称XMR）是一组API函数集，可被JavaScript、JS
 
     每个HTTP请求和响应都会带有响应的头部信息，XHR对象提供了操作这两种头部信息的方法。
 
-    1. `setRequestHeader()`
+    1. setRequestHeader()
 
         使用`setRequestHeader()`方法可以设置自定义的请求头部信息。
 
@@ -589,7 +589,7 @@ XMLHttpRequest（以下简称XMR）是一组API函数集，可被JavaScript、JS
         xhr.send(null);
         ```        
 
-    2. `getResponseHeader()`, `getAllResponseHeaders()`   
+    2. getResponseHeader(), getAllResponseHeaders()   
     
         调用XHR对象的`getResponseHeader()`方法并传入头部字段名称，可以取得响应的响应头部信息。<br>
         调用`getAllResponseHeaders()`方法则可以取得一个包含所有头部信息的长字符串。
