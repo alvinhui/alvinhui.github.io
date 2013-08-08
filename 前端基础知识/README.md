@@ -565,17 +565,17 @@ XMLHttpRequest（以下简称XMR）是一组API函数集，可被JavaScript、JS
  
 4. HTTP头
 
-默认情况下，在发送XHR请求的同时，还会发送下列头部信息：
-* Accept: 浏览器能够处理的内容类型
-* Accept-Charset: 浏览器能够显示的字符集
-* Accept-Encoding: 浏览器能够处理的压缩编码
-* Accept-Language: 浏览器当前设置的语言
-* Cookie: 当前页面设置的任何Cookie
-* Host：发出请求的页面所在的域
-* Referer：发出请求的页面的URL
-* User-Agent: 浏览器的用户代理字符串
+    默认情况下，在发送XHR请求的同时，还会发送下列头部信息：
+    * Accept: 浏览器能够处理的内容类型
+    * Accept-Charset: 浏览器能够显示的字符集
+    * Accept-Encoding: 浏览器能够处理的压缩编码
+    * Accept-Language: 浏览器当前设置的语言
+    * Cookie: 当前页面设置的任何Cookie
+    * Host：发出请求的页面所在的域
+    * Referer：发出请求的页面的URL
+    * User-Agent: 浏览器的用户代理字符串
 
-每个HTTP请求和响应都会带有响应的头部信息，XHR对象提供了操作这两种头部信息的方法。
+    每个HTTP请求和响应都会带有响应的头部信息，XHR对象提供了操作这两种头部信息的方法。
 
     1. `setRequestHeader()`
 
