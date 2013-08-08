@@ -350,6 +350,64 @@ Javascript与HTML之间的交互是通过事件实现的。事件，就是文档
         </script>
         ```
 
+2. DOM中的事件对象
+
+    与DOM中的Event对象不同，要访问ie中的event对象有几种不同的方式，取决于指定事件处理程序的方法。
+
+    ```javascript
+    var btn = document.getElementById('btn');
+    btn.onclick = function(){
+        var event = window.event;
+        alert(event.type);//click
+    };
+
+    btn.attachEvent('onclick', function(event){
+        alert(event.type);
+        alert(window.event.type); //也可以通过window.event来访问
+    });
+    ```
+
+    几个常用的event属性：
+
+    1. cancelBubble
+
+        默认为false，但将其设置为true就可以取消事件冒泡。（与DOM的stopProgagation()方法作用相同）
+
+        ```javascript
+        var btn3 = document.getElementById('btn3');
+        btn3.onclick = function(){
+            alert('Clicked');
+            window.event.cancelBubble = true;
+        };
+        document.body.onclick = function(){
+            alert('body Clicked!');
+        };
+        ```
+
+    2. returnValue
+
+        默认为true，但将起设置为false就可以取消事件的默认行为（与DOM的preventDefault()方法作用相同）
+
+        ```javascript
+        var btn4 = document.getElementById('btn4');
+        btn4.onclick = function(){
+            window.event.returnValue = false;
+        };
+        ```
+
+    3. srcElement
+
+        事件的目标。（与DOM的target属性相同）
+
+        ```html
+        <button id="btn5">Btn5</button>
+        <script>
+        document.body.onclick = function(){
+            alert(window.event.srcElement==document.getElementById('btn5'))
+        };
+        </script>
+        ```
+
 ### 盒模型
 
 一个盒包括了内容(content)、边框(border)、内边距(padding)、外边距(margin)。下图展示了盒模型的直观意义：
