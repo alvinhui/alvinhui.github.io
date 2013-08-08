@@ -21,12 +21,12 @@
 
 2. 节点间移动：
 
-    当前节点为node，
-    移动到父节点：`node.parentNode`
-    移动到上一个子节点：`node.nextSibling` 
-    移动到下一个子节点：`node.previousSibling` 
-    返回所有子节点：`node.childNodes`（包含文本节点及标签节点）
-    返回第一个子节点：`node.firstChild` 
+    当前节点为node，<br>
+    移动到父节点：`node.parentNode`<br>
+    移动到上一个子节点：`node.nextSibling` <br>
+    移动到下一个子节点：`node.previousSibling` <br>
+    返回所有子节点：`node.childNodes`（包含文本节点及标签节点）<br>
+    返回第一个子节点：`node.firstChild` <br>
     返回最后一个子节点： node.lastChild 
 
 ### DOM操作
