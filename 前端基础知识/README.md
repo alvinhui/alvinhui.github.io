@@ -1,6 +1,4 @@
-# 
-
-## Nicholas C. Zakas认为前端工程师应该具备的基本知识
+# Nicholas C. Zakas认为前端工程师应该具备的基本知识
 
 * __DOM结构__: 两个节点之间可能存在哪些关系以及如何在节点之间任意移动。
 * __DOM操作__: 怎样添加、删除、移动、复制、创建和查找节点。
@@ -13,7 +11,7 @@
 * __块级元素与行内元素__: 怎么用CSS控制它们、它们怎样影响周围的元素以及你觉得应该如何定义它们的样式。
 * __浮动元素__: 怎么使用它们、它们有什么问题以及怎么解决这些问题。
 
-### DOM结构
+## DOM结构
 
 1. 两个节点可能存在的关系：
     * 父子
@@ -29,9 +27,9 @@
     返回第一个子节点：`node.firstChild` <br>
     返回最后一个子节点： node.lastChild 
 
-### DOM操作
+## DOM操作
 
-#### 创建节点
+### 创建节点
 
 1. 创建元素节点
 
@@ -88,7 +86,7 @@
     eDiv2.appendChild(oFragmeng);//最后一次性添加到eDiv2中 
     ```
 
-#### 删除节点
+### 删除节点
 
 1. 删除元素节点
 
@@ -111,7 +109,7 @@
     eDiv.removeAttributeNode(attr); 
     ```
 
-#### 添加节点
+### 添加节点
 
 1. 添加节点
 
@@ -142,7 +140,7 @@
     document.body.replaceChild(eP3, eP);
     ```
 
-#### 复制节点
+### 复制节点
 
 `cloneNode()` 方法创建指定节点的副本。
 `cloneNode()` 方法有一个参数（true 或 false）。该参数指示被复制的节点是否包括原节点的所有属性和子节点。
@@ -155,7 +153,7 @@ console.log(eP2Clone);
 console.log(eP2CloneAll);
 ```
 
-#### 查找节点
+### 查找节点
 
 1. 根据标签名
 
@@ -181,11 +179,11 @@ console.log(eP2CloneAll);
     document.getElementById('myId');
     ```
 
-### 事件
+## 事件
 
 Javascript与HTML之间的交互是通过事件实现的。事件，就是文档或浏览器窗口发声在一些特定的交互瞬间。可以使用监听器来预订事件，以便事件发生时执行相应的代码。
 
-#### 使用事件
+### 使用事件
 
 1. 传统模式：HTML事件处理程序
 
@@ -258,7 +256,7 @@ Javascript与HTML之间的交互是通过事件实现的。事件，就是文档
     btn.detachEvent('onclick', handleClick);
     ```
 
-#### 事件对象
+### 事件对象
 
 在触发DOM上某个事件时，会产生一个事件对象event，这个对象中包含着所有与事件有关的信息。包括导致事件的元素，事件的类型，以及其他与特定事件相关的信息。例如，鼠标操作导致的事件对象中，会包含鼠标位置的信息。
 
@@ -408,11 +406,11 @@ Javascript与HTML之间的交互是通过事件实现的。事件，就是文档
         </script>
         ```
 
-### XMLHttpRequest
+## XMLHttpRequest
     
 XMLHttpRequest（以下简称XMR）是一组API函数集，可被JavaScript、JScript、VBScript以及其它web浏览器内嵌的脚本语言调用，通过HTTP在浏览器和web服务器之间收发XML或其它数据。
 
-#### 创建XMR
+### 创建XMR
 
 1. IE中
 
@@ -482,7 +480,7 @@ XMLHttpRequest（以下简称XMR）是一组API函数集，可被JavaScript、JS
     }
     ```        
 
-#### 使用
+### 使用
 
 1. open()
 
@@ -650,7 +648,7 @@ XMLHttpRequest（以下简称XMR）是一组API函数集，可被JavaScript、JS
         xhr.send('name=alvin&age=23');
         ```
 
-### 盒模型
+## 盒模型
 
 一个盒包括了内容(content)、边框(border)、内边距(padding)、外边距(margin)。下图展示了盒模型的直观意义：
 ![盒子模型](http://www.w3.org/TR/2011/REC-CSS2-20110607/images/boxdim.png)
