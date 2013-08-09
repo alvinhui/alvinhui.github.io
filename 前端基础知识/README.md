@@ -410,7 +410,7 @@ Javascript与HTML之间的交互是通过事件实现的。事件，就是文档
     
 XMLHttpRequest（以下简称XMR）是一组API函数集，可被JavaScript、JScript、VBScript以及其它web浏览器内嵌的脚本语言调用，通过HTTP在浏览器和web服务器之间收发XML或其它数据。
 
-### 创建XMR
+### 创建
 
 1. IE中
 
