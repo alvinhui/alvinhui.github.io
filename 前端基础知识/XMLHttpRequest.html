@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <title>XMLHttpRequest</title> 
+    </head>
+    <body>
+        <script type="text/javascript">
+         function createXHR(){
+            if (typeof XMLHttpRequest != "undefined"){
+                return new XMLHttpRequest();
+            } else if (typeof ActiveXObject != "undefined"){
+                if (typeof arguments.callee.activeXString != "string"){
+                    var versions = ["MSXML2.XMLHttp.6.0", "MSXML2.XMLHttp.3.0",
+                                    "MSXML2.XMLHttp"];
+            
+                    for (var i=0,len=versions.length; i < len; i++){
+                        try {
+                            var xhr = new ActiveXObject(versions[i]);
+                            arguments.callee.activeXString = versions[i];
+                            return xhr;
+                        } catch (ex){
+                            //skip
+                        }
+                    }
+                }
+            
+                return new ActiveXObject(arguments.callee.activeXString);
+            } else {
+                throw new Error("No XHR object available.");
+            }
+        }
+
+
+        //同步
+        var xhr1 = createXHR();        
+        xhr1.open("get", "example.txt", false);
+        xhr1.send(null);
+
+        if ((xhr1.status >= 200 && xhr1.status < 300) || xhr1.status == 304){
+            alert(xhr1.statusText);
+            alert(xhr1.responseText);
+        } else {
+            alert("Request was unsuccessful: " + xhr1.status);
+        }
+
+
+        //异步
+        var xhr2 = createXHR();      
+        //必须在open()之前指定onreadystatechange事件处理程序才能确保跨浏览器兼容性  
+        //为了获得更好的兼容性，使用DOM0级方法添加事件处理程序
+        xhr2.onreadystatechange = function(event){
+            if (xhr2.readyState == 4){
+                if ((xhr2.status >= 200 && xhr2.status < 300) || xhr2.status == 304){
+                    alert(xhr2.responseText);
+                } else {
+                    alert("Request was unsuccessful: " + xhr2.status);
+                }
+            }
+        };
+        xhr2.open("get", "example.txt", true);
+        xhr2.send(null);
+
+
+        //HTTP头
+        var xhr3 = createXHR();      
+        xhr3.onreadystatechange = function(event){
+            if (xhr3.readyState == 4){
+                if ((xhr3.status >= 200 && xhr3.status < 300) || xhr3.status == 304){
+                    alert(xhr3.getAllResponseHeaders());//获取全部头部信息的字符串
+                } else {
+                    alert("Request was unsuccessful: " + xhr3.status);
+                }
+            }
+        };
+        xhr3.open("get", "example.php", true);
+        //要成功发送请求头部信息，必须在open()方法之后且调用send()之前调用setRequestHeader()
+        xhr3.setRequestHeader("MyHeader", "MyValue");
+        xhr3.send(null);
+
+
+        //get
+        function addURLParam(url, name, value){
+            url += (url.indexOf('?')==-1 ? '?' : '&');
+            url += encodeURIComponent(name) + '=' + encodeURIComponent(value);
+            return url;
+        }
+
+        var url = 'get.php';
+        url = addURLParam(url, 'name', 'Alvin');
+        url = addURLParam(url, 'age', '23');
+
+        var xhr4 = createXHR();     
+        xhr4.onreadystatechange = function(event){
+            if (xhr4.readyState == 4){
+                if ((xhr4.status >= 200 && xhr4.status < 300) || xhr4.status == 304){
+                    alert(xhr4.responseText);
+                } else {
+                    alert("Request was unsuccessful: " + xhr4.status);
+                }
+            }
+        };
+        xhr4.open('get', url, false);
+        xhr4.send(null);
+
+        //post
+        var xhr5 = createXHR();        
+        xhr5.onreadystatechange = function(event){
+            if (xhr5.readyState == 4){
+                if ((xhr5.status >= 200 && xhr5.status < 300) || xhr5.status == 304){
+                    alert(xhr5.responseText);
+                } else {
+                    alert("Request was unsuccessful: " + xhr5.status);
+                }
+            }
+        };
+        
+        xhr5.open("post", "postexample.php", true);
+
+        //模拟浏览器行为，所有由浏览器发出的post请求都将'content-type'头部设置为'application/x-www-form-urlencoded'
+        xhr5.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");        
+        xhr5.send('name=alvin&age=23');
+        </script>
+    </body>
+</html>

@@ -533,20 +533,20 @@ XMLHttpRequest（以下简称XMR）是一组API函数集，可被JavaScript、JS
     只要readyState属性由一个值变成另一个值时，都会触发一次readyStatechange事件。我们可以利用这个事件来检测每次状态变化后readyState的值。
 
     ```javascript
-    var xhr = createXHR();      
+    var xhr2 = createXHR();      
     //必须在open()之前指定onreadystatechange事件处理程序才能确保跨浏览器兼容性  
     //为了获得更好的兼容性，使用DOM0级方法添加事件处理程序
-    xhr.onreadystatechange = function(event){
-        if (xhr.readyState == 4){
-            if ((xhr.status >= 200 && xhr.status < 300) || xhr.status == 304){
-                alert(xhr.responseText);
+    xhr2.onreadystatechange = function(event){
+        if (xhr2.readyState == 4){
+            if ((xhr2.status >= 200 && xhr2.status < 300) || xhr2.status == 304){
+                alert(xhr2.responseText);
             } else {
-                alert("Request was unsuccessful: " + xhr.status);
+                alert("Request was unsuccessful: " + xhr2.status);
             }
         }
     };
-    xhr.open("get", "example.txt", true);
-    xhr.send(null);
+    xhr2.open("get", "example.txt", true);
+    xhr2.send(null);
     ```
 
     使用abort()方法来取消异步请求。例如：
@@ -591,18 +591,18 @@ XMLHttpRequest（以下简称XMR）是一组API函数集，可被JavaScript、JS
         调用`getAllResponseHeaders()`方法则可以取得一个包含所有头部信息的长字符串。
 
         ```javascript
-        var xhr = createXHR();        
-        xhr.onreadystatechange = function(event){
-            if (xhr.readyState == 4){
-                if ((xhr.status >= 200 && xhr.status < 300) || xhr.status == 304){
-                    alert(xhr.getAllResponseHeaders());
+        var xhr3 = createXHR();      
+        xhr3.onreadystatechange = function(event){
+            if (xhr3.readyState == 4){
+                if ((xhr3.status >= 200 && xhr3.status < 300) || xhr3.status == 304){
+                    alert(xhr3.getAllResponseHeaders());//获取全部头部信息的字符串
                 } else {
-                    alert("Request was unsuccessful: " + xhr.status);
+                    alert("Request was unsuccessful: " + xhr3.status);
                 }
             }
         };
-        xhr.open("get", "example.php", true);
-        xhr.send(null);
+        xhr3.open("get", "example.php", true);
+        xhr3.send(null);
         ```
 
 5. Get请求和Post请求
@@ -619,33 +619,43 @@ XMLHttpRequest（以下简称XMR）是一组API函数集，可被JavaScript、JS
             return url;
         }
 
-        var url = 'example.php';
+        var url = 'get.php';
         url = addURLParam(url, 'name', 'Alvin');
         url = addURLParam(url, 'age', '23');
-        
-        xhr.open('get', url, false);
-        xhr.send(null);
+
+        var xhr4 = createXHR();     
+        xhr4.onreadystatechange = function(event){
+            if (xhr4.readyState == 4){
+                if ((xhr4.status >= 200 && xhr4.status < 300) || xhr4.status == 304){
+                    alert(xhr4.responseText);
+                } else {
+                    alert("Request was unsuccessful: " + xhr4.status);
+                }
+            }
+        };
+        xhr4.open('get', url, false);
+        xhr4.send(null);
         ```
 
     2. post请求
 
         ```javascript
-        var xhr = createXHR();        
-        xhr.onreadystatechange = function(event){
-            if (xhr.readyState == 4){
-                if ((xhr.status >= 200 && xhr.status < 300) || xhr.status == 304){
-                    alert(xhr.responseText);
+        var xhr5 = createXHR();        
+        xhr5.onreadystatechange = function(event){
+            if (xhr5.readyState == 4){
+                if ((xhr5.status >= 200 && xhr5.status < 300) || xhr5.status == 304){
+                    alert(xhr5.responseText);
                 } else {
-                    alert("Request was unsuccessful: " + xhr.status);
+                    alert("Request was unsuccessful: " + xhr5.status);
                 }
             }
         };
         
-        xhr.open("post", "postexample.php", true);
+        xhr5.open("post", "postexample.php", true);
 
         //模拟浏览器行为，所有由浏览器发出的post请求都将'content-type'头部设置为'application/x-www-form-urlencoded'
-        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");        
-        xhr.send('name=alvin&age=23');
+        xhr5.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");        
+        xhr5.send('name=alvin&age=23');
         ```
 
 ## 盒模型
