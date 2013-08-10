@@ -685,7 +685,7 @@ JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式。 它�
 
     数组是值（value）的有序集合。一个数组以“[”（左中括号）开始，“]”（右中括号）结束。值之间使用“,”（逗号）分隔。
 
-    ！[array](http://www.json.org/array.gif)   
+    ![array](http://www.json.org/array.gif)   
 
     ```
     ["value1", "value2", "value3"]
@@ -694,19 +694,19 @@ JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式。 它�
 
     值（value）可以是双引号括起来的字符串（string）、数值(number)、true、false、 null、对象（object）或者数组（array）。这些结构可以嵌套。
 
-    ！[value](http://www.json.org/value.gif)   
+    ![value](http://www.json.org/value.gif)   
     
 4. 字符串 string
 
     字符串（string）是由双引号包围的任意数量Unicode字符的集合，使用反斜线转义。一个字符（character）即一个单独的字符串（character string）。
 
-    ！[string](http://www.json.org/string.gif)   
+    ![string](http://www.json.org/string.gif)   
 
 5. 数值 number
 
     数值（number）也与C或者Java的数值非常相似。除去未曾使用的八进制与十六进制格式。除去一些编码细节。
 
-    ！[number](http://www.json.org/number.gif)   
+    ![number](http://www.json.org/number.gif)   
            
 ### 使用JSON
 
