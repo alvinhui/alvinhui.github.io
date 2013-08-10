@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>JSON Example</title>
+    <script type="text/javascript" src="json2.js"></script>
+</head>
+<body>
+    <script type="text/javascript">
+    
+        var jsonText = "{\"name\":\"Nicholas C. Zakas\", \"age\":29, \"author\":true }";
+        var object = JSON.parse(jsonText, function(key, value){
+            switch(key){
+                case "age":     return value + 1;
+                case "author":  return undefined;
+                default:        return value;
+            }    
+        });
+    
+        alert(object.age);      //30
+        alert(object.author);   //undefined
+
+    </script>
+</body>
+</html>
