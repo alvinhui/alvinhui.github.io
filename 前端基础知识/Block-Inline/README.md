@@ -12,13 +12,13 @@
 
 块级元素默认是从新的一行开始，多个块级元素按垂直方向排列。块级元素宽度默认是占满可填充的空间。看看效果：
 
-‵‵‵html
-<style>
-    div{
-        border: 1px solid red;
-        margin-bottom: 10px;
-    }
-</style>
+```css
+div{
+    border: 1px solid red;
+    margin-bottom: 10px;
+}
+```
+```html
 <body>
     <div>Div 1</div>
     <div>Div 2</div>
@@ -27,15 +27,15 @@
 
 可以通过`width`属性设置宽度，通过`margin`属性设置外间距（上下左右四个方向都可以设置），通过`padding`属性设置内填充（上下左右四个方向都可以设置）。看看效果：
 
+```css
+#mydiv{
+    border: 1px solid red;
+    width: 400px;
+    padding: 10px;
+    margin: 10px;
+}
+```
 ```html
-<style type="text/css">
-    #mydiv{
-        border: 1px solid red;
-        width: 400px;
-        padding: 10px;
-        margin: 10px;
-    }
-</style>
 <body>
     <div id="mydiv">
         Long text here...
@@ -47,27 +47,27 @@
 
 行内元素默认在同一行显示，默认宽度就是内容的所填充的空间。行内元素不允许设置width, height, 垂直方向margin。
 
+```css
+div{
+    border: 1px solid #000;
+}
+.block{
+    margin-bottom: 10px;
+}
+.inline{
+    border: 1px solid red;
+    margin-top: 100px;/* 无效 */
+    margin-left: 100px;
+    padding-top: 100px;
+    padding-left: 100px;
+
+    width: 600px;/* 无效 */
+    height: 50px;/* 无效 */
+
+    line-height: 50px;
+}
+```
 ```html
-<style type="text/css">
-    div{
-        border: 1px solid #000;
-    }
-    .block{
-        margin-bottom: 10px;
-    }
-    .inline{
-        border: 1px solid red;
-        margin-top: 100px;/* 无效 */
-        margin-left: 100px;
-        padding-top: 100px;
-        padding-left: 100px;
-
-        width: 600px;/* 无效 */
-        height: 50px;/* 无效 */
-
-        line-height: 50px;
-    }
-</style>
 <body>
     <div class="block">
         BlockBlockBlockBlockBlockBlockBlockBlockBlockBlockBlock
