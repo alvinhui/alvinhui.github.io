@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <title>Block-Inline</title> 
+        <style type="text/css">
+            div{
+                border: 1px solid #000;
+            }
+            .block{
+                margin-bottom: 10px;
+            }
+            .inline{
+                margin-top: 100px;/* 无效 */
+                margin-left: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="block">
+            Block
+        </div>
+        <div>
+            <span class="inline">Inline</span> 
+        </div>   
+    </body>
+</html>
