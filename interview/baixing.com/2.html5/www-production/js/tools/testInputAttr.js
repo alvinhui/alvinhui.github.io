@@ -1,0 +1,1 @@
+define([],function(){return function(e){var t={},n=document.createElement("input"),r={};return t=function(e){for(var t=0,i=e.length;i>t;t++)r[e[t]]=!!(e[t]in n);return r.list&&(r.list=!(!document.createElement("datalist")||!window.HTMLDataListElement)),r}("autocomplete autofocus list placeholder max min multiple pattern required step".split(" ")),t[e]}});

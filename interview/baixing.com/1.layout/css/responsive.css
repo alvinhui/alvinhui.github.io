@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+@media all and (max-width: 420px) {
+    .wrapper{
+        width: 100%;
+    }
+    .ui-container{
+        min-width: 0;
+    }
+    .ui-container-column {
+        float: none;
+        width: 100%!important;
+    }
+}
