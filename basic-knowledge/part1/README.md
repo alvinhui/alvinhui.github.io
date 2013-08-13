@@ -1,6 +1,6 @@
 # 文件夹目录
 
-Nicholas C. Zakas认为前端工程师应该具备的基本知识（[观点原文](http://www.nczonline.net/blog/2010/01/05/interviewing-the-front-end-engineer/)|[中文翻译](http://www.cn-cuckoo.com/2010/01/08/how-nicholas-c-zakas-interviewing-the-front-end-engineer-1332.html)）
+Nicholas C. Zakas认为前端工程师应该具备的基本知识（[观点原文](http://www.nczonline.net/blog/2010/01/05/interviewing-the-front-end-engineer/) | [中文翻译](http://www.cn-cuckoo.com/2010/01/08/how-nicholas-c-zakas-interviewing-the-front-end-engineer-1332.html)）
 
 * __DOM-structure__: 两个节点之间可能存在哪些关系以及如何在节点之间任意移动。[阅读](https://github.com/alvinhui/alvinhui.github.io/tree/master/basic-knowledge/part1/DOM-structure)
 * __DOM-manipulation__: 怎样添加、删除、移动、复制、创建和查找节点。[阅读](https://github.com/alvinhui/alvinhui.github.io/tree/master/basic-knowledge/part1/DOM-manipulation)
