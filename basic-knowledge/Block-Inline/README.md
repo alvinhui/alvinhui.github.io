@@ -45,7 +45,7 @@ div{
 
 ## 行内的表现和控制
 
-行内元素默认在同一行显示，默认宽度就是内容的所填充的空间。行内元素不允许设置width, height, 垂直方向margin。
+行内元素默认在同一行显示，默认宽度就是内容的所填充的空间。对行内元素设置width, height, 垂直方向margin无效。
 
 ```css
 div{
@@ -57,6 +57,7 @@ div{
 .inline{
     border: 1px solid red;
     margin-top: 100px;/* 无效 */
+    margin-bottom: 100px;/* 无效 */
     margin-left: 100px;
     padding-top: 100px;
     padding-left: 100px;
