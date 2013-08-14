@@ -1,0 +1,86 @@
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	div{
+		padding: 0;
+		margin: 0;
+	}
+	.A{
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		width: 30px;
+		height: 30px;
+		background-color: #F00;
+	}
+	.B{
+		position: absolute;
+		left: 30px;
+		top: 0px;
+		width: 30px;
+		height: 30px;
+		background-color: #0A0;
+	}
+	.C{
+		position: absolute;
+		left: 60px;
+		top: 0px;
+		width: 30px;
+		height: 30px;
+		background-color: #00F;
+	}
+	.list{
+		float: left;
+		width: 90px;
+		height: 30px;
+		position: relative;
+		border-bottom:solid 1px #FFF;
+		color: #FFF;
+	}
+	.content{
+		width: 90px;
+		height: 90px;
+	}
+	</style>
+</head>
+<body>
+<p><strong>第一题：</strong>TodoMVC：https://github.com/tastejs/todomvc，SeaJs实现了两版(Angular和SeaJs)：http://seajs.github.io/examples/</p>
+<p><strong>第二题：</strong>因为1秒之后调用函数的默认的是window对象，所以sayHello里的this指针为window，只需要绑定到foo即可。</p>
+
+<pre>
+foo = function(){
+    this.myName = "Foo function.";
+}
+foo.prototype.sayHello = function(){
+    alert(this.myName);
+}
+foo.prototype.bar = function(){
+    /*或setTimeout(this.sayHello.call(this), 1000);*/
+    setTimeout(this.sayHello.bind(this), 1000);
+}
+var f = new foo;
+f.bar();
+</pre>
+<strong>第三题：</strong>
+<div class="content">
+	<div class="list">
+		<div class="A">A</div>
+		<div class="B">B</div>
+		<div class="C">C</div>
+	</div>
+
+	<div class="list">
+		<div class="C">A</div>
+		<div class="B">B</div>
+		<div class="A">C</div>
+	</div>
+
+	<div class="list">
+		<div class="B">A</div>
+		<div class="A">B</div>
+		<div class="C">C</div>
+	</div>
+</div>
+</body>
+</html>
