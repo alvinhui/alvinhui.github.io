@@ -9,7 +9,11 @@
     ```javascript
     var eDiv =document.createElement('div');
     document.body.appendChild(eDiv);
+    // or like this in IE
+    var div = document.createElement('<div id=\"myDiv">div</div>');
     ```
+
+    >第二种方法一般用户解决IE7以下动态创建元素的某些问题
 
 2. 创建属性节点
 
@@ -80,6 +84,13 @@
     eDiv.removeAttributeNode(attr); 
     ```
 
+3. 删除name节点
+    
+    `removeNameItem(name)`从列表中移除nodeName属性等于name的节点
+    ```javascript
+    element.removeNameItem(name);
+    ```
+
 ## 添加节点
 
 1. 添加节点
@@ -123,6 +134,8 @@ var eP2CloneAll = eP2.cloneNode(true);
 console.log(eP2Clone);
 console.log(eP2CloneAll);
 ```
+>注意：cloneNode()不会复制javascript属性，比如绑定的事件，但IE会复制事件处理事件，建议
+>复制前最好移除事件处理
 
 ## 查找节点
 
@@ -132,6 +145,7 @@ console.log(eP2CloneAll);
 
     ```javascript
     document.getElementsByTagName('p');
+    div.getElementsByTagName('*');// 获取目标div里的所有元素
     ```
 
 2. 根据name属性
@@ -149,3 +163,23 @@ console.log(eP2CloneAll);
     ```javascript
     document.getElementById('myId');
     ```
+    > 注意，IE8以下不区分ID的大小写，会把"Div"和"div"当作相同的元素
+
+4. namedItem()
+    
+    存在name属性的元素，可以使用namedItem来获取
+    ```html
+    <img src="img.jpg" name="myImage" alt="">
+    ```
+    ```javascript
+    var myImage = images.namedItem('myImage');
+    var myImage = images['myImage'];
+    ```
+
+5. 其他
+    
+    `document.anchors`,包含文档中所有带name特性的a元素
+    `document.applets`,包含文档中的<applet>元素，比较少见
+    `document.forms`,包含文档中的<form>元素，相等于`document.getElementsByTagName('form')`
+    `document.images`,包含文档中的<img>元素，相等于`document.getElementsByTagName('img')`
+    `document.links`,包含文档中所有带href的a元素
