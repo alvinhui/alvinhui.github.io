@@ -40,14 +40,22 @@
         console.log(nodeParentPrevPrev.id);//div1
         ```
 
-    3. childNodes
+    3. childNodes/item()
 
-        返回所有子节点：`node.childNodes`（包含文本节点及标签节点）
+        返回所有子节点的NodeList：`node.childNodes`（包含文本节点及标签节点）
 
         ```javascript
         console.log(nodeParentPrevPrev.childNodes);
-        console.log(nodeParentPrevPrev.childNodes.length);//5: 2 blank text, 2 span, 1 text
+        console.log(nodeParentPrevPrev.childNodes.length);
+        //5: 2 blank text, 2 span, 1 text
+        //in IE, 3:2 span,1 text
+        console.log(nodeParentPrevPrev.childNodes[0]);
+        console.log(nodeParentPrevPrev.childNodes.item(0));// 返回一个元素
+
         ```
+
+        >
+        
 
     4. nextSibling
 
