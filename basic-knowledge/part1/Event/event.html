@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <title>Event</title> 
+    </head>
+    <body>
+        
+        <input type="button" value="Click Me" onClick="alert('Clicked')">
+        <script type="text/javascript">
+        function showMessage(){
+            alert('Hello world!');
+        }
+        </script>
+        <input type="button" value="Click Me" onClick="showMessage()">
+        <input id="btn" type="button" value="Btn">
+
+        <script type="text/javascript">
+            /*
+             * Part 1 - 使用事件
+             */
+
+            //DOM 0
+            var ele = document.getElementById('btn');
+            ele.onclick = function(){
+                // 注意this指向当前节点
+                alert(this.id);
+            };
+
+            ele.onclick = null; //删除事件处理程序
+
+            //DOM 2
+            var handleClick = function(){
+                alert(this.id);
+            };
+            var btn = document.getElementById('btn');
+            btn.addEventListener('click', handleClick, false);
+
+            //可以为同一个节点添加多个事件处理函数，他们是按顺序执行的。
+            //所以在此列中，会先输出id再输出hello word
+            btn.addEventListener('click', function(){
+                alert('Hello word!!');
+            }, false);
+
+            //删除一个监听
+            btn.removeEventListener('click', handleClick, false);
+
+
+            /*
+             * Part 2 - 事件对象
+             */
+            var ele = document.getElementById('btn');
+            ele.onclick = function(event){
+                alert(event.type);
+            };
+            btn.addEventListener('click', function(event){
+                alert(event.type);
+            }, false);
+        </script>
+
+
+        <!-- currentTarget,target -->
+        <input id="btn2" type="button" value="Btn2">
+        <script type="text/javascript">
+        document.body.onclick = function(event){
+            alert(event.currentTarget === document.body);//true
+            alert(this === document.body);//true
+            alert(event.target === document.getElementById('btn2'));//true
+        };
+        </script>
+
+
+        <!-- preventDefault() -->
+        <a href="http://alvinhui.github.io/" id="myLink">Alvin的github</a>
+        <script type="text/javascript">
+        document.getElementById('myLink').onclick = function(event){
+            event.preventDefault();
+        };
+        </script>
+
+
+        <!-- stopPropagation() -->
+        <button id="btn3">Btn3</button>
+        <script>
+            var btn = document.getElementById('btn3');
+            btn.onclick = function(event){
+                alert('Clicked!');
+                event.stopPropagation();
+            };
+            document.body.onclick = function(){
+                alert('Body clicked!');//点击btn时不会输出，因为冒泡没有传播到body
+            };
+        </script>
+
+
+        <!-- eventPhase -->
+        <button id="btn4">Btn4</button>
+        <script>
+        var btn = document.getElementById("btn4");
+        btn.onclick = function(event){
+            alert(event.eventPhase);   //2
+        };
+
+        document.body.addEventListener("click", function(event){
+            alert(event.eventPhase);   //1
+        }, true);
+
+        document.body.onclick = function(event){
+            alert(event.eventPhase);   //3
+        };
+        </script>
+    </body>
+</html>

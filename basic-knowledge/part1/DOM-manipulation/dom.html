@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <title>Dom</title> 
+    </head>
+    <body>
+        <input name="test" type="text" value="input">
+        <div id="test">Test</div>
+        <script type="text/javascript">
+            /*
+             * Part 1 - 创建节点
+             */
+
+            //创建元素节点
+            var eDiv = document.createElement('div');
+            document.body.appendChild(eDiv);
+
+            //创建属性节点
+            var attr = document.createAttribute('data-name');
+            attr.nodeValue = 'value';
+            eDiv.setAttributeNode(attr);
+
+            //创建文本节点
+            var nText = document.createTextNode('Hello word!');
+            eDiv.appendChild(nText);
+
+            //创建注释节点
+            var nComment = document.createComment('comment here...');
+            eDiv.appendChild(nComment);
+
+            //创建文档碎片节点
+            var eDiv2 = document.createElement('div');
+            eDiv2.setAttribute('id', 'test_div');
+            document.body.appendChild(eDiv2);
+            var oFragmeng = document.createDocumentFragment();  //先创建文档碎片  
+            for(var i=0;i<10;i++){  
+                var op = document.createElement('p');  
+                var oText = document.createTextNode(i);  
+                op.appendChild(oText);  
+                oFragmeng.appendChild(op); //先附加在文档碎片中  
+            }  
+            eDiv2.appendChild(oFragmeng);//最后一次性添加到eDiv2中 
+
+
+            /*
+             * Part 2 - 删除节点
+             */
+
+            //删除元素节点
+            document.body.removeChild(eDiv2);
+
+            //删除属性节点
+            //eDiv.removeAttribute('data-name'); 
+            eDiv.removeAttributeNode(attr); 
+
+            /*
+             * Part 3 - 添加节点
+             */
+
+            //添加节点
+            var eP = document.createElement('p');
+            eP.appendChild(document.createTextNode('Test appendChild'));
+            document.body.appendChild(eP);
+
+            //插入节点
+            var eP2 = document.createElement('p');
+            eP2.appendChild(document.createTextNode('test insertBefore'));
+            document.body.insertBefore(eP2,eP);
+
+            //替换节点
+            var eP3 = document.createElement('p');
+            eP3.appendChild(document.createTextNode('test replaceChild'));
+            document.body.replaceChild(eP3, eP);
+
+            /*
+             * Part 4 - 复制节点
+             */
+            eP2.setAttribute('data-name', 'value');
+            var eP2Clone = eP2.cloneNode();
+            var eP2CloneAll = eP2.cloneNode(true);
+            console.log(eP2Clone);
+            console.log(eP2CloneAll);
+
+            /*
+             * Part 5 - 查找节点
+             */
+
+             //根据标签名
+            console.log(document.getElementsByTagName('p'));
+
+             //根据name属性
+            console.log(document.getElementsByName('test'));
+
+             //根据id属性
+            console.log(document.getElementById('test'));
+        </script>
+    </body>
+</html>

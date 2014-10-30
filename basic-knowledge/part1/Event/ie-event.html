@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <title>IE Event</title> 
+    </head>
+    <body>
+        <button id="btn">Btn</button>
+        <button id="btn2">Btn2</button>
+        <button id="btn3">Btn3</button>
+        <a href="http://google.com" id="btn4">Btn4</a>
+        <button id="btn5">Btn5</button>
+        <script type="text/javascript">
+            /*
+             * Part 1
+             */
+            var btn = document.getElementById('btn');
+            var handleClick = function(){
+                alert(this===window);//输出true；注意！IE处理函数的作用域是全局
+            };
+            btn.attachEvent('onclick', handleClick);
+
+            //也可以为同一节点添加多个事件处理函数，不过与DOM2方法不同的是，这些事件不是以添加它们的顺序执行，而是以相反的顺序被触发。
+            //所以在此列中，首先看到的是hellow word然后才是id
+            btn.attachEvent('onclick', function(){
+                alert('Hello word!');
+            });
+
+            //使用detachEvent移除事件处理程序
+            btn.detachEvent('onclick', handleClick);
+
+
+            /*
+             * Part 2   Event
+             */
+            var btn2 = document.getElementById('btn2');
+            btn2.onclick = function(){
+                var event = window.event;
+                alert(event.type);//click
+            };
+
+            btn2.attachEvent('onclick', function(event){
+                alert(event.type);
+                alert(window.event.type); //也可以通过window.event来访问
+            });
+
+            //cancelBubble
+            var btn3 = document.getElementById('btn3');
+            btn3.onclick = function(){
+                alert('Clicked');
+                window.event.cancelBubble = true;
+            };
+            document.body.onclick = function(){
+                alert('body Clicked!');
+            };
+
+            //returnValue
+            var btn4 = document.getElementById('btn4');
+            btn4.onclick = function(){
+                window.event.returnValue = false;
+            };
+
+            //srcElement
+            document.body.onclick = function(){
+                alert(window.event.srcElement==document.getElementById('btn5'))
+            };
+
+        </script>
+    </body>
+</html>

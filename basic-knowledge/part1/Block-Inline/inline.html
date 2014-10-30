@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <title>Block-Inline</title> 
+        <style type="text/css">
+            div{
+                border: 1px solid #000;
+            }
+            .block{
+                margin-bottom: 10px;
+            }
+            .inline{
+                border: 1px solid red;
+                margin-top: 100px;/* 无效 */
+                margin-bottom: 100px;/* 无效 */
+                margin-left: 100px;
+                padding-top: 100px;
+                padding-left: 100px;
+
+                width: 600px;/* 无效 */
+                height: 50px;/* 无效 */
+
+                line-height: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="block">
+            BlockBlockBlockBlockBlockBlockBlockBlockBlockBlockBlock
+        </div>
+        <div>
+            <span class="inline">Inline</span> 123
+        </div>   
+    </body>
+</html>

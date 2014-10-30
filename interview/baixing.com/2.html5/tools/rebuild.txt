@@ -1,0 +1,33 @@
+Optimizing (standard) CSS file: /home/alvin/www/sites/baixing/2.html5/www-production/css/base.css
+Optimizing (standard) CSS file: /home/alvin/www/sites/baixing/2.html5/www-production/css/ie6.css
+Optimizing (standard) CSS file: /home/alvin/www/sites/baixing/2.html5/www-production/css/screen.css
+
+Tracing dependencies for: app
+Uglify2 file: /home/alvin/www/sites/baixing/2.html5/www-production/js/app.js
+Uglify2 file: /home/alvin/www/sites/baixing/2.html5/www-production/js/libs/jquery/1.10.2.js
+Uglify2 file: /home/alvin/www/sites/baixing/2.html5/www-production/js/main.js
+Uglify2 file: /home/alvin/www/sites/baixing/2.html5/www-production/js/plugins/jquery.placeholder/main.js
+Uglify2 file: /home/alvin/www/sites/baixing/2.html5/www-production/js/requirejs/2.1.8.min.js
+Uglify2 file: /home/alvin/www/sites/baixing/2.html5/www-production/js/tools/clickFeedback.js
+Uglify2 file: /home/alvin/www/sites/baixing/2.html5/www-production/js/tools/testInputAttr.js
+
+css/base.css
+----------------
+css/base.css
+
+css/ie6.css
+----------------
+css/ie6.css
+
+css/screen.css
+----------------
+css/screen.css
+
+js/app.js
+----------------
+js/libs/jquery/1.10.2.js
+js/tools/clickFeedback.js
+js/plugins/jquery.placeholder/main.js
+js/tools/testInputAttr.js
+js/app.js
+

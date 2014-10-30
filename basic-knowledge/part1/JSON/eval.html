@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <title>Eval</title> 
+    </head>
+    <body>
+        <script type="text/javascript">
+            var jsonText = '[{"name": "Alvin", "age": "23"}, {"name": "Javascript", "age": "15"}]';
+            var people = eval(jsonText);
+            alert(people[0].name);
+
+
+            //var object1 = eval('{"name": "Alvin"}'); //抛出错误
+            //alert(object1.name);
+
+            var object2 = eval('({"name": "Alvin"})'); //没问题
+            alert(object2.name);
+
+            var object3 = eval("("+jsonText+")"); //通用解决方案
+        </script>
+    </body>
+</html>
