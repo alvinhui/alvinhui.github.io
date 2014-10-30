@@ -82,27 +82,23 @@ tags : [前端, 规范]
 
 关于严格模式参考 [MDN - Strict mode](https://developer.mozilla.org/en/JavaScript/Strict_mode)。
 
-```javascript
-define(function (require, exports, module) {
-    'use strict';
- 
-    // ...
-});
+    define(function (require, exports, module) {
+        'use strict';
+     
+        // ...
+    });
 
-function doSomething () {
-    'use strict';
+    function doSomething () {
+        'use strict';
 
-    //...
-}
-```
+        //...
+    }
 
-```html
-<script>
-    'use strict';
+    <script>
+        'use strict';
 
-    //...
-</script>
-```
+        //...
+    </script>
 
 <h4 id="var">变量</h4>
 
@@ -110,75 +106,69 @@ function doSomething () {
 
 总是使用 `var` 来声明变量
 
-```javascript
-var name = 'alvin';
-```
+    var name = 'alvin';
 
 变量声明总是提前。
 
 将所有的var语句合并为一个语句，每个变量的初始化独占一行。对于那些没有初始值的变量来说，它们应当出席在var语句的尾部。
 
-```javascript
-// Good
-function doSometingWithItems (items, count) {
-    var value = 10,
-        num = value + count,
-        item,
-        result,
-        i,
-        len;
+    // Good
+    function doSometingWithItems (items, count) {
+        var value = 10,
+            num = value + count,
+            item,
+            result,
+            i,
+            len;
 
-    if (num > 0) {
-        for (i = 0, len = items.length; i < len; i += 1) {
-            item = items[i];
-            result += item - num;
-        }
-    }
-
-    return result;
-}
-
-// Bad
-function doSometingWithItems (items, count) {
-    var value = 10;
-    var num = value + count;
-
-    if (num > 0) {
-        var result;
-        for (var i = 0, len = items.length; i < len; i += 1) {
-            var item = items[i];
-            result += item - num;
+        if (num > 0) {
+            for (i = 0, len = items.length; i < len; i += 1) {
+                item = items[i];
+                result += item - num;
+            }
         }
 
         return result;
     }
-}
-```
+
+    // Bad
+    function doSometingWithItems (items, count) {
+        var value = 10;
+        var num = value + count;
+
+        if (num > 0) {
+            var result;
+            for (var i = 0, len = items.length; i < len; i += 1) {
+                var item = items[i];
+                result += item - num;
+            }
+
+            return result;
+        }
+    }
 
 <h5 id="var-assignment">赋值</h5>
 
 总是使用直接量
 
-```javascript
-// Good
-var name = 'alvin';
-var count = 100;
-var forever = true;
-var numbers = [1, 2, 3, 4];
-var book = {
-    title: 'Javascript',
-    author: 'Brendan Eich'
-};
+    // Good
+    var name = 'alvin';
+    var count = 100;
+    var forever = true;
+    var numbers = [1, 2, 3, 4];
+    var book = {
+        title: 'Javascript',
+        author: 'Brendan Eich'
+    };
 
-// Bad
-var name = new String('alvin');
-var count = new Number(100);
-var forever = new Boolean(true);
-var numbers = new Array(1, 2, 3, 4);
-var book = new Object();
-book.title = 'Javascript';
-book.author = 'Brendan Eich';
-```
+    // Bad
+    var name = new String('alvin');
+    var count = new Number(100);
+    var forever = new Boolean(true);
+    var numbers = new Array(1, 2, 3, 4);
+    var book = new Object();
+    book.title = 'Javascript';
+    book.author = 'Brendan Eich';
 
 <h4 id="semicolons">分号</h4>
 
@@ -188,15 +178,13 @@ book.author = 'Brendan Eich';
 
 而且在某些情况下，不写分号可是很危险的：
 
-```javascript
-MyClass.prototype.myMethod = function() {
-  return 42;
-}  // 这个缺德的没写分号
+    MyClass.prototype.myMethod = function() {
+      return 42;
+    }  // 这个缺德的没写分号
 
-(function() {
-  // 匿名函数的执行
-})();
-```
+    (function() {
+      // 匿名函数的执行
+    })();
 
 上段代码会发生什么事情？
 
@@ -206,70 +194,65 @@ MyClass.prototype.myMethod = function() {
 
 `if...else...`，`while`，`for`，`do...while...`，`try...catch..finally...`总是使用括号
 
-```javascript
-// Good
-if (condition) {
-    doSomething();
-} else if (otherCondition) {
-    doOtherThing();
-} else {
-    doSomethigElse()
-}
+    // Good
+    if (condition) {
+        doSomething();
+    } else if (otherCondition) {
+        doOtherThing();
+    } else {
+        doSomethigElse()
+    }
 
-// Bad
-if (condition)
-    doSomething();
-else if (otherCondition)
-    doOtherThing();
-else
-    doSomethingElse();
+    // Bad
+    if (condition)
+        doSomething();
+    else if (otherCondition)
+        doOtherThing();
+    else
+        doSomethingElse();
 
-// Good
-var i;
-for (i in object) {
-    doSomething();
-} 
+    // Good
+    var i;
+    for (i in object) {
+        doSomething();
+    } 
 
-// Bad
-var i;
-for (i in object) 
-    doSomething();
-```
+    // Bad
+    var i;
+    for (i in object) 
+        doSomething();
 
 <h4 id="switch">Switch</h4>
 
 1. 禁止出现连续执行（fall through）。每一个case代码块内都应当使用 `break`；
 2. 当 `default` 什么都不做时，省略 `dafault` ，但必须写上注释。
 
-```javascript
-switch () {
-    case 'first':
-        //代码
-        break;
-    case 'second':
-        //代码
-        break;
-    case 'third':
-        //代码
-        break;
-    default:
-        //代码
-}
-
-switch () {
-    case 'first':
-        //代码
-        break;
-    case 'second':
-        //代码
-        break;
-    case 'third':
-        //代码
-        break;
-    
-    //没有default
-}
-```
+    switch () {
+        case 'first':
+            //代码
+            break;
+        case 'second':
+            //代码
+            break;
+        case 'third':
+            //代码
+            break;
+        default:
+            //代码
+    }
+    switch () {
+        case 'first':
+            //代码
+            break;
+        case 'second':
+            //代码
+            break;
+        case 'third':
+            //代码
+            break;
+        
+        //没有default
+    }
 
 <h4 id="for-in">for-in循环</h4>
 
@@ -277,19 +260,17 @@ for-in循环是用来遍历对象属性的。不用定义任何控制条件，�
 
 for-in循环有一个问题，就是它不仅遍历对象的实例属性，同意还遍历原型继承来的属性。出于这个原因，最好使用 `hasOwnProperty()` 方法来为for-in循环过滤出实例属性。
 
-```javascript
-var person = {name: 'alvin'};
-var student = Object.create(person);
-student.age = 12;
+    var person = {name: 'alvin'};
+    var student = Object.create(person);
+    student.age = 12;
 
-var i;
-for (i in student) {
-    console.log(i);
-    if (student.hasOwnProperty(i)) {
-        console.log(student[i]);
+    var i;
+    for (i in student) {
+        console.log(i);
+        if (student.hasOwnProperty(i)) {
+            console.log(student[i]);
+        }
     }
-}
-```
 
 <h4 id="equal">相等</h4>
 
@@ -332,39 +313,33 @@ for (i in student) {
 
 不要这样写：
 
-```javascript
-var myString = 'A rather long string of English text, an error message \
-                actually that just keeps going and going -- an error \
-                message to make the Energizer bunny blush (right through \
-                those Schwarzenegger shades)! Where was I? Oh yes, \
-                you\'ve got an error and all the extraneous whitespace is \
-                just gravy.  Have a nice day.';
-```
+    var myString = 'A rather long string of English text, an error message \
+                    actually that just keeps going and going -- an error \
+                    message to make the Energizer bunny blush (right through \
+                    those Schwarzenegger shades)! Where was I? Oh yes, \
+                    you\'ve got an error and all the extraneous whitespace is \
+                    just gravy.  Have a nice day.';
 
 空白字符开头字符行不能被很安全的编译剥离，以至于斜杠后面的空格可能会产生奇怪的错误。虽然大多数脚本引擎都支持这个，但它并不是ECMAScript标准的一部分。
 
 可以用 `+` 号运算符来连接每一行：
 
-```javascript
-var myString = 'A rather long string of English text, an error message ' +
-    'actually that just keeps going and going -- an error ' +
-    'message to make the Energizer bunny blush (right through ' +
-    'those Schwarzenegger shades)! Where was I? Oh yes, ' +
-    'you\'ve got an error and all the extraneous whitespace is ' +
-    'just gravy.  Have a nice day.';
-```
+    var myString = 'A rather long string of English text, an error message ' +
+        'actually that just keeps going and going -- an error ' +
+        'message to make the Energizer bunny blush (right through ' +
+        'those Schwarzenegger shades)! Where was I? Oh yes, ' +
+        'you\'ve got an error and all the extraneous whitespace is ' +
+        'just gravy.  Have a nice day.';
 
 <h4 id="modifying_prototypes_of_builtin_objects">修改内置对象的原型</h4>
 
 永远不要修改原生对象及其原型中已存在的方法，如需增加方法要先做判断。
 
-```javascript
-var aProto = Array.prototype;
- 
-aProto.isArray = aProto.isArray || function () {
-    // ...
-};
-```
+    var aProto = Array.prototype;
+     
+    aProto.isArray = aProto.isArray || function () {
+        // ...
+    };
 
 <h3 id="javaScript_Style_Rules">代码风格</h3>
 
@@ -372,37 +347,33 @@ aProto.isArray = aProto.isArray || function () {
 
 使用四空格字符为一个缩进层级
 
-```javascript
-// Good
-function doSomething () {
-    var name = 'alvin';
+    // Good
+    function doSomething () {
+        var name = 'alvin';
 
-    if (name = 'alvin') {
+        if (name = 'alvin') {
+            for () {
+                
+            }
+        }
+    }
+
+    // Not good
+    function doSomething () {
+      var name = 'alvin';
+
+      if (name = 'alvin') {
         for () {
             
         }
+      }
     }
-}
-
-// Not good
-function doSomething () {
-  var name = 'alvin';
-
-  if (name = 'alvin') {
-    for () {
-        
-    }
-  }
-}
-```
 
 <h4 id="quotation_marks">引号</h4>
 
 使用单引号（'）比双引号（"）更好，特别是当创建一个HTML代码的字符串时候：
 
-```javascript
-var msg = 'This is some HTML<a href="">link</a>';
-```
+    var msg = 'This is some HTML<a href="">link</a>';
 
 介于此，我们字符串的字面量以单引号为准。
 
@@ -410,7 +381,6 @@ var msg = 'This is some HTML<a href="">link</a>';
 
 1. 运算符两边总是留有一个空格
 
-    ```javascript
     // Good 
     var count = max + min;
     var result = condition ? goodOne : badOne;
@@ -426,12 +396,10 @@ var msg = 'This is some HTML<a href="">link</a>';
     for (i=0,l=o.leng;l>i;i++) {
         //...
     }
-    ```
 2. 块语句的间隔
 
     在左圆括号之前和右圆括号之后添加一个空格
 
-    ```javascript
     // Good
     if (condition) {
         //...
@@ -449,65 +417,60 @@ var msg = 'This is some HTML<a href="">link</a>';
     switch(condition){
         //..
     }
-    ```
 
 <h4 id="parentheses_align">括号的对齐方式</h4>
 
 将左花括号放置在块语句中第一句代码的末尾
 
-```javascript
-// Good
-if () {
-    //...
-} else if () {
-    //...
-} else {
-    //...
-}
+    // Good
+    if () {
+        //...
+    } else if () {
+        //...
+    } else {
+        //...
+    }
 
-// Bad
-if () 
-{
-    //...
-}
-else if ()
-{
-    //...
-}
-else
-{
-    //...
-}
-```
+    // Bad
+    if () 
+    {
+        //...
+    }
+    else if ()
+    {
+        //...
+    }
+    else
+    {
+        //...
+    }
 
-```javascript
-// Good
-switch () {
-    
-}
+    // Good
+    switch () {
+        
+    }
 
-while () {
-    
-}
+    while () {
+        
+    }
 
-for () {
-    
-}
+    for () {
+        
+    }
 
-do {
-    
-} while () {
-    
-}
+    do {
+        
+    } while () {
+        
+    }
 
-try {
-    
-} catch () {
-    
-} finally {
-    
-}
-```
+    try {
+        
+    } catch () {
+        
+    } finally {
+        
+    }
 
 <h4 id="line_limit">行的长度</h4>
 
@@ -517,33 +480,27 @@ try {
 
 当一行长度达到了单行最大字符数限制时，就需要手动将一行拆成两行。__通常__我们会在运算符后换行，下一行会增加两个层级的缩进。
 
-```javascript
-// Good
-callAFunction(document, element, window, 'some string value', true, 123,
+    // Good
+    callAFunction(document, element, window, 'some string value', true, 123,
+            navigator);
+
+    // Bad
+    callAFunction(document, element, window, 'some string value', true, 123,
         navigator);
 
-// Bad
-callAFunction(document, element, window, 'some string value', true, 123,
-    navigator);
+    // Very bad
+    callAFunction(document, element, window, 'some string value', true, 123
+            , navigator);
 
-// Very bad
-callAFunction(document, element, window, 'some string value', true, 123
-        , navigator);
-```
+    // 语句换行
+    if (isLeapYear && isFebruary && day === 29 && itsYourBirthday &&
+            noPlans) {
+        waitAnotherFourYears();
+    }
 
-```javascript
-// 语句换行
-if (isLeapYear && isFebruary && day === 29 && itsYourBirthday &&
-        noPlans) {
-    waitAnotherFourYears();
-}
-```
-
-```javascript
-// 变量赋值时：第二行的位置应当和赋值运算符的位置保持对齐
-var result = somethig + anotherThing + yetAnotherThing + someThingElse + 
-             anotherSomeThingElse;
-```
+    // 变量赋值时：第二行的位置应当和赋值运算符的位置保持对齐
+    var result = somethig + anotherThing + yetAnotherThing + someThingElse + 
+                 anotherSomeThingElse;
 
 <h4 id="new_line">空行</h4>
 
@@ -551,7 +508,6 @@ var result = somethig + anotherThing + yetAnotherThing + someThingElse +
 
 1. 在方法之间
 
-    ```javascript
     // Good
     function doSometing() {
         //...
@@ -568,11 +524,9 @@ var result = somethig + anotherThing + yetAnotherThing + someThingElse +
     function  doOtherThing () {
         //...
     }
-    ```
 
 2. 在方法中的局部变量和第一条语句之间
 
-    ```javascript
     // Good
     function doSomething () {
         var name = 'Alvin',
@@ -591,11 +545,9 @@ var result = somethig + anotherThing + yetAnotherThing + someThingElse +
 
         }
     }
-    ```
 
 3. 在多行或单行注释之前
 
-    ```javascript
     // Good
     function doSomething() {
         var name = 'Alvin';
@@ -614,11 +566,9 @@ var result = somethig + anotherThing + yetAnotherThing + someThingElse +
             
         }
     }
-    ```
 
 4. 在方法内的逻辑片段之间插入空行，提高可读性。
 
-    ```javascript
     // Good
     if (w1 && w1.length) {
         
@@ -651,17 +601,14 @@ var result = somethig + anotherThing + yetAnotherThing + someThingElse +
             }
         }
     }
-    ```
 
 <h4 id="naming">命名</h4>
 
 采用驼峰式大小写命名法。
 
-```javascript
-var thisIsMyName;
-var anotherVariable;
-var aVeryLongVariableName;
-```
+    var thisIsMyName;
+    var anotherVariable;
+    var aVeryLongVariableName;
 
 <h5 id="variable">变量</h5>
 
@@ -679,16 +626,14 @@ var aVeryLongVariableName;
     
     比如：命名count、length、size表示数据类型是数字，而命名name、title和message表明数据类型是字符串。
 
-```javascript
-// Good
-var count = 10;
-var myName = 'Alvin';
-var found = true;
+    // Good
+    var count = 10;
+    var myName = 'Alvin';
+    var found = true;
 
-// Bad
-var getCount = 10;
-var isFound = true;
-```
+    // Bad
+    var getCount = 10;
+    var isFound = true;
 
 <h5 id="properties_and_methods">属性和方法</h5>
 
@@ -710,26 +655,22 @@ var isFound = true;
 
 使用大写字母和下划线来命名，下划线用以分隔单词，比如：
 
-```javascript
-var MAX_COUNT = 10;
-var URL = 'http://m.quecai.com';
-```
+    var MAX_COUNT = 10;
+    var URL = 'http://m.quecai.com';
 
 <h5 id="constructor">构造函数</h5>
 
 构造函数命名应总是遵守大驼峰命名法。
 
-```javascript
-function Person (name) {
-    this.name = name;
-}
+    function Person (name) {
+        this.name = name;
+    }
 
-Person.prototype.sayName = function() {
-    alert(this.name);
-};
+    Person.prototype.sayName = function() {
+        alert(this.name);
+    };
 
-var me = new Person('Alvin');
-```
+    var me = new Person('Alvin');
 
 构造函数命名也常常是名词，因为它们是用来创建某个类型的实例的。
 
@@ -739,15 +680,12 @@ var me = new Person('Alvin');
 
 以两个斜线开始，双斜线后敲入一个空格。
 
-```javascript
-// 这是一个单行注释
-```
+    // 这是一个单行注释
 
 使用方法：
 
 1. 独占一行的注释，用来解释下一行代码。这行注释之前总是有一个空行，且缩进层级和下一行代码保持一致。
 
-    ```javascript
     // Good
     if (condition) {
 
@@ -760,53 +698,43 @@ var me = new Person('Alvin');
     //如果代码执行到这里，则表明通过了所有安全性检查
         allowed();
     }
-    ```
 
 2. 在代码行的尾部的注释。代码结束到注释之间至少有一个空格。
 
-    ```javascript
     // Good
     var result = something + somethingElse; // somethingElse不应当取值为null
 
     // Bad
     var result = something + somethingElse;// somethingElse不应当取值为null
-    ```
 
 3. 注释掉一大段代码
 
-    ```javascript
     // if (condition) {
     //     allowed();
     // }
     // var result = something + somethingElse;
     // var result = something + somethingElse;
-    ```
 
 <h3 id="multi_line_comments">多行注释</h3>
 
 范例：
 
-```javascript
-/*
- * 另一段注释
- * 这段注释包含两行文本
- */
-```
-
-多行注释总是出现在将要描述的代码段之前，注释和代码之间没有空行间隔。多行注释之前应当有一个空行，且缩进层级和其描述的代码保持一致。
-
-```javascript
-// Good
-
-if (condition) {
-
     /*
      * 另一段注释
      * 这段注释包含两行文本
      */
-    allowed();
-}
-```
+
+多行注释总是出现在将要描述的代码段之前，注释和代码之间没有空行间隔。多行注释之前应当有一个空行，且缩进层级和其描述的代码保持一致。
+
+    // Good
+    if (condition) {
+
+        /*
+         * 另一段注释
+         * 这段注释包含两行文本
+         */
+        allowed();
+    }
 
 <h3 id="document_comments">文档注释</h3>
 
@@ -816,20 +744,17 @@ if (condition) {
 
 范例：
 
-```javascript
-/**
-返回一个对象，这个对象包含被提供对象的所有属性。
-后一个对象的属性会覆盖前一个对象的属性。
-传入一个单独的对象，会创建一个它的签拷贝。
-@method merge
-@param {Object} 被合并的一个或多个对象
-@return {Object} 一个新的合并后的对象
-**/
-merge () {
-    
-}
-
-```
+    /**
+    返回一个对象，这个对象包含被提供对象的所有属性。
+    后一个对象的属性会覆盖前一个对象的属性。
+    传入一个单独的对象，会创建一个它的签拷贝。
+    @method merge
+    @param {Object} 被合并的一个或多个对象
+    @return {Object} 一个新的合并后的对象
+    **/
+    merge () {
+        
+    }
 
 <h2 id="file">文件和目录规划</h2>
 
@@ -841,16 +766,14 @@ merge () {
 
 在浏览器中，window对象往往重载并等同于全局对象，因此在全局作用域中声明的变量和函数都是window对象的属性。
 
-```javascript
-var color = 'red';
+    var color = 'red';
 
-function sayColor () {
-    alert(color);
-}
+    function sayColor () {
+        alert(color);
+    }
 
-console.log(window.color); // 'red'
-console.log(typeof window.sayColor); // 'function'
-```
+    console.log(window.color); // 'red'
+    console.log(typeof window.sayColor); // 'function'
 
 全局变量带来的问题
 
@@ -862,12 +785,10 @@ console.log(typeof window.sayColor); // 'function'
 
     一个依赖全局变量的函数即是深度耦合于上下文环境之中。如果环境发生改变，函数有可能就失效了。
 
-    ```javascript
     // 如果全局变量color不存在，sayColor方法将会报错
     function sayColor () {
         alert(color);
     }
-    ```
 3. 难以调试
 
     任何依赖全局变量才能正常工作的函数，只有为其重新创建完整的全局环境才能正确地测试它。
