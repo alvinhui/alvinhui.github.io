@@ -9,7 +9,7 @@ highlighter: pygments
 # so be sure to set them if your theme uses them.
 #
 title : Alvin's Blog
-tagline: Site Tagline
+tagline: Focus on the web technology
 author :
   name : Alvin Hui
   email : wuji.xwt@alibaba-inc.com
