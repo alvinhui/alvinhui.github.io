@@ -5,7 +5,9 @@ tagline: 软件工程师，web前端开发者，Node.js开发者
 ---
 {% include JB/setup %}
 
-这是一个基于 [jekyll](http://jekyllrb.com/), 使用 [jekyllbootstrap](http://jekyllbootstrap.com/) 风格建立的个人网站。关注[计算机科学](http://zh.wikipedia.org/wiki/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6)与[软件工程](http://zh.wikipedia.org/wiki/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B)，[web前端开发](https://github.com/JacksonTian/fks)与[Node.js](http://nodejs.org/)应用。同时关注科技及互联网行业。
+这是一个基于 [jekyll](http://jekyllrb.com/) 使用 [jekyllbootstrap](http://jekyllbootstrap.com/) 风格建立的个人网站。
+
+网站关注[计算机科学](http://zh.wikipedia.org/wiki/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6)与[软件工程](http://zh.wikipedia.org/wiki/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B)，[web前端开发](https://github.com/JacksonTian/fks)与[Node.js](http://nodejs.org/)应用。同时关注科技及互联网行业。
 
 你可以点击<a href="/archive.html"><strong>这里</strong></a>查看我的文章。
 
