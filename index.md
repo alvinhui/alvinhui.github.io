@@ -5,7 +5,7 @@ tagline: 程序员, web前端开发者, Node.js开发者
 ---
 {% include JB/setup %}
 
-今天基于Jekyll再次搭建了这个博客，会开始更加专注技术文章的输出，算是自己对技术沉淀的总结。
+这是一个基于 [jekyll](http://jekyllrb.com/), 使用 [jekyllbootstrap](http://jekyllbootstrap.com/) 风格建立的个人网站。
 
 你可以点击<a href="/archive.html"><strong>这里</strong></a>查看我的文章。
 
@@ -39,6 +39,6 @@ tagline: 程序员, web前端开发者, Node.js开发者
     </tbody>
 </table>
 
-<p style="text-align: right;margin-top: 60px;">--- 记于2014.12.14</p>
+<!--<p style="text-align: right;margin-top: 60px;">--- 记于2014.12.14</p>-->
 
 
