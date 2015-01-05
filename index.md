@@ -7,7 +7,7 @@ tagline: 软件工程师，web前端开发者，Node.js开发者
 
 这是一个基于 [jekyll](http://jekyllrb.com/) 使用 [jekyllbootstrap](http://jekyllbootstrap.com/) 风格建立的个人网站。
 
-网站关注[计算机科学](http://zh.wikipedia.org/wiki/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6)与[软件工程](http://zh.wikipedia.org/wiki/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B)，[web前端开发](https://github.com/JacksonTian/fks)与[Node.js](http://nodejs.org/)应用。同时关注互联网行业与科技。
+网站关注[计算机科学](http://zh.wikipedia.org/wiki/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6)与[软件工程](http://zh.wikipedia.org/wiki/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B)，[web前端开发](https://github.com/JacksonTian/fks)与[Node.js](http://nodejs.org/)的应用。同时关注科技与互联网行业。
 
 你可以点击<a href="/archive.html"><strong>这里</strong></a>查看我的文章。
 
@@ -21,7 +21,7 @@ tagline: 软件工程师，web前端开发者，Node.js开发者
             </td>
             <td>
                 <div style="padding-left: 25px;">
-                    我感谢编程，它让我重新认识了自己以及自己所处的世界，同时改变了我阅读世界的方式。
+                    感谢编程，它让我重新认识了自己以及自己所处的世界，同时改变了我阅读世界的方式。
                     <!-- <p>网名Alvin，花名“梧忌”。现就职于阿里巴巴淘宝网，任职前端开发工程师，负责淘宝订单管理应用的前端开发。</p>
 
                     <ul>
