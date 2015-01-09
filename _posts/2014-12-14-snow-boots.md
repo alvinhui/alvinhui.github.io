@@ -20,7 +20,7 @@ tags : [雪地靴, 选购, 选购雪地靴, 雪地靴指南]
 
 1. 鞋面材质
 
-    ![x](http://img5.douban.com/view/note/large/public/p23717937.jpg)
+    ![image](https://cloud.githubusercontent.com/assets/4392234/5681366/0511c9e4-9853-11e4-9399-dbaa728822dc.png)
 
     鞋面材质决定了鞋子的透密性和耐用性，它的材质工艺决定了整理美观。
     羊皮，牛皮，猪皮？其各有利弊，具体说明可见我的这篇（<a href="http://www.douban.com/note/471987558/">《易混淆鞋面材质辨析》</a>）文章。
@@ -29,9 +29,10 @@ tags : [雪地靴, 选购, 选购雪地靴, 雪地靴指南]
 
     * 帮面材质：帮面就是鞋子外面的，帮面就是鞋面，没有区别。但有些人会把前面脚背位置叫鞋面，脚中间以及脚后跟的内外侧叫帮面。
     * 材质工艺：磨砂皮／打蜡皮／软面皮／反绒皮 等。
+
 2. 内里材质
 
-    ![x](http://img3.douban.com/view/note/large/public/p23717980.jpg)
+    ![image](https://cloud.githubusercontent.com/assets/4392234/5681382/1fd43640-9853-11e4-9164-9e81e9bb216d.png)
 
     内里材质决定了鞋子的透气性／保暖性和除菌性。
 
@@ -42,9 +43,10 @@ tags : [雪地靴, 选购, 选购雪地靴, 雪地靴指南]
     * 最次：人造毛：长毛绒／短毛绒／珍珠绒
 
     最好的雪地靴应当是羊皮毛一体的。
+
 3.鞋底材质
 
-    ![x](http://img5.douban.com/view/note/large/public/p23717999.jpg)
+    ![x](http://gtms01.alicdn.com/tps/i1/TB1UWV2HXXXXXapXXXXq4PkIVXX-600-291.jpg)
 
     鞋底材质决定鞋子的防滑／耐用（耐磨,防腐）／减震／抓地力／防水性／弹性等性能。
 
@@ -52,7 +54,7 @@ tags : [雪地靴, 选购, 选购雪地靴, 雪地靴指南]
 
 ## 制作工艺
 
-    ![x](http://img5.douban.com/view/note/large/public/p23718037.jpg)
+    ![x](http://gtms02.alicdn.com/tps/i2/TB11M0SHXXXXXXcaXXX8iDwIVXX-600-416.jpg)
 
     考虑完了用料，接下要考察的就是制作工艺了。
 
@@ -64,12 +66,13 @@ tags : [雪地靴, 选购, 选购雪地靴, 雪地靴指南]
 
     每个人的脚型都不一样，所以需要根据自己的脚型来挑选鞋子。在网上购物，由于无法试穿，经常有网友会觉得买的鞋子“太挤”，“太磕绊”，“不舒服”，都是由于鞋子的整体结构设计不符合你的双脚所致。
 
-    ![x](http://img3.douban.com/view/note/large/public/p23795630.jpg)
+    ![x](http://gtms03.alicdn.com/tps/i3/TB1dIV3HXXXXXbxXXXXfnW8IVXX-600-207.jpg)
 
     * 鞋头设计：两边宽度，上下高度
     * 脚跟设计：两边宽度，脚垫弧度
     * 鞋底脚垫设计：直接决定行走的舒适度
     * 系带设计：决定固定方式
+
 2. 整理外观设计是否符合你的审美标准：颜色搭配／鞋面布局……
 
 ## 结论
