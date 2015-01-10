@@ -2,7 +2,8 @@
 layout: post
 category : 前端开发
 title: "一套 Javascript 测试题"
-tags : [前端, Javascript, 试题]
+description: "对一套 javascript 测试题进行讲解"
+tags : [Javascript, 试题]
 ---
 {% include JB/setup %}
 

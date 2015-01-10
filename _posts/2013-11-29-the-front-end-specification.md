@@ -2,7 +2,8 @@
 layout: post
 category : 前端开发
 title: "前端编程规范"
-tags : [前端, 规范]
+description: "一套前端编码规范"
+tags : [规范, 标准]
 ---
 {% include JB/setup %}
 

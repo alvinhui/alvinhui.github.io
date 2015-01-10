@@ -2,7 +2,8 @@
 layout: post
 category : 生活
 title: "雪地靴选购指南"
-tags : [雪地靴, 选购, 选购雪地靴, 雪地靴指南]
+description: "雪地靴选购指南"
+tags : [购物指南]
 ---
 {% include JB/setup %}
 
