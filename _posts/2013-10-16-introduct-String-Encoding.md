@@ -3,7 +3,7 @@ layout: post
 category : 计算机科学
 title: "字符串编码详解"
 description: "详细讲解字符串编码"
-tags : [字符串, 编码]
+tags : [编码, 操作系统]
 ---
 {% include JB/setup %}
 
