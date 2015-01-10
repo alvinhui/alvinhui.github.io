@@ -1,6 +1,6 @@
 ---
 layout: post
-category : 前端技术
+category : 前端开发
 title: "一套 Javascript 测试题"
 tags : [前端, Javascript, 试题]
 ---

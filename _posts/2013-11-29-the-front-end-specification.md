@@ -1,6 +1,6 @@
 ---
 layout: post
-category : 前端技术
+category : 前端开发
 title: "前端编程规范"
 tags : [前端, 规范]
 ---

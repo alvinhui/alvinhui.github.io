@@ -1,6 +1,6 @@
 ---
 layout: post
-category : 计算机技术
+category : 计算机科学
 title: "从管理开机启动项看windows注册表"
 tags : [开机启动, windows, 计算机技术]
 ---
