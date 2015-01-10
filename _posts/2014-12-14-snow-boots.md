@@ -3,7 +3,7 @@ layout: post
 category : 生活
 title: "雪地靴选购指南"
 description: "雪地靴选购指南"
-tags : [购物指南]
+tags : [购物]
 ---
 {% include JB/setup %}
 
