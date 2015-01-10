@@ -1,6 +1,6 @@
 ---
 layout: post
-category : 购物
+category : 生活
 title: "雪地靴选购指南"
 tags : [雪地靴, 选购, 选购雪地靴, 雪地靴指南]
 ---
