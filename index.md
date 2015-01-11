@@ -11,8 +11,18 @@ tagline: 软件工程师，web前端开发者，Node.js开发者
 
 <ul>
     <li>
-        <a href="">
+        <a href="/archive.html">
             我的文章
+        </a>
+    </li>
+    <li>
+        <a href="http://www.douban.com/people/alvinhui/photos">
+            我的相册
+        </a>
+    </li>
+    <li>
+        <a href="http://alvinhui.pp.163.com/">
+            我的摄影
         </a>
     </li>
 </ul>
