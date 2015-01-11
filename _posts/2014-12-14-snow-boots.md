@@ -76,6 +76,13 @@ tags : [购物]
 
 2. 整理外观设计是否符合你的审美标准：颜色搭配／鞋面布局……
 
+## 品牌
+
+1. [jumbougg](http://jumbougg.tmall.com/)
+2. [骆驼](http://luotuo.tmall.com/)
+3. [策恩](http://ceengz.tmall.com/)
+4. [UGG](http://ugg.tmall.com/)
+
 ## 结论
 
 这么说完，你是否能明白到，除非你是土豪，能买得起所有都“最”的鞋子，不然在不同价位下你都必须有所取舍。
