@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2b0c4ca-6d71-4e83-b6ee-1fa9389d6e2c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/album.html" afterPath="$PROJECT_DIR$/album.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photography.html" afterPath="$PROJECT_DIR$/photography.html" />
-    </list>
+    <list default="true" id="f2b0c4ca-6d71-4e83-b6ee-1fa9389d6e2c" name="Default" comment="" />
     <ignored path="alvinhui.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
