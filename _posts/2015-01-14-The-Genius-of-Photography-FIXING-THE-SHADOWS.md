@@ -7,15 +7,21 @@ tags : [摄影, 摄影史]
 ---
 {% include JB/setup %}
 
-这是一篇BBC的[《摄影艺术百年史》](http://movie.douban.com/subject/4154964/)中[《瞬间的永恒》](http://v.youku.com/v_show/id_XNDcyMTUzMTE2.html)的观看笔记。
+这是一篇[《摄影艺术百年史》](http://movie.douban.com/subject/4154964/)影集中[《瞬间的永恒》](http://v.youku.com/v_show/id_XNDcyMTUzMTE2.html)一集的观看笔记。
 
-BBC出产的精品系列的片子，情节设计周密，循序渐进地演绎了170年的摄影史，引人深思。
+这是BBC出产的精品系列的片子，情节设计周密，循序渐进地演绎了170年的摄影史，引人深思。
+
+第一集《瞬间的永恒》讲述了摄影技术的诞生历程以及摄影技术发展初期（19世纪下半期）对艺术和社会的影响。
+
+    "是谁发明了摄影？"
+    "摄影它是艺术吗？"
+    "摄影它可以做什么？"
 
 ## 开篇
 
 ![Meudon](http://gtms01.alicdn.com/tps/i1/TB18nmmHXXXXXXCXFXX2Ek84XXX-223-300.jpg)
 
-影片一开头通过解读[安德烈·柯特兹](http://baike.baidu.com/view/1693070.htm)1928年拍摄的作品《meudon》来诠释摄影的魅力。
+影片一开头通过解读匈牙利籍美国摄影师[安德烈·柯特兹(André Kertész)](http://baike.baidu.com/view/1693070.htm)1928年拍摄的作品《meudon》来诠释摄影的魅力。
 
 “摄影诞生170年来，它使我们愉悦，为我们服务，令我们感动，也令我们愤怒，偶尔也会让我们失望。但最重要的，通过揭示世界表象之下的神秘的陌生，它激起了我们的好奇心。这就是摄影真正的魅力。"
 
@@ -23,7 +29,7 @@ BBC出产的精品系列的片子，情节设计周密，循序渐进地演绎�
 
 ### 尝试
 
-18世纪90年代，出身显赫的[汤玛斯·威治伍德](http://en.wikipedia.org/wiki/Thomas_Wedgwood_(photographer))，在开始研究硝酸银对光线的反应，并尝试以暗箱拍摄照片，不过以失败告终。威治伍德又把树叶放在涂了硝酸银的白色皮革上，结果皮革未被盖住的部分变成黑色。威治伍德把一些物件放在经处理的纸上，“复制”出这些物件的模样，但无法固定影像，时间一耐了，影像就消失。一般认为，威治伍德的照片没有保存下来。
+18世纪90年代，出身显赫的英国人[汤玛斯·威治伍德(Thomas Wedgwood)](http://en.wikipedia.org/wiki/Thomas_Wedgwood_(photographer))，在开始研究硝酸银对光线的反应，并尝试以暗箱拍摄照片，不过以失败告终。威治伍德又把树叶放在涂了硝酸银的白色皮革上，结果皮革未被盖住的部分变成黑色。威治伍德把一些物件放在经处理的纸上，“复制”出这些物件的模样，但无法固定影像，时间一耐了，影像就消失。一般认为，威治伍德的照片没有保存下来。
 
 1802年，英国科学研究所期刊上发布了[汉弗里·戴维(Humphry Davy)](http://baike.baidu.com/view/1328243.htm)与汤玛斯·威治伍德用银盐做实验：浸湿一张皮革试图制作印相照片，他们将一片树叶直接放在皮革上将其曝光，他们真的看到了逐渐显示的影像，但是影像不断变黑直到消息。
 
@@ -51,7 +57,7 @@ BBC出产的精品系列的片子，情节设计周密，循序渐进地演绎�
 
 #### 英国的塔尔博特
 
-![威廉·福克斯·塔尔博特](http://gtms01.alicdn.com/tps/i1/TB1esKmHXXXXXatXFXXBuU9JFXX-890-722.jpg)
+![威廉·福克斯·塔尔博特](http://gtms01.alicdn.com/tps/i1/TB1tb9kHXXXXXX9XVXXQtnXWpXX-390-316.jpg)
 
 1835年，作为另一个重要的创始人，英国人[威廉·福克斯·塔尔博特(Henry Fox Talbot)](http://baike.baidu.com/view/3771570.htm) 用涂上感光物料的高级书写纸张，拍摄世上第一张负像照片，即后来所谓的负片。通过接触式印相，可获得正像照片，由此开创出由负转正的摄影工艺。
 
@@ -65,7 +71,7 @@ BBC出产的精品系列的片子，情节设计周密，循序渐进地演绎�
 
 谈到了科技发展下产生铁路巨头与迈布里奇的合作，是现代电影技术的启蒙。
 
-![一步的八个阶段](http://gtms03.alicdn.com/tps/i3/TB15xlBHXXXXXabXXXXCF4NFXXX-802-502.jpg)
+![一步的八个阶段](http://gtms02.alicdn.com/tps/i2/TB1iJ1lHXXXXXc5XFXXiR13WpXX-390-241.jpg)
 
 1879年，英国人[埃德沃德·迈布里奇(Eadweard J. Muybridge)](http://baike.baidu.com/view/3265852.htm)：使用多个相机拍摄运动的物体，他在美国旧金山创作了《一步的八个阶段》，该运动摄影实验为后来的电影拍摄技术提供了启迪。
 
