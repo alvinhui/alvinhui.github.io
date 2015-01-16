@@ -1,7 +1,7 @@
 ---
 layout: post
 category : 生活
-title: "雪地靴选购指南"
+title: "如何选购雪地靴？"
 description: "雪地靴选购指南"
 tags : [购物]
 ---
@@ -90,7 +90,7 @@ tags : [购物]
 但作为雪地靴最主要的功能：保暖，笔者建议你可以从以下几个维度由高自低优先级考虑：
 
 1. 内里材质
-2. 结构设计
+2. 整体结构设计
 3. 鞋底材质
 
 最后来看看笔者选的雪地靴吧：[http://detail.tmall.com/item.htm?id=42919448009](http://detail.tmall.com/item.htm?id=42919448009)
