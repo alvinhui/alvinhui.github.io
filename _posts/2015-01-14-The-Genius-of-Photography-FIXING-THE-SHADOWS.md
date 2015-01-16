@@ -130,7 +130,7 @@ tags : [摄影, 摄影史]
 
 <h3 id="portrait-master">大师</h3>
 
-![纳达尔](http://gtms03.alicdn.com/tps/i3/TB1sxWDHXXXXXahXXXXu64aQFXX-300-368.jpg)
+![纳达尔](http://gtms01.alicdn.com/tps/i1/TB1ERCDHXXXXXX9XXXXRHpuTXXX-200-245.jpg)
 
 19世纪后期重要的法国摄影家[加斯帕德·费利克斯·图尔纳雄](http://zh.wikipedia.org/wiki/%E7%B4%8D%E9%81%94%E7%88%BE_(%E6%94%9D%E5%BD%B1%E5%AE%B6))([Gaspard-Félix Tournachon](http://en.wikipedia.org/wiki/Nadar_(photographer)))：他为许多十九世纪名人留下肖像，这些肖像活灵活现，突破了普通影楼那种僵硬的人物形象。
 
