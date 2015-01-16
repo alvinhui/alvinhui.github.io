@@ -7,7 +7,7 @@ tags : [摄影, 摄影史]
 ---
 {% include JB/setup %}
 
-这是一篇[《摄影艺术百年史》](http://movie.douban.com/subject/4154964/)纪录片中[《瞬间的永恒》](http://v.youku.com/v_show/id_XNDcyMTUzMTE2.html)一集的观看笔记。
+这是一篇[《摄影艺术百年史》](http://movie.douban.com/subject/4154964/)纪录片中[《瞬间的永恒》](http://v.youku.com/v_show/id_XNDcyMTUzMTE2.html)一集的观看笔记，对影片中的人物、事件的资料进行了汇总和补充。
 
 该纪录片由[BBC](http://baike.baidu.com/view/60739.htm)出产，循序渐进地演义了170年的摄影史，并带领观众去思考摄影与科技、艺术、社会间的关系。它诠释了摄影的魅力，反问了摄影的未来。
 
@@ -32,11 +32,11 @@ tags : [摄影, 摄影史]
 
 ## 开篇
 
-![Meudon](http://gtms01.alicdn.com/tps/i1/TB18nmmHXXXXXXCXFXX2Ek84XXX-223-300.jpg)
+![柯特兹的作品：《Meudon》](http://gtms01.alicdn.com/tps/i1/TB18nmmHXXXXXXCXFXX2Ek84XXX-223-300.jpg)
 
 影片一开头通过解读匈牙利籍美国摄影师[安德烈·柯特兹](http://baike.baidu.com/view/1693070.htm)([André Kertész](http://en.wikipedia.org/wiki/Andr%C3%A9_Kert%C3%A9sz))1928年拍摄的作品《meudon》来诠释摄影的魅力。
 
-“摄影诞生170年来，它使我们愉悦，为我们服务，令我们感动，也令我们愤怒，偶尔也会让我们失望。但最重要的，通过揭示世界表象之下的神秘的陌生，它激起了我们的好奇心。这就是摄影真正的魅力。"
+    “摄影诞生170年来，它使我们愉悦，为我们服务，令我们感动，也令我们愤怒，偶尔也会让我们失望。但最重要的，通过揭示世界表象之下的神秘的陌生，它激起了我们的好奇心。这就是摄影真正的魅力。"
 
 <h2 id="start">摄影的诞生</h2>
 
@@ -52,25 +52,33 @@ tags : [摄影, 摄影史]
 
 #### 法国的涅普斯和达盖尔
 
-![现存最早的照片《从李格拉斯的窗户进行观看》](http://gtms04.alicdn.com/tps/i4/TB1S.JhHXXXXXXZXpXXFge9WpXX-390-272.jpg)
+##### 涅普斯
 
 1826年，现存最早的照片由法国发明家[约瑟夫·尼塞福尔·涅普斯](http://baike.baidu.com/view/5696831.htm)([Joseph Nicéphore Nièpce](http://en.wikipedia.org/wiki/Nic%C3%A9phore_Ni%C3%A9pce))拍摄。尼埃普斯将犹太沥青涂在铅锡合金版上，曝光8小时获得此影像。他称这种技术为日光蚀刻法，但他未及完善这一技术便去世。
 
+![现存最早的照片《从李格拉斯的窗户进行观看》](http://gtms04.alicdn.com/tps/i4/TB1S.JhHXXXXXXZXpXXFge9WpXX-390-272.jpg)
+
+    这是一张被认定为现存最早的照片《从李格拉斯的窗户进行观看》，由约瑟夫·尼塞福尔·涅普斯拍摄。
+
+##### 路易·达盖尔
+
+![路易·达盖尔](http://gtms03.alicdn.com/tps/i3/TB1ZGKBHXXXXXbIXXXXgDMQNVXX-400-512.jpg)
+
 1824年，法国发明家[路易·达盖尔](http://baike.baidu.com/view/53561.htm)([Louis Daguerre](http://en.wikipedia.org/wiki/Louis_Daguerre))开始实验银版摄影法。
 
-1829达盖尔与尼埃普斯合作，开始了两人为时四年的合作。1833年尼埃普斯突然逝世。
+1829年，达盖尔与尼埃普斯合作，开始了两人为时四年的合作。1833年尼埃普斯突然逝世。
 
 1839年，路易·达盖尔宣布自己发明了摄影（[银版摄影法](http://zh.wikipedia.org/wiki/%E9%93%B6%E7%89%88%E6%91%84%E5%BD%B1%E6%B3%95)）。
 
 银版摄影法的优点是照片逼真，而且是正像。缺点是从不同的角度观看，照片会由正像变成负像。此外，由于影像是在一层很薄的银上形成，因此容易受损，用手指轻擦也可能会令照片受损。其他缺点包括拍出来的影像是左右颠倒、复制照片困难，还有拍摄成本高昂。
 
-![《坦普尔大街街》](http://gtms02.alicdn.com/tps/i2/TB15NSnHXXXXXc1XpXXzUS_WpXX-387-278.jpg)
+![达盖尔的作品：《坦普尔大街街景》](http://gtms02.alicdn.com/tps/i2/TB15NSnHXXXXXc1XpXXzUS_WpXX-387-278.jpg)
 
-    这张1838年末或者1839年初在巴黎拍的《坦普尔大街街景》是第一张拍到人的照片。照片曝光有十分钟多，因此虽然大街上有许多交通，但是它们都没有被拍上去，只有一个擦鞋的人站的时间足够久被拍上去了。
+    这张1838年末或者1839年初达盖尔在巴黎拍的《坦普尔大街街景》是第一张拍到人的照片。照片曝光有十分钟多，因此虽然大街上有许多交通，但是它们都没有被拍上去，只有一个擦鞋的人站的时间足够久被拍上去了。
 
 #### 英国的塔尔博特
 
-![威廉·福克斯·塔尔博特](http://gtms01.alicdn.com/tps/i1/TB1tb9kHXXXXXX9XVXXQtnXWpXX-390-316.jpg)
+![塔尔博特在摄影中](http://gtms01.alicdn.com/tps/i1/TB1tb9kHXXXXXX9XVXXQtnXWpXX-390-316.jpg)
 
 1835年，作为另一个重要的创始人，英国化学家[威廉·福克斯·塔尔博特](http://baike.baidu.com/view/3771570.htm)([Henry Fox Talbot](http://en.wikipedia.org/wiki/Henry_Fox_Talbot))用涂上感光物料的高级书写纸张，拍摄世上第一张负像照片，即后来所谓的负片。通过接触式印相，可获得正像照片，由此开创出由负转正的摄影工艺。
 
@@ -84,9 +92,11 @@ tags : [摄影, 摄影史]
 
 谈到了科技发展下产生铁路巨头与迈布里奇的合作，是现代电影技术的启蒙。
 
-![一步的八个阶段](http://gtms02.alicdn.com/tps/i2/TB1iJ1lHXXXXXc5XFXXiR13WpXX-390-241.jpg)
+![埃德沃德·迈布里奇](http://gtms01.alicdn.com/tps/i1/TB1TYusHXXXXXXiaXXX7D8_FFXX-350-510.jpg)
 
 1879年，英国摄影师[埃德沃德·迈布里奇](http://baike.baidu.com/view/3265852.htm)([Eadweard J. Muybridge](http://en.wikipedia.org/wiki/Eadweard_Muybridge))：使用多个相机拍摄运动的物体，他在美国旧金山创作了《一步的八个阶段》，该运动摄影实验为后来的电影拍摄技术提供了启迪。
+
+![迈布里奇的作品：《一步的八个阶段》](http://gtms02.alicdn.com/tps/i2/TB1iJ1lHXXXXXc5XFXXiR13WpXX-390-241.jpg)
 
 <h2 id="bu">摄影商业化</h2>
 
@@ -114,7 +124,7 @@ tags : [摄影, 摄影史]
 
 早期的摄影师，有不少都是画家出身。
 
-![x](http://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Photographer-studio-1893.jpg/250px-Photographer-studio-1893.jpg)
+![19世纪后期摄影影楼场景](http://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Photographer-studio-1893.jpg/250px-Photographer-studio-1893.jpg)
 
     这张1893年的合成照片，可见一名摄影师在正替自己拍照。我们可从这张照片窥探早期照相馆的拍照方式。客人坐在椅上，头部被支架固定，尽可能保持静止不动，直至完成曝光。巨大的相机固定在木架上，摄影师手执快门线，准备打开快门。这种以支架固定头部的拍摄方式，在十九世纪末已经落伍。
 
@@ -133,6 +143,8 @@ tags : [摄影, 摄影史]
 
 <h3 id="society-through">技术突破</h3>
 
+![乔治·伊斯曼](http://gtms01.alicdn.com/tps/i1/TB1JqKAHXXXXXasXpXXFRIVNVXX-400-540.jpg)
+
 19世纪后期，美国发明家[乔治·伊斯曼](http://baike.baidu.com/view/1640964.htm)([George Eastman](http://en.wikipedia.org/wiki/George_Eastman))（柯达创始人）：1883年发明胶片，1886年发明面向家庭的、便携式的家用照相机，1888年6月，小型口袋式照相机“柯达一号”推向市场，1895年，以卖价5美元的口袋式照相机投放市场，轰动了全世界——照相技术“面向大众化”之梦，终于变成了现实。
 
 <h3 id="society-main">摄影与社会</h3>
@@ -141,5 +153,7 @@ tags : [摄影, 摄影史]
 2. 记录人类社会生活
 
 <h3 id="society-master">大师</h3>
+
+![拉蒂格的摄影作品](http://gtms04.alicdn.com/tps/i4/TB1ddCxHXXXXXaFXFXXm2r4LpXX-500-366.jpg)
 
 20世纪上半叶，法国摄影家[雅克·亨利·拉蒂格](http://baike.baidu.com/view/3221414.htm)([Jacques Henri Lartigue](http://en.wikipedia.org/wiki/Jacques_Henri_Lartigue))个人摄影：反映生活真实的一面，与同时代严肃绘画相比，自由奔放。反映了业余摄影的社会价值、艺术价值。

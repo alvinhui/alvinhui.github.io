@@ -7,7 +7,7 @@ tags : [摄影, 摄影史]
 ---
 {% include JB/setup %}
 
-这是一篇[《摄影艺术百年史》](http://movie.douban.com/subject/4154964/)纪录片中[《大师群像》](http://v.youku.com/v_show/id_XNDcyMTUzMjI4.html)一集的观看笔记。
+这是一篇[《摄影艺术百年史》](http://movie.douban.com/subject/4154964/)纪录片中[《大师群像》](http://v.youku.com/v_show/id_XNDcyMTUzMjI4.html)一集的观看笔记，，对影片中的人物、事件的资料进行了汇总和补充。
 
 该纪录片由[BBC](http://baike.baidu.com/view/60739.htm)出产，循序渐进地演义了170年的摄影史，并带领观众去思考摄影与科技、艺术、社会间的关系。它诠释了摄影的魅力，反问了摄影的未来。
 
