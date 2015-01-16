@@ -62,7 +62,7 @@ tags : [摄影, 摄影史]
 
 ##### 路易·达盖尔
 
-![路易·达盖尔](http://gtms03.alicdn.com/tps/i3/TB1ZGKBHXXXXXbIXXXXgDMQNVXX-400-512.jpg)
+![路易·达盖尔](http://gtms01.alicdn.com/tps/i1/TB1xSuxHXXXXXX7XFXX6IdwTXXX-200-256.jpg)
 
 1824年，法国发明家[路易·达盖尔](http://baike.baidu.com/view/53561.htm)([Louis Daguerre](http://en.wikipedia.org/wiki/Louis_Daguerre))开始实验银版摄影法。
 
@@ -78,7 +78,7 @@ tags : [摄影, 摄影史]
 
 #### 英国的塔尔博特
 
-![塔尔博特在摄影中](http://gtms01.alicdn.com/tps/i1/TB1tb9kHXXXXXX9XVXXQtnXWpXX-390-316.jpg)
+![塔尔博特在摄影中](http://gtms03.alicdn.com/tps/i3/TB1nhysHXXXXXczXVXX_Z3VQpXX-300-243.jpg)
 
 1835年，作为另一个重要的创始人，英国化学家[威廉·福克斯·塔尔博特](http://baike.baidu.com/view/3771570.htm)([Henry Fox Talbot](http://en.wikipedia.org/wiki/Henry_Fox_Talbot))用涂上感光物料的高级书写纸张，拍摄世上第一张负像照片，即后来所谓的负片。通过接触式印相，可获得正像照片，由此开创出由负转正的摄影工艺。
 
@@ -92,7 +92,7 @@ tags : [摄影, 摄影史]
 
 谈到了科技发展下产生铁路巨头与迈布里奇的合作，是现代电影技术的启蒙。
 
-![埃德沃德·迈布里奇](http://gtms01.alicdn.com/tps/i1/TB1TYusHXXXXXXiaXXX7D8_FFXX-350-510.jpg)
+![埃德沃德·迈布里奇](http://gtms04.alicdn.com/tps/i4/TB136qpHXXXXXcCaXXX6WBCTXXX-200-291.jpg)
 
 1879年，英国摄影师[埃德沃德·迈布里奇](http://baike.baidu.com/view/3265852.htm)([Eadweard J. Muybridge](http://en.wikipedia.org/wiki/Eadweard_Muybridge))：使用多个相机拍摄运动的物体，他在美国旧金山创作了《一步的八个阶段》，该运动摄影实验为后来的电影拍摄技术提供了启迪。
 
@@ -143,7 +143,7 @@ tags : [摄影, 摄影史]
 
 <h3 id="society-through">技术突破</h3>
 
-![乔治·伊斯曼](http://gtms01.alicdn.com/tps/i1/TB1JqKAHXXXXXasXpXXFRIVNVXX-400-540.jpg)
+![乔治·伊斯曼](http://gtms02.alicdn.com/tps/i2/TB1EEutHXXXXXa6XVXXhI8yTXXX-200-270.jpg)
 
 19世纪后期，美国发明家[乔治·伊斯曼](http://baike.baidu.com/view/1640964.htm)([George Eastman](http://en.wikipedia.org/wiki/George_Eastman))（柯达创始人）：1883年发明胶片，1886年发明面向家庭的、便携式的家用照相机，1888年6月，小型口袋式照相机“柯达一号”推向市场，1895年，以卖价5美元的口袋式照相机投放市场，轰动了全世界——照相技术“面向大众化”之梦，终于变成了现实。
 
