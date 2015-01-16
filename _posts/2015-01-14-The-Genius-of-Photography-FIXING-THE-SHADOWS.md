@@ -11,7 +11,7 @@ tags : [摄影, 摄影史]
 
 该纪录片由[BBC](http://baike.baidu.com/view/60739.htm)出产，循序渐进地演义了170年的摄影史，并带领观众去思考摄影与科技、艺术、社会间的关系。它诠释了摄影的魅力，反问了摄影的未来。
 
-第一集《瞬间的永恒》讲述了摄影技术的诞生历程以及摄影技术发展初期（19世纪下半期）对艺术和社会的影响。
+第一集《瞬间的永恒》，讲述了摄影技术的诞生历程，以及摄影技术发展初期（19世纪下半期）对艺术的冲击。
 
     "是谁发明了摄影？"
     "摄影是艺术吗？"
@@ -158,4 +158,4 @@ tags : [摄影, 摄影史]
 
 ![拉蒂格的摄影作品](http://gtms04.alicdn.com/tps/i4/TB1ddCxHXXXXXaFXFXXm2r4LpXX-500-366.jpg)
 
-20世纪上半叶，法国摄影家[雅克·亨利·拉蒂格](http://baike.baidu.com/view/3221414.htm)([Jacques Henri Lartigue](http://en.wikipedia.org/wiki/Jacques_Henri_Lartigue))个人摄影：反映生活真实的一面，与同时代严肃绘画相比，自由奔放。反映了业余摄影的社会价值、艺术价值。
+20世纪上半叶，法国摄影家[雅克·亨利·拉蒂格](http://baike.baidu.com/view/3221414.htm)([Jacques Henri Lartigue](http://en.wikipedia.org/wiki/Jacques_Henri_Lartigue))个人摄影：反映生活真实的一面，与同时代严肃绘画相比，自由奔放。反映了摄影的社会价值、艺术价值。
