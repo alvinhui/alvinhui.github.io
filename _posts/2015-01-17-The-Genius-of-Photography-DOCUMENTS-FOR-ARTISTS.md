@@ -33,25 +33,40 @@ tags : [摄影, 摄影史]
 
 20世纪初期，德国处于一片混乱的状态，魏玛共和国即将垮台，极度的通货膨胀，普遍失业，满大街的政治暴力。桑德的相机对准了该时期德国社会各级层、职业以及身份的人群。他以最朴实直接的摄影方式记录了特定年代中人们的精神面貌并用图像透析深藏在外表之下的内在民族性格。
 
+桑德作品中所有的人像都是平等真实的，纳粹上台后，桑德的作品显而和纳粹提倡日耳曼民族高人一等，政府的人民具有优越性的观点相违背，于是纳粹开始抹杀桑德的类型摄影。但是德国越是陷入这种集团的混乱，桑德就越是坚持他的类型摄影。
+
 <h2 id="alexander-rodchenko">亚历山大·罗德琴科(Alexander Rodchenko)</h2>
 
-[亚历山大·罗德琴科](http://baike.baidu.com/view/302248.htm)([Alexander Rodchenko](http://en.wikipedia.org/wiki/Alexander_Rodchenko))
+另外一边，与桑德同时期的苏联摄影家[亚历山大·罗德琴科](http://baike.baidu.com/view/302248.htm)([Alexander Rodchenko](http://en.wikipedia.org/wiki/Alexander_Rodchenko))，这位新型知识份子，先锋派艺术家，在为布尔什维克党掌权后，放弃了绘画，利用摄影和他那独特的视角动态地展示了无产阶级新社会。
 
-先锋艺术家－俄罗斯摄影师－蒙太奇手法
+罗德琴科对于摄影的贡献有2个：
+
+1. 其一，得益于莱卡手提相机的推出，罗德琴科利用它突破了传统摄影的方法，采用全新的视角（比如从上往下和从下往上）进行拍摄，展示了动态的新社会。罗德琴科还著文鼓励摄影师参与这种摄影方式的变革。
+2. 其二，罗德琴科被看做一个平面设计和结构主义的大师。他可以算是平面设计开山的祖师之一。他首创在后期剪辑照片，组成一些涵义非常强烈的图片。他把这种方式称为“照片蒙太奇”。
+
+罗德琴科拍摄的大多数照片和大多数作品都是政治意味很浓：他在布尔什维克党掌权初期拍摄的作品被当作政治宣传的喉舌，歌颂苏联体制的成功；在斯大林发起政治恐怖风暴时期，罗德琴科又被迫使用“蒙太奇”手法修改那些他曾经拍摄的战争英雄的肖像。
+
+摄影作品集：[http://www.artnet.com/artists/alexander-rodchenko/](http://www.artnet.com/artists/alexander-rodchenko/)
 
 <h2 id="atget">尤金·阿杰特(Eugène Atget)</h2>
 
 ![尤金·阿杰特](http://gtms02.alicdn.com/tps/i2/TB1ViyBHXXXXXb4XpXXXjFuTXXX-200-250.jpg)
 
-[尤金·阿杰特](http://baike.baidu.com/view/3269431.htm)([Eugène Atget](http://en.wikipedia.org/wiki/Eug%C3%A8ne_Atget))
+[尤金·阿杰特](http://baike.baidu.com/view/3269431.htm)([Eugène Atget](http://en.wikipedia.org/wiki/Eug%C3%A8ne_Atget))法国摄影家，纪实摄影先驱。
 
-法国摄影师－纪实摄影
+尤金·阿杰特用一台18×24英寸的大片幅相机，在39年里拍摄了大约8000幅照片，记录了巴黎这个都市的面貌和变迁。他拍摄的巴黎及其近郊的照片对焦清晰、不经修饰，既有纪录片的效果，又具有艺术价值。一些照片反映了他精巧的构图以及对细节的关注。
+
+阿杰特通过对客观事物的描绘来反映非真实的精神世界。
+
+1927年，阿杰特故去，其作品被被美国摄影家贝伦尼斯·阿博特收藏并推广，引起社会关注，并被许多人认同和赏识。他的作品被收入现代主义作品展览，他的第一部摄影集也在1931年出版。
 
 <h2 id="man-ray">曼·雷(Man Ray)</h2>
 
 [曼·雷](http://baike.baidu.com/view/3269406.htm)([Man Ray](http://en.wikipedia.org/wiki/Man_Ray))
 
 美国摄影师－超现实主义
+
+曼·雷摄影作品集：[http://www.wikipaintings.org/en/man-ray/mode/all-paintings](http://www.wikipaintings.org/en/man-ray/mode/all-paintings)
 
 <h2 id="walker-evans">沃克·伊文斯(Walker Evans)</h2>
 
