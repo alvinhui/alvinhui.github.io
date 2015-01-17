@@ -25,6 +25,8 @@ tags : [摄影, 摄影史]
 
 <h2 id="august-sander">奥古斯特·桑德(August Sander)</h2>
 
+![奥古斯特·桑德](http://gtms04.alicdn.com/tps/i4/TB1h1WCHXXXXXa8XpXX6WBCTXXX-200-288.jpg)
+
 影片的一开始介绍了摄影其中的一种类型：类型摄影，由此引出了二十世纪德国类型摄影大师[奥古斯特·桑德](http://baike.baidu.com/view/157695.htm)([August Sander](http://en.wikipedia.org/wiki/August_Sander))。
 
 奥古斯特·桑德，“德国人性见证者"，"时代面孔收集者"。
@@ -39,6 +41,8 @@ tags : [摄影, 摄影史]
 
 <h2 id="atget">尤金·阿杰特(Eugène Atget)</h2>
 
+![尤金·阿杰特](http://gtms02.alicdn.com/tps/i2/TB1ViyBHXXXXXb4XpXXXjFuTXXX-200-250.jpg)
+
 [尤金·阿杰特](http://baike.baidu.com/view/3269431.htm)([Eugène Atget](http://en.wikipedia.org/wiki/Eug%C3%A8ne_Atget))
 
 法国摄影师－纪实摄影
@@ -50,6 +54,8 @@ tags : [摄影, 摄影史]
 美国摄影师－超现实主义
 
 <h2 id="walker-evans">沃克·伊文斯(Walker Evans)</h2>
+
+![沃克·伊文斯](http://gtms01.alicdn.com/tps/i1/TB1xLyDHXXXXXXZXpXX3dpfTXXX-200-133.jpg)
 
 沃克·伊文斯([Walker Evans](http://en.wikipedia.org/wiki/Walker_Evans))
 
