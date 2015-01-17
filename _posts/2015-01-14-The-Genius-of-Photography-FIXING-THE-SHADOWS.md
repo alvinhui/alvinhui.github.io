@@ -58,7 +58,7 @@ tags : [摄影, 摄影史]
 
 1826年，现存最早的照片由法国发明家[约瑟夫·尼塞福尔·涅普斯](http://baike.baidu.com/view/5696831.htm)([Joseph Nicéphore Nièpce](http://en.wikipedia.org/wiki/Nic%C3%A9phore_Ni%C3%A9pce))拍摄。尼埃普斯将犹太沥青涂在铅锡合金版上，曝光8小时获得此影像。他称这种技术为日光蚀刻法，但他未及完善这一技术便去世。
 
-![现存最早的照片《从李格拉斯的窗户进行观看》](http://gtms04.alicdn.com/tps/i4/TB1S.JhHXXXXXXZXpXXFge9WpXX-390-272.jpg)
+![现存最早的照片《从李格拉斯的窗户进行观看》](http://gtms01.alicdn.com/tps/i1/TB17O5vHXXXXXchXVXXHhwrNVXX-400-278.jpg)
 
     这是一张被认定为现存最早的照片《从李格拉斯的窗户进行观看》，由约瑟夫·尼塞福尔·涅普斯拍摄。
 
@@ -74,19 +74,21 @@ tags : [摄影, 摄影史]
 
 银版摄影法的优点是照片逼真，而且是正像。缺点是从不同的角度观看，照片会由正像变成负像。此外，由于影像是在一层很薄的银上形成，因此容易受损，用手指轻擦也可能会令照片受损。其他缺点包括拍出来的影像是左右颠倒、复制照片困难，还有拍摄成本高昂。
 
-![达盖尔的作品：《坦普尔大街街景》](http://gtms02.alicdn.com/tps/i2/TB15NSnHXXXXXc1XpXXzUS_WpXX-387-278.jpg)
+![达盖尔的作品：《坦普尔大街街景》](http://gtms03.alicdn.com/tps/i3/TB1DFGFHXXXXXbcXXXXY83sNVXX-400-286.jpg)
 
     这张1838年末或者1839年初达盖尔在巴黎拍的《坦普尔大街街景》是第一张拍到人的照片。照片曝光有十分钟多，因此虽然大街上有许多交通，但是它们都没有被拍上去，只有一个擦鞋的人站的时间足够久被拍上去了。
 
 #### 英国的塔尔博特
 
-![塔尔博特在摄影中](http://gtms03.alicdn.com/tps/i3/TB1nhysHXXXXXczXVXX_Z3VQpXX-300-243.jpg)
+![塔尔博特](http://gtms01.alicdn.com/tps/i1/TB1fP5BHXXXXXbVXpXXsHRvTXXX-200-252.jpg)
 
 1835年，作为另一个重要的创始人，英国化学家[威廉·福克斯·塔尔博特](http://baike.baidu.com/view/3771570.htm)([Henry Fox Talbot](http://en.wikipedia.org/wiki/Henry_Fox_Talbot))用涂上感光物料的高级书写纸张，拍摄世上第一张负像照片，即后来所谓的负片。通过接触式印相，可获得正像照片，由此开创出由负转正的摄影工艺。
 
 1841年，塔尔博特宣布发明[卡罗式摄影法](http://baike.baidu.com/view/4204130.htm)。
 
 卡罗式摄影法的拍摄成本较低，又可重复印制相同的照片，其发明为现代摄影成像技术的基础。
+
+![塔尔博特在摄影中](http://gtms04.alicdn.com/tps/i4/TB1WF1zHXXXXXasXFXXcGAuNVXX-400-324.jpg)
 
 <h2 id="science-and-technology">摄影与科技</h2>
 
@@ -98,7 +100,7 @@ tags : [摄影, 摄影史]
 
 1879年，英国摄影师[埃德沃德·迈布里奇](http://baike.baidu.com/view/3265852.htm)([Eadweard J. Muybridge](http://en.wikipedia.org/wiki/Eadweard_Muybridge))：使用多个相机拍摄运动的物体，他在美国旧金山创作了《一步的八个阶段》，该运动摄影实验为后来的电影拍摄技术提供了启迪。
 
-![迈布里奇的作品：《一步的八个阶段》](http://gtms02.alicdn.com/tps/i2/TB1iJ1lHXXXXXc5XFXXiR13WpXX-390-241.jpg)
+![迈布里奇的作品：《一步的八个阶段》](http://gtms04.alicdn.com/tps/i4/TB1oqesHXXXXXbFaXXXkTglNVXX-400-247.jpg)
 
 <h2 id="bu">摄影商业化</h2>
 
@@ -158,6 +160,6 @@ tags : [摄影, 摄影史]
 
 <h3 id="society-master">大师</h3>
 
-![拉蒂格的摄影作品](http://gtms04.alicdn.com/tps/i4/TB1ddCxHXXXXXaFXFXXm2r4LpXX-500-366.jpg)
-
 20世纪上半叶，法国摄影家[雅克·亨利·拉蒂格](http://baike.baidu.com/view/3221414.htm)([Jacques Henri Lartigue](http://en.wikipedia.org/wiki/Jacques_Henri_Lartigue))个人摄影：反映生活真实的一面，与同时代严肃绘画相比，自由奔放。反映了摄影的社会价值、艺术价值。
+
+![拉蒂格的摄影作品](http://gtms03.alicdn.com/tps/i3/TB1B7myHXXXXXbkXFXXy9stNVXX-400-293.jpg)
