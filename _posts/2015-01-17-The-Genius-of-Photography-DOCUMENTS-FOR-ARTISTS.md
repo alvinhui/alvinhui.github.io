@@ -31,27 +31,31 @@ tags : [摄影, 摄影史]
 
 20世纪初期，德国处于一片混乱的状态，魏玛共和国即将垮台，极度的通货膨胀，普遍失业，满大街的政治暴力。桑德的相机对准了该时期德国社会各级层、职业以及身份的人群。他以最朴实直接的摄影方式记录了特定年代中人们的精神面貌并用图像透析深藏在外表之下的内在民族性格。
 
-
 <h2 id="alexander-rodchenko">亚历山大·罗德琴科(Alexander Rodchenko)</h2>
 
+[亚历山大·罗德琴科](http://baike.baidu.com/view/302248.htm)([Alexander Rodchenko](http://en.wikipedia.org/wiki/Alexander_Rodchenko))
+
 先锋艺术家－俄罗斯摄影师－蒙太奇手法
-http://baike.baidu.com/view/302248.htm
 
 <h2 id="atget">尤金·阿杰特(Eugène Atget)</h2>
 
+[尤金·阿杰特](http://baike.baidu.com/view/3269431.htm)([Eugène Atget](http://en.wikipedia.org/wiki/Eug%C3%A8ne_Atget))
+
 法国摄影师－纪实摄影
-http://baike.baidu.com/view/3269431.htm
 
 <h2 id="man-ray">曼·雷(Man Ray)</h2>
 
+[曼·雷](http://baike.baidu.com/view/3269406.htm)([Man Ray](http://en.wikipedia.org/wiki/Man_Ray))
+
 美国摄影师－超现实主义
-http://baike.baidu.com/view/3269406.htm
 
 <h2 id="walker-evans">沃克·伊文斯(Walker Evans)</h2>
 
+沃克·伊文斯([Walker Evans](http://en.wikipedia.org/wiki/Walker_Evans))
+
 美国摄影师－纪实摄影
-http://en.wikipedia.org/wiki/Walker_Evans
 
 <h2 id="bill-brandt">比尔·布兰特(Bill Brandt)</h2>
 
-http://baike.baidu.com/view/4552788.htm
+[比尔·布兰特](http://baike.baidu.com/view/4552788.htm)([Bill Brandt](http://en.wikipedia.org/wiki/Bill_Brandt))
+
