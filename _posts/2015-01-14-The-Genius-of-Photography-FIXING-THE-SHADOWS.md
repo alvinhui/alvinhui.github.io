@@ -90,6 +90,8 @@ tags : [摄影, 摄影史]
 
 ![塔尔博特在摄影中](http://gtms04.alicdn.com/tps/i4/TB1WF1zHXXXXXasXFXXcGAuNVXX-400-324.jpg)
 
+    塔尔博特正在使用他的卡罗式摄影法进行拍摄
+
 <h2 id="science-and-technology">摄影与科技</h2>
 
 影片的故事时间快速推进，来到19世纪下半期，谈到科技的高速发展与科技发展对人类思维模式的影响，对社会的冲击。
