@@ -128,7 +128,7 @@ tags : [摄影, 摄影史]
 
 早期的摄影师，有不少都是画家出身。
 
-![19世纪后期摄影影楼场景](http://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Photographer-studio-1893.jpg/250px-Photographer-studio-1893.jpg)
+![19世纪后期摄影影楼场景](http://gtms04.alicdn.com/tps/i4/TB1WjmDHXXXXXXEXpXX7g7qNVXX-400-274.jpg)
 
     这张1893年的合成照片，可见一名摄影师在正替自己拍照。我们可从这张照片窥探早期照相馆的拍照方式。客人坐在椅上，头部被支架固定，尽可能保持静止不动，直至完成曝光。巨大的相机固定在木架上，摄影师手执快门线，准备打开快门。这种以支架固定头部的拍摄方式，在十九世纪末已经落伍。
 
