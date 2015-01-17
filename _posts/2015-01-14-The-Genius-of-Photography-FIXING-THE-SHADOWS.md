@@ -138,7 +138,11 @@ tags : [摄影, 摄影史]
 
 ![纳达尔](http://gtms01.alicdn.com/tps/i1/TB1ERCDHXXXXXX9XXXXRHpuTXXX-200-245.jpg)
 
-19世纪后期重要的法国摄影家[加斯帕德·费利克斯·图尔纳雄](http://zh.wikipedia.org/wiki/%E7%B4%8D%E9%81%94%E7%88%BE_(%E6%94%9D%E5%BD%B1%E5%AE%B6))([Gaspard-Félix Tournachon](http://en.wikipedia.org/wiki/Nadar_(photographer)))：他为许多十九世纪名人留下肖像，这些肖像活灵活现，突破了普通影楼那种僵硬的人物形象。
+19世纪后期重要的法国摄影家[加斯帕德·费利克斯·图尔纳雄](http://zh.wikipedia.org/wiki/%E7%B4%8D%E9%81%94%E7%88%BE_(%E6%94%9D%E5%BD%B1%E5%AE%B6))([Gaspard-Félix Tournachon](http://en.wikipedia.org/wiki/Nadar_(photographer)))（绰号：纳达尔）：他为许多十九世纪名人留下肖像，这些肖像活灵活现，突破了普通影楼那种僵硬的人物形象。
+
+#### 链接
+
+* [纳达尔作品集](http://www.artic.edu/aic/collections/artwork/artist/Nadar+%28Gaspard+Felix+Tournachon%29)
 
 <h2 id="art">摄影与艺术</h2>
 
@@ -162,6 +166,12 @@ tags : [摄影, 摄影史]
 
 <h3 id="society-master">大师</h3>
 
+![雅克·亨利·拉蒂格](http://www.atgetphotography.com/Images/Photos/Lartigue/lartigue000.jpg)
+
 20世纪上半叶，法国摄影家[雅克·亨利·拉蒂格](http://baike.baidu.com/view/3221414.htm)([Jacques Henri Lartigue](http://en.wikipedia.org/wiki/Jacques_Henri_Lartigue))个人摄影：反映生活真实的一面，与同时代严肃绘画相比，自由奔放。反映了摄影的社会价值、艺术价值。
 
 ![拉蒂格的摄影作品](http://gtms03.alicdn.com/tps/i3/TB1B7myHXXXXXbkXFXXy9stNVXX-400-293.jpg)
+
+#### 链接
+
+* [拉蒂格作品集](http://www.atgetphotography.com/The-Photographers/Jacques-Henri-Lartigue.html)
