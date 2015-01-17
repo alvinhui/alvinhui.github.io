@@ -54,6 +54,8 @@ tags : [摄影, 摄影史]
 
 ##### 涅普斯
 
+![约瑟夫·尼塞福尔·涅普斯](http://upload.wikimedia.org/wikipedia/commons/d/dd/Joseph_Nic%C3%A9phore_Ni%C3%A9pce.jpg)
+
 1826年，现存最早的照片由法国发明家[约瑟夫·尼塞福尔·涅普斯](http://baike.baidu.com/view/5696831.htm)([Joseph Nicéphore Nièpce](http://en.wikipedia.org/wiki/Nic%C3%A9phore_Ni%C3%A9pce))拍摄。尼埃普斯将犹太沥青涂在铅锡合金版上，曝光8小时获得此影像。他称这种技术为日光蚀刻法，但他未及完善这一技术便去世。
 
 ![现存最早的照片《从李格拉斯的窗户进行观看》](http://gtms04.alicdn.com/tps/i4/TB1S.JhHXXXXXXZXpXXFge9WpXX-390-272.jpg)
