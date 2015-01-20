@@ -37,6 +37,10 @@ tags : [摄影, 摄影史]
 
 ![x](http://gtms03.alicdn.com/tps/i3/TB1mcuGHXXXXXa6XpXX5QJm_XXX-450-406.jpg)
 
+### 链接
+
+* [奥古斯特·桑德作品集](http://www.amber-online.com/exhibitions/sander-collection)
+
 <h2 id="alexander-rodchenko">亚历山大·罗德琴科(Alexander Rodchenko)</h2>
 
 ![亚历山大·罗德琴科](http://gtms04.alicdn.com/tps/i4/TB1XoWHHXXXXXbRXXXXhYtETXXX-200-299.jpg)
@@ -70,6 +74,10 @@ tags : [摄影, 摄影史]
 
 ![x](http://gtms03.alicdn.com/tps/i3/TB1WByCHXXXXXbbXFXX97MpNVXX-400-301.jpg)
 
+### 链接
+
+* [尤金·阿杰特作品集](http://www.atgetphotography.com/The-Photographers/Eugene-Atget.html)
+
 <h2 id="man-ray">曼·雷(Man Ray)</h2>
 
 ![x](http://gtms03.alicdn.com/tps/i3/TB16mOwHXXXXXX3aXXXJwlwTXXX-200-257.jpg)
@@ -96,7 +104,13 @@ tags : [摄影, 摄影史]
 
 ![x](http://gtms02.alicdn.com/tps/i2/TB1G1OBHXXXXXc4XFXX0FleQFXX-300-390.jpg)
 
+### 链接
+
+* [沃克·伊文斯作品集](http://www.afterwalkerevans.com/)
+
 <h2 id="bill-brandt">比尔·布兰特(Bill Brandt)</h2>
+
+![比尔·布兰特](http://gtms03.alicdn.com/tps/i3/TB1O.skGVXXXXbKaXXXeG4tTXXX-200-238.jpg)
 
 英国摄影师[比尔·布兰特](http://baike.baidu.com/view/4552788.htm)([Bill Brandt](http://en.wikipedia.org/wiki/Bill_Brandt))1925年开始自学摄影，4年后赴巴黎投师摄影家曼·雷门下。这个学徒时期虽然只有数月之久，却影响了他 的一生，布兰德就是从曼·雷身上觉察到超现实主义在影像表现上有莫大的启示作用，它可以泄露自我压抑下的潜在意义，而照相机就是最佳的捕捉利器。
 
@@ -105,3 +119,7 @@ Bill Brandt的作品构成了对近代英国最生动的写照。最初，Bill B
 Bill Brandt又是引发影像革命的先驱。他利用一架焦点固定、光圈比针孔还小的老式柯达相机拍摄女性人体照片，结果产生了一批变形夸张的作品，极富超现实主义意韵。Bill Brandt对影调的处理也颇具特色，灰色调常被压缩，影像黑白分明，反差强烈，似乎把拍摄对象从现实环境中分离了出来。
 
 ![x](http://gtms04.alicdn.com/tps/i4/TB1zwCIHXXXXXbUXXXXXp.jNVXX-400-233.jpg)
+
+### 链接
+
+* [比尔·布兰特](http://billbrandtarchive.photoshelter.com/gallery-list)
