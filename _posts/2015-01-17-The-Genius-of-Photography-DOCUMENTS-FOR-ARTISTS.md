@@ -58,7 +58,7 @@ tags : [摄影, 摄影史]
 
 ### 链接
 
-摄影作品集：[http://www.artnet.com/artists/alexander-rodchenko/](http://www.artnet.com/artists/alexander-rodchenko/)
+* [罗德琴科摄影作品集](http://www.artnet.com/artists/alexander-rodchenko/)
 
 <h2 id="atget">尤金·阿杰特(Eugène Atget)</h2>
 
@@ -122,4 +122,4 @@ Bill Brandt又是引发影像革命的先驱。他利用一架焦点固定、光
 
 ### 链接
 
-* [比尔·布兰特](http://billbrandtarchive.photoshelter.com/gallery-list)
+* [比尔·布兰特作品集](http://billbrandtarchive.photoshelter.com/gallery-list)
