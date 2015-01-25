@@ -47,6 +47,10 @@ tags : [摄影, 摄影史]
 2. 成立了[玛格南图片社](http://baike.baidu.com/view/891966.htm)（Magnum Photos）
 3. 创立和实践了决定性瞬间理论
 
+### 链接
+
+* [摄影大师：亨利·卡蒂埃－布列松](http://vision.xitek.com/gallery/201301/31-114108.html)
+
 <h2 id="war">战地摄影</h2>
 
 <h3 id="robert-capa">罗伯特·卡帕（Robert Capa）</h3>
@@ -56,6 +60,10 @@ tags : [摄影, 摄影史]
 卡帕被认为是“决定性瞬间”的集大成者之一，他的作品通过凝结瞬间再现了战争的残酷和暴戾，突出表现在他的几幅名作中。他一生痛恨战争，想借影像来唤醒人们的良知，不再彼此杀戮。
 
     “罗伯·卡帕了解并憎恨战争，在他生动、真实的照片中，如同哥雅（Gova）的名画《战争的灾难》一样，宣泄出人类诚挚而强烈的真情，他纪录了战争的恐怖和荒诞的愚蠢。”——史秦钦（E·SteiChen）
+
+#### 链接
+
+* [罗伯特·卡帕：用生命赌影像](http://vision.xitek.com/gallery/201302/04-114484.html)
 
 <h3 id="tony-vaccaro">托尼·维卡罗（Tony Vaccaro）</h3>
 
@@ -104,6 +112,10 @@ tags : [摄影, 摄影史]
 这一段，影片想说明的问题是，摄影有时候会被利用，反映的可能不是真实。
 
 <h3 id="eugene-smith">尤金·史密斯（Eugene Smith）</h3>
+
+#### 链接
+
+* [孤独伟大的人道主义摄影家：尤金·史密斯](http://image.fengniao.com/292/2921571.html)
 
 <h3 id="shomei-tomatsu">东松照明（Shomei Tomatsu）</h3>
 

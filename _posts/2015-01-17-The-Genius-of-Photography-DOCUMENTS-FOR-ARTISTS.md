@@ -40,6 +40,7 @@ tags : [摄影, 摄影史]
 ### 链接
 
 * [奥古斯特·桑德作品集](http://www.amber-online.com/exhibitions/sander-collection)
+* [奥古斯特·桑德:20世纪见证者](http://vision.xitek.com/gallery/201301/15-112846.html)
 
 <h2 id="alexander-rodchenko">亚历山大·罗德琴科(Alexander Rodchenko)</h2>
 
@@ -93,6 +94,7 @@ tags : [摄影, 摄影史]
 * [曼·雷摄影作品集](http://www.wikipaintings.org/en/man-ray/mode/all-paintings)
 * [曼·雷摄影作品鉴赏：《与其拍一个意念，不如拍一个幻梦》](http://image.fengniao.com/290/2901719.html)
 * [曼·雷摄影作品鉴赏：《曼·雷（Man Ray）和他的代表作》](http://www.douban.com/note/317988602/)
+* [实验主义摄影大师：曼·雷](http://vision.xitek.com/gallery/201501/21-170165.html)
 
 <h2 id="walker-evans">沃克·伊文斯(Walker Evans)</h2>
 
@@ -107,6 +109,7 @@ tags : [摄影, 摄影史]
 ### 链接
 
 * [沃克·伊文斯作品集](http://www.afterwalkerevans.com/)
+* [美国影像：沃克·伊文斯](http://vision.xitek.com/gallery/201501/19-169954.html)
 
 <h2 id="bill-brandt">比尔·布兰特(Bill Brandt)</h2>
 
