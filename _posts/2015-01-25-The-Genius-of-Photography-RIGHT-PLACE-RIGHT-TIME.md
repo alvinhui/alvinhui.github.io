@@ -20,7 +20,7 @@ tags : [摄影, 摄影史]
 
     * [罗伯特·卡帕（Robert Capa）](./#robert-capa)
     * [托尼·维卡罗（Tony Vaccaro）](./#tony-vaccaro)
-    * [亨里克・罗斯（[Henryk Ross）](./#henryk-ross)
+    * [亨里克·罗斯（Henryk Ross）](./#henryk-ross)
 * [战后影像](./#after-war)
 
     * [日本](./#japan)
