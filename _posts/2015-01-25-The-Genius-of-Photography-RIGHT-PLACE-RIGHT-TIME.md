@@ -35,6 +35,8 @@ tags : [摄影, 摄影史]
 
 <h2 id="the-decisive-moment">决定性瞬间</h2>
 
+![亨利·卡蒂埃·布列松](http://gtms04.alicdn.com/tps/i4/TB1zrLQHXXXXXXTXXXXBlhyTXXX-200-272.jpg)
+
 [《决定性瞬间》](http://book.douban.com/subject/2785236/)是[亨利·卡蒂埃·布列松](http://baike.baidu.com/view/1489586.htm)（[Henri Cartier-Bresson](http://en.wikipedia.org/wiki/Henri_Cartier-Bresson)）的摄影理论，同时也是他在1952年出版的第一本摄影著作。
 
 “决定性瞬间”特指通过抓拍手段，在极短暂的几分之一秒的瞬间中，将具有决定性意义的事物加以概括，并用强有力的视觉构图表达出来。这种抓拍的摄影思想同时也被与布列松同时代的德国摄影家爱瑞克·萨洛蒙、英国摄影家比尔·布兰特、匈牙利著名战地摄影记者罗伯特·卡帕等摄影名家所推崇，并成为新闻摄影最有效的手段。这一摄影理论影响了无数后继的摄影人。
@@ -47,6 +49,8 @@ tags : [摄影, 摄影史]
 2. 成立了[玛格南图片社](http://baike.baidu.com/view/891966.htm)（Magnum Photos）
 3. 创立和实践了决定性瞬间理论
 
+![火车站背后](http://gtms01.alicdn.com/tps/i1/TB1tbvLHXXXXXbxXpXXjUc2NVXX-400-573.jpg)
+
 ### 链接
 
 * [摄影大师：亨利·卡蒂埃－布列松](http://vision.xitek.com/gallery/201301/31-114108.html)
@@ -55,11 +59,15 @@ tags : [摄影, 摄影史]
 
 <h3 id="robert-capa">罗伯特·卡帕（Robert Capa）</h3>
 
+![罗伯特·卡帕](http://gtms02.alicdn.com/tps/i2/TB1rcbOHXXXXXbFXXXXbqBiTXXX-200-147.jpg)
+
 [罗伯特·卡帕](http://baike.baidu.com/view/157673.htm)（[Robert Capa](http://en.wikipedia.org/wiki/Robert_Capa)）原名安德鲁·弗里德曼（André Friedmann），匈牙利裔美国籍摄影记者，20世纪最著名的战地摄影记者之一，参与报道过5场发生于20世纪的主要战争：包括西班牙内战，中国抗日战争、第二次世界大战欧洲战场、第一次中东战争以及第一次印支战争。第二次世界大战期间，卡帕跟随美国军队报道了北非及意大利的军事行动，诺曼第登陆中的奥马哈海滩战役以及巴黎的解放。
 
 卡帕被认为是“决定性瞬间”的集大成者之一，他的作品通过凝结瞬间再现了战争的残酷和暴戾，突出表现在他的几幅名作中。他一生痛恨战争，想借影像来唤醒人们的良知，不再彼此杀戮。
 
     “罗伯·卡帕了解并憎恨战争，在他生动、真实的照片中，如同哥雅（Gova）的名画《战争的灾难》一样，宣泄出人类诚挚而强烈的真情，他纪录了战争的恐怖和荒诞的愚蠢。”——史秦钦（E·SteiChen）
+
+![战士倒下的瞬间](http://gtms04.alicdn.com/tps/i4/TB1xBPOHXXXXXarXXXXHhwrNVXX-400-281.jpg)
 
 #### 链接
 
@@ -113,12 +121,16 @@ tags : [摄影, 摄影史]
 
 <h3 id="eugene-smith">尤金·史密斯（Eugene Smith）</h3>
 
+![尤金·史密斯](http://gtms04.alicdn.com/tps/i4/TB1EAvDHXXXXXXPaXXXj64lTXXX-200-200.jpg)
+
 [尤金·史密斯](http://baike.baidu.com/view/1560160.htm)（[Eugene Smith](http://en.wikipedia.org/wiki/W._Eugene_Smith)），当代新闻摄影大师。在战争年代，他曾经创作了战争史上最让人震动的照片；在和平年代，他以其高度的人道主义精神关注和报道社会现实。
 
 尤金·史密斯纪实摄影有两个重要的特点：
 
 1. 浪漫主义。虽是纪实，但作品中无不表达一种浪漫的，积极向上的生活态度，给人以希望。
 2. 人道主义。他的作品中无处散发着人性关怀，对人类大悲大怜之爱。
+
+![通向天堂之路](http://gtms03.alicdn.com/tps/i3/TB1idnLHXXXXXbIXpXXQQsSNVXX-400-492.jpg)
 
 #### 专题摄影
 
@@ -130,15 +142,21 @@ tags : [摄影, 摄影史]
 
 <h3 id="shomei-tomatsu">东松照明（Shomei Tomatsu）</h3>
 
+![东松照明](http://gtms03.alicdn.com/tps/i3/TB1Df_OHXXXXXbYXXXXGuhrTXXX-200-231.jpg)
+
 [东松照明](http://baike.baidu.com/view/11683977.htm)（[Shomei Tomatsu](http://en.wikipedia.org/wiki/Sh%C5%8Dmei_T%C5%8Dmatsu)）是成长于战后日本的摄影家，在寻找“没有被美国化的日本”的过程中他以独特的纪实空间揭示了战后一代日本人的内心痛苦，在日本摄影界产生重要影响。从战后的长崎到东京，他以敏感的视角一路拍过去，调动了生活的全部积累。正如他所说：“某个人的生命整体在按下快门的瞬间凝聚起来。如果他活了50年，那么凝聚的就是这50年的时间。“
 
 影片中提到了东松照明在长崎、广岛原子弹爆炸16年后返回原地拍摄的照片。他的作品中相当一部分拍摄的是受原子弹爆炸而损毁的静物：粘着被核弹溶化的头骨的钢盔、停止在11点零2分的手表、被溶化了的像肉一般的玻璃瓶，物品都在画面的中央位置，直直地存在在那里，让人去思考它们在那时发生了什么。这些物品似乎将1945年的那灾难性的一刻还原在你的眼前，让你不由得为那惨烈而心头发紧。东松照明在后来又屡次返回长崎拍摄，关注那些受原子弹爆炸伤害的民众的生活。
+
+![停止的钟](http://gtms04.alicdn.com/tps/i4/TB135fzHXXXXXc_aXXXgDMQNVXX-400-479.jpg)
 
 #### 链接
 
 * [审视战后日本——新摄影大师东松照明](http://image.fengniao.com/347/3470238.html)
 
 <h2 id="change">摄影方式的变更</h2>
+
+
 
 <h2 id="other">其他</h2>
 
