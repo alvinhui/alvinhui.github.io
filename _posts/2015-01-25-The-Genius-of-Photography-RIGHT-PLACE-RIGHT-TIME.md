@@ -170,6 +170,8 @@ tags : [摄影, 摄影史]
 
 <h3 id="magnum">玛格南图片社</h3>
 
+![玛格南图片社](http://gtms03.alicdn.com/tps/i3/TB1qOjQHXXXXXavXXXXj64lTXXX-200-200.jpg)
+
 [玛格南图片社](http://zh.wikipedia.org/wiki/%E9%A6%AC%E6%A0%BC%E8%98%AD%E6%94%9D%E5%BD%B1%E9%80%9A%E8%A8%8A%E7%A4%BE)（[Magnum Photos](http://en.wikipedia.org/wiki/Magnum_Photos)）是20世纪第一个也是最重要的新闻摄影师的独立组织，它的成立对新闻摄影乃至整个现代摄影产生了巨大的影响。 玛格南一词的拉丁文原意是“伟大，顽强”，并与一个著名的香槟酒的名字相同，含有庆祝之意。在美国，“玛格南”是指一种威力强大的左轮手枪子弹。 
 　　 
 玛格南图片社成立于 1947年5月22日，发起人是当时已经很有名气的战地纪实摄影家罗伯特·卡帕、社会纪实摄影家卡蒂埃·布列松、新闻摄影师戴维·西蒙、《生活》杂志专职摄影记者乔治·罗杰。
@@ -179,6 +181,8 @@ tags : [摄影, 摄影史]
 此外玛格南图片社还有一个历史性的贡献，那就是它首次宣布将成员全部照片版权予以保留，永远归照片作者所有。（现在当然是很正常的事了）（在此之前，照片版权都归发表者享有，即使是自由撰稿人的照片一般也将版权卖给载体。这种情况在当时已成惯例。） 是玛格南坚持了这种做法终于争得了新闻摄影师对自己报道照片的正当权益。成为新的国际惯例。 
 
 <h3 id="lift">《生活杂志》</h3>
+
+![生活杂志](http://gtms04.alicdn.com/tps/i4/TB1b32RHXXXXXX_XXXXYxXyTXXX-200-268.jpg)
 
 [《生活杂志》](http://zh.wikipedia.org/wiki/%E7%94%9F%E6%B4%BB_(%E9%9B%9C%E8%AA%8C))（[Life magazine](http://en.wikipedia.org/wiki/Life_(magazine))）是一本在美国发行的老牌周刊杂志，可说是在美国家喻户晓，地位与《时代杂志》（Time magazine）相差不远。其前身是1883年在纽约市曼哈顿发行的幽默周刊，发行社就叫做生活出版社（Life Publishing Company），当时这本周刊因漫画《海报女郎》（Pin Up Girl）与丰富的影剧资料而大受欢迎。
 
