@@ -87,17 +87,17 @@ tags : [购物]
     ![](http://gtms02.alicdn.com/tps/i2/TB1S6skHXXXXXcgXVXXhze9MpXX-683-401.png)
 
     ![](http://gtms03.alicdn.com/tps/i3/TB13A7iHXXXXXcoaXXXo9ZXRVXX-618-564.png)
-2. 两排型
+2. **两排型**
 
     ![](http://gtms01.alicdn.com/tps/i1/TB1dztsHXXXXXc2aXXXo_fwIVXX-570-387.png)
 
     ![](http://gtms03.alicdn.com/tps/i3/TB1jB3nHXXXXXbzXXXXAbKMTFXX-728-471.png)
-3. 单夹型
+3. **单夹型**
 
     ![](http://gtms03.alicdn.com/tps/i3/TB1rcVRHXXXXXc_aXXX5lhySVXX-411-362.png)
 
     ![](http://gtms03.alicdn.com/tps/i3/TB1f2QiHXXXXXbEaXXXQ4pROVXX-690-490.png)
-4. 随意型
+4. **随意型**
 
     ![](http://gtms03.alicdn.com/tps/i3/TB1baZmHXXXXXcoXXXXzIssYVXX-634-592.png)
 
@@ -117,11 +117,11 @@ tags : [购物]
 
 在使用自拍杆时需要进行伸长和缩短操作，每次伸长和缩短都需要进行固定。所以伸缩的流畅性，固定伸缩杆的方式都是影响自拍杆的因素。常见的伸缩固定方式有：
 
-1. 扭动式
+1. **扭动式**
 
     ![](http://gtms03.alicdn.com/tps/i3/TB1okgfHXXXXXa0apXXud4sGFXX-563-625.png)
 
-2. 板扣式
+2. **板扣式**
 
     ![](http://gtms01.alicdn.com/tps/i1/TB1yKwdHXXXXXbYapXX24UoUVXX-626-637.png)
 
@@ -151,48 +151,48 @@ tags : [购物]
 
 <h2 id="banner">品牌</h2>
 
-1. xsories
+1. **xsories**
 
     国际品牌，质量和做工都是上乘。不差钱请上。
 
     * 官网：[http://www.xsories.com/](http://www.xsories.com/)
     * 宝贝：[http://item.taobao.com/item.htm?id=39225060763](http://item.taobao.com/item.htm?id=39225060763)
 
-2. quik pod
+2. **quik pod**
 
     国际品牌，这货在 Go Pro 届挺出名。
 
     * 官网：[http://www.quikpod.com/](http://www.quikpod.com/)
     * 宝贝：[http://shop.quikpod.com/products/quik-pod-smartphone-selfie-pole](http://shop.quikpod.com/products/quik-pod-smartphone-selfie-pole)
 
-3. 炫达
+3. **炫达**
 
     xsories 的国内高(shan)仿(zai)版
 
     * 宝贝：[http://item.taobao.com/item.htm?id=41324392445](http://item.taobao.com/item.htm?id=41324392445)
 
-4. momax
+4. **momax**
 
     据说是一个香港牌子，钢琴家郎朗拿过它上《天天向上》节目。
 
     * 官网：[http://momaxmms.tmall.com/](http://momaxmms.tmall.com/)
     * 宝贝：[http://detail.tmall.com/item.htm?id=41248118532](http://detail.tmall.com/item.htm?id=41248118532)
 
-5. 富图宝
+5. **富图宝**
 
     在天猫上销量很火。
 
     * 官网：[http://futubaosm.tmall.com/](http://futubaosm.tmall.com/)
     * 宝贝（蓝牙一体化）：[http://detail.tmall.com/item.htm?id=39861733380](http://detail.tmall.com/item.htm?id=39861733380)
 
-6. 云腾
+6. **云腾**
 
     本身是产脚架的品牌（很次，三线品牌）。卖的自拍杆有的模仿 quik pod 的味道。
 
     * 官网：[http://yunteng.tmall.com/](http://yunteng.tmall.com/)
     * 宝贝：[http://detail.tmall.com/item.htm?id=41835862076](http://detail.tmall.com/item.htm?id=41835862076)
 
-7. komkia
+7. **komkia**
 
     国产品牌中较为优质的。
 
