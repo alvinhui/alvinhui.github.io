@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Alvin Hui
-tagline: 软件工程师，web前端开发者，Node.js开发者
+tagline: 软件工程师，摄影爱好者
 ---
 {% include JB/setup %}
 
