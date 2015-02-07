@@ -50,7 +50,7 @@ tagline: 软件工程师，摄影爱好者，资深淘宝买家
 <!--                        <li>-->
 <!--                            2011年，就职于 <a href="http://hodfords.com/" target="_blank">Hodfords.com Ltd</a> 广州办事处，任职php开发工程师，负责公司CMS系统的研发。-->
 <!--                        </li>-->
-<!--                    </ul> -->-->
+<!--                    </ul> -->
 <!--                </div>-->
 <!--            </td>-->
 <!--        </tr>-->
