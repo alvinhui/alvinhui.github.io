@@ -1,13 +1,17 @@
 ---
 layout: page
 title: Alvin Hui
-tagline: 软件工程师，摄影爱好者
+tagline: 软件工程师，摄影爱好者，资深淘宝买家
 ---
 {% include JB/setup %}
 
 这是一个基于 [jekyll](http://jekyllrb.com/) 使用 [jekyllbootstrap](http://jekyllbootstrap.com/) 风格建立的个人网站。
 
-网站关注[计算机科学](http://zh.wikipedia.org/wiki/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6)与[软件工程](http://zh.wikipedia.org/wiki/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B)，[web前端开发](https://github.com/JacksonTian/fks)与[Node.js](http://nodejs.org/)的应用。同时关注科技与互联网行业。
+作为软件工程师，博客关注[计算机科学](http://zh.wikipedia.org/wiki/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6)与[软件工程](http://zh.wikipedia.org/wiki/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B)，[web前端开发](https://github.com/JacksonTian/fks)与[Node.js](http://nodejs.org/)的应用。同时关注科技与互联网行业。
+
+作为摄影爱好者，博客关注摄影艺术的历史，摄影器材的选购和摄影技巧的运用。
+
+作为资深淘宝买家，博客会分享一些购物经验。
 
 <ul>
     <li>
