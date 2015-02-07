@@ -3,7 +3,7 @@ layout: post
 category : Front-end
 title: "前端编程规范"
 description: "一套前端编码规范"
-tags : [规范, 标准]
+tags : [规范]
 ---
 {% include JB/setup %}
 
