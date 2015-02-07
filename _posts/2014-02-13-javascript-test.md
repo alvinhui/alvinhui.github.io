@@ -1,6 +1,6 @@
 ---
 layout: post
-category : 前端开发
+category : Front-end
 title: "一套 Javascript 测试题"
 description: "对一套 javascript 测试题进行讲解"
 tags : [Javascript, 试题]

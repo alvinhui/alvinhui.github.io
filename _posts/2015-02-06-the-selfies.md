@@ -1,6 +1,6 @@
 ---
 layout: post
-category : 生活
+category : Shopping
 title: "自拍杆潮一把"
 description: "教你如何选购自拍杆"
 tags : [购物]

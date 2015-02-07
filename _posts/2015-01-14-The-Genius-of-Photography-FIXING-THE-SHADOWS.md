@@ -1,6 +1,6 @@
 ---
 layout: post
-category : 摄影
+category : Photography
 title: "摄影艺术百年史（一）：瞬间的永恒"
 description: "摄影艺术百年史（一）：瞬间的永恒的观看笔记"
 tags : [摄影, 摄影史]

@@ -1,6 +1,6 @@
 ---
 layout: post
-category : 生活
+category : Shopping
 title: "如何选购地毯？"
 description: "教你如何选购地毯，地毯选购指南"
 tags : [购物]

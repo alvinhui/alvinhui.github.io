@@ -1,6 +1,6 @@
 ---
 layout: post
-category : 摄影
+category : Photography
 title: "摄影艺术百年史（三）：快门下的抉择"
 description: "摄影艺术百年史（三）：快门下的抉择"
 tags : [摄影, 摄影史]
