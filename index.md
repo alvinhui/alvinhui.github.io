@@ -5,11 +5,11 @@ tagline: 软件工程师，摄影爱好者，资深淘宝买家
 ---
 {% include JB/setup %}
 
-作为一名软件工程师，我的博客将会关注[计算机科学](http://zh.wikipedia.org/wiki/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6)与[软件工程](http://zh.wikipedia.org/wiki/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B)，[web前端开发](https://github.com/JacksonTian/fks)与[Node.js](http://nodejs.org/)的应用。同时关注科技与互联网行业。
+作为一名软件工程师，博客将会关注[计算机科学](http://zh.wikipedia.org/wiki/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6)与[软件工程](http://zh.wikipedia.org/wiki/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B)，[web前端开发](https://github.com/JacksonTian/fks)与[Node.js](http://nodejs.org/)的应用。同时关注科技与互联网行业。
 
-作为一名摄影爱好者，我的博客将会关注摄影艺术的历史、摄影器材的选购和摄影技巧的运用。
+作为一名摄影爱好者，博客将会关注摄影艺术的历史、摄影器材的选购和摄影技巧的运用。
 
-作为资深淘宝买家，我也会在博客中分享一些我的购物经验。
+作为一名资深淘宝买家，也会在博客中分享一些我的购物经验。
 
 <ul>
     <li>
