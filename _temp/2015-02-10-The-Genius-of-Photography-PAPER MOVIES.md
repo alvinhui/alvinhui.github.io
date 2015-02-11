@@ -1,8 +1,8 @@
 ---
 layout: post
 category : Photography
-title: "摄影艺术百年史（三）：快门下的抉择"
-description: "摄影艺术百年史（三）：快门下的抉择"
+title: "摄影艺术百年史（三）：纸上电影"
+description: "摄影艺术百年史（四）：纸上电影"
 tags : [摄影史]
 ---
 {% include JB/setup %}
@@ -24,7 +24,6 @@ tags : [摄影史]
 《美国人》相册：
 两个基本要素：国旗和十字架
 整个相册像一个故事，故事里弥漫着久违的乐观的态度。
-
 
 <h2 id="">威廉·克莱因</h2>
 
