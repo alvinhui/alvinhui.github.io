@@ -26,7 +26,7 @@ tags : [摄影史]
 
 <h2 id="city">都市摄影</h2>
 
-<h3 id="robert-frank">罗伯特·弗兰克（Robert Frank）</h2>
+<h3 id="robert-frank">罗伯特·弗兰克（Robert Frank）</h3>
 
 ![]()
 
@@ -49,7 +49,7 @@ tags : [摄影史]
 * [罗伯特·弗兰克《美国人》](http://www.cpanet.org.cn/cms/html/shangtu/20100415/44741.html)
 * [摄影师付羽眼中的罗伯特·弗兰克](http://oldlensvision.lofter.com/post/69b7f_c1af2)
 
-<h3 id="william-klein">威廉·克莱因（William Klein）</h2>
+<h3 id="william-klein">威廉·克莱因（William Klein）</h3>
 
 ![]()
 
@@ -67,28 +67,28 @@ tags : [摄影史]
 
 ![]()
 
-<h4 id="arthur-fellig">亚瑟·菲利格（Arthur Fellig）</h2>
+<h4 id="arthur-fellig">亚瑟·菲利格（Arthur Fellig）</h4>
 
 影片中克莱因提到的他最喜欢的摄影师亚瑟·菲利格（Arthur Fellig），他有一个更为人所知的名字：维基（[Weegee](http://en.wikipedia.org/wiki/Weegee)）。
 
 罗伯特·弗兰克与威廉·克莱因的摄影是西方当代摄影家的一个重要转折点。他们的都市摄影可列入纪实摄影的范畴，但与他们之前的纪实摄影不同的是，他们的摄影话语已经不具有基于西方人文主义普遍价值观念的大叙事风格，而是出自他们自身的感动与经验的个人叙事风格。他们的影像话语从本质上来说是对“求助于诸如精神辩证法、意义阐释学、理性主体或劳动主体的解放、财富的增长等某个大叙事（让—弗朗索瓦·奥利塔语）的元话语的质疑”。他们的纪实作品不是为了阐述一种普遍的理念，而是一种基于个人的生命经验、着眼于个人的生命现实的一种个人发言。是对一种大一统的价值观的反叛，是对多元主义的渴望与呼唤，是以影像方式对当时麦卡锡主义一统天下的沉闷的美国现实的一种对抗。弗兰克与克莱因的影像与当时的“垮掉的一代”共有一种精神特征，即对一味追求“进步”、“力量”、与“物质”的美国的“美德”持有一种强烈的怀疑。他们的从个人立场出发的纪实摄影的出现，为后来诸如1970年代的黛安娜·阿巴丝的“新纪实”风格、1980年代的南·戈尔丁的私秘纪实风格做好了准备。
 
-<h3 id="">盖瑞·温诺格兰（Garry Winogrand）</h2>
+<h3 id="">盖瑞·温诺格兰（Garry Winogrand）</h3>
 
 1960年代街道摄影师
 
-<h3 id="">Tony Ray-Jones</h2>
+<h3 id="">Tony Ray-Jones</h3>
 
 http://en.wikipedia.org/wiki/Tony_Ray-Jones
 
 英国摄影师，拍摄1970年代的海滩
 
-<h3 id="">埃德·拉斯查（Edward Ruscha）</h2>
+<h3 id="">埃德·拉斯查（Edward Ruscha）</h3>
 
 http://en.wikipedia.org/wiki/Edward_Ruscha
 
 加油站、停车场
 
-<h3 id="">威廉·埃格尔斯顿（William Eggleston）</h2>
+<h3 id="">威廉·埃格尔斯顿（William Eggleston）</h3>
 
 彩色摄影
