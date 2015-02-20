@@ -19,7 +19,7 @@ tags : [摄影史]
         * [亚瑟·菲利格（Arthur Fellig）](./#arthur-fellig) 
 * [街头摄影](./#street)
     * [盖瑞·温诺格兰（Garry Winogrand）](./#) 
-    * [托尼·雷－乔尼斯（Tony Ray-Jones）](./#) 
+    * [托尼·雷-乔尼斯（Tony Ray-Jones）](./#) 
 * [彩色摄影](./#colorful)
     * [埃德·拉斯查（Edward Ruscha）](./#) 
     * [威廉·埃格尔斯顿（William Eggleston）](./#) 
@@ -79,7 +79,7 @@ tags : [摄影史]
 
 1960年代街道摄影师
 
-<h3 id="">Tony Ray-Jones</h3>
+<h3 id="">托尼·雷-乔尼斯（Tony Ray-Jones）</h3>
 
 http://en.wikipedia.org/wiki/Tony_Ray-Jones
 
