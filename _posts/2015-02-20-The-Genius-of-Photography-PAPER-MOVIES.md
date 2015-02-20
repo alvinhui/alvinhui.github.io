@@ -1,7 +1,7 @@
 ---
 layout: post
 category : Photography
-title: "摄影艺术百年史（三）：纸上电影"
+title: "摄影艺术百年史（四）：纸上电影"
 description: "摄影艺术百年史（四）：纸上电影"
 tags : [摄影史]
 ---
