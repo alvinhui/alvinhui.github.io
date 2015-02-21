@@ -45,7 +45,7 @@ tags : [摄影史]
 
     “这就是罗伯特·弗兰克，他代表着美国摄影最显著的特征，他的照片仅仅是描述，即使他的照片里面有疏离、寂寥、忧郁，他也是客观描述了存在着的、别人的疏离、寂寥、忧郁，他看到了这些，他描述了，而绝不是他自己内心有什么不高兴。”————付羽
 
-![]()
+![《美国人》](http://gtms01.alicdn.com/tps/i1/TB1VM.2HXXXXXXaXVXXUSQXLpXX-500-444.jpg)
 
 #### 链接
 
@@ -54,7 +54,7 @@ tags : [摄影史]
 
 <h3 id="william-klein">威廉·克莱因（William Klein）</h3>
 
-![]()
+![威廉·克莱因](http://gtms03.alicdn.com/tps/i3/TB1jwf_GFXXXXXyaXXX4u3u.FXX-560-560.jpg)
 
 说到弗兰克就不得不提与他同时代的另一个摄影大师[威廉·克莱因](http://baike.baidu.com/view/4037260.htm)（[William Klein](http://en.wikipedia.org/wiki/William_Klein_%28photographer%29)）。
 
@@ -68,7 +68,7 @@ tags : [摄影史]
 
 与弗兰克的摄影相对稳重，和缓，不事嚣张相比，威廉·克莱因更奔放、冲动。如果说弗兰克的摄影是对都市生活的各种滋味细细品味后的结果的话，克莱因的摄影则是一种对都市的不计后果的敌视与攻击。就他们的行动样式来说，弗兰克属于潜伏型，他的照片是在一种冷眼旁观后顺手拈来的收获；克莱因则属于主动出击型，他通过这种积极的出击去攫获他需要的某些东西。
 
-![]()
+![2 kids](http://gtms04.alicdn.com/tps/i4/TB1j3tkHXXXXXahXFXXFTkZ.FXX-560-790.jpg)
 
 <h4 id="arthur-fellig">亚瑟·菲利格（Arthur Fellig）</h4>
 
@@ -80,7 +80,7 @@ tags : [摄影史]
 
 <h3 id="">盖瑞·温诺格兰德（Garry Winogrand）</h3>
 
-![]()
+![盖瑞·温诺格兰德](http://gtms01.alicdn.com/tps/i1/TB13DcVHXXXXXXTaXXXsWSATVXX-487-313.jpg)
 
 1960年代，二战后的欧洲还处在百废待兴时期，摄影的主战场转移到了美国。其中纽约，这座蒸蒸日上的都市，吸引着很多摄影师走向街头，通过自己摄影来记录它时代的倩影。其中最有成就的摄影师，就是[盖瑞·温诺格兰德](http://baike.baidu.com/view/11611044.htm)（[Garry Winogrand](http://en.wikipedia.org/wiki/Garry_Winogrand)）。
 
@@ -98,7 +98,7 @@ tags : [摄影史]
 
     “看到他的相片真是太好了，盖瑞.温诺格兰德的气息无处不在。我看见的不是风格技巧，而是灵魂的慷慨。我就想：这就是对生命的欲望。”————Joel Meyerowitz
 
-![]()
+![](http://gtms02.alicdn.com/tps/i2/TB159wZHXXXXXXPaXXXThPuIVXX-600-405.jpg)
 
 #### 链接
 
@@ -132,7 +132,7 @@ tags : [摄影史]
 
 <h2 id="">威廉·埃格尔斯顿（William Eggleston）</h2>
 
-![]()
+![威廉·埃格尔斯顿](http://gtms04.alicdn.com/tps/i4/TB1EX32HXXXXXczXVXXQRxn0VXX-640-645.jpg)
 
 威廉·埃格尔斯顿（William Eggleston），彩色摄影之父。从1960年代中期开始，埃格尔斯顿开始从事彩色摄影的实验。1965年，他尝试用彩色反转片拍摄，1967年，他开始转向彩色负片拍摄。
 
@@ -148,7 +148,7 @@ tags : [摄影史]
 
     “摄影师继续深入世界拍摄当今的生活，但他们有各自的动机与方式。彩色还是黑白，轻便的35毫米还是笨重的景观相机，胶卷还是数码。他们共同点在于他们独到的观察力，他们看到被我们忽略的事物再展现给我们看，引人深思。对我来说，摄影师是天使而不是神，他们的工作不是去创造，而是更好地理解已经存在的事物，更好地看世界。这样世界才会连贯，有意思，有结果，有意义。要做到这点摄影师不惜身受磨难，也不能像哲学家理论家那样，脱离现实。而且…我认为这就是…老实说，这就是摄影学赋予了她重要的意义。这些地方有灵性，我的工作就是发现它们的灵性。”
 
-![]()
+![天花板](http://gtms03.alicdn.com/tps/i3/TB1c3s0HXXXXXX3aXXX_9jvIVXX-600-383.jpg)
 
 ### 链接
 
