@@ -104,12 +104,15 @@ tags : [摄影史]
 
 1935年，伊文斯受了RA（Resettlement Administration）和FSA（Farm Secuirty Administration）的委托，到美国南部的一些农业州拍摄宣传篇，以缓和大衰退对美国农村地区所产生的影响。伊文斯通过自己的相机，记录和搜集当时农村的情况，最后真实地展现了经济大萧条下美国人民的生活状态。
 
+沃克-埃文斯冷静记录人与周围环境、事物的关系，以丰富的细节与精确的刻画呈现眼前的事实。埃文斯的摄影努力排除任何夸张、感动以及由此而来的歪曲，努力将眼前事物与事实作如实记录。然而，奇怪的是，他的记录越是客观，越是具有一种非他莫属的个性色彩。在他冷静的凝视下，一切事物都获得一种超越了其自身的神圣光彩。而他的纪实摄影，也因此同时具有了观念与记录的双重色彩。 ......埃文斯的作品给出了新的启示和方向，即以客观象征的手法描绘了一幅幅20世纪30年代美国的现实图景，不是祈求通过叙事的方式来讲述美国社会的故事，而是通过他那直接、从容不迫、节制、朴实、照单全收的精密描写的摄影风格，全面展示他对摄影的本质思考。作为法国自然主义文学家古斯塔夫·福楼拜（Gustave Flaubert,1821～1880）的忠实信徒，埃文斯以客观严谨的手法认真实践福楼拜的“精彩地描写不起眼的事物”的观念，并成功地将人与事物通过影像转化为一种超然的、具备神圣性的象征物。
+
 ![x](http://gtms02.alicdn.com/tps/i2/TB1G1OBHXXXXXc4XFXX0FleQFXX-300-390.jpg)
 
 ### 链接
 
 * [沃克·伊文斯作品集](http://www.afterwalkerevans.com/)
 * [美国影像：沃克·伊文斯](http://vision.xitek.com/gallery/201501/19-169954.html)
+* [布勒松的选择-027 Walker EVans 沃克 埃文斯](http://www.antphotos.cn/archiver/?tid-16383.html)
 
 <h2 id="bill-brandt">比尔·布兰特(Bill Brandt)</h2>
 
@@ -126,3 +129,4 @@ Bill Brandt又是引发影像革命的先驱。他利用一架焦点固定、光
 ### 链接
 
 * [比尔·布兰特作品集](http://billbrandtarchive.photoshelter.com/gallery-list)
+* [布勒松的选择-006 Bill Brandt 比尔·布兰德](http://www.antphotos.cn/archiver/?tid-15610.html)
