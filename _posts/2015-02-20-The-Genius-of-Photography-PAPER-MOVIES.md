@@ -20,10 +20,10 @@ tags : [摄影史]
     * [威廉·克莱因（William Klein）](./#william-klein) 
         * [亚瑟·菲利格（Arthur Fellig）](./#arthur-fellig) 
 * [街头摄影](./#street)
-    * [盖瑞·温诺格兰德（Garry Winogrand）](./#) 
-    * [托尼·雷-乔尼斯（Tony Ray-Jones）](./#) 
-* [埃德·拉斯查（Edward Ruscha）](./#) 
-* [威廉·埃格尔斯顿（William Eggleston）](./#) 
+    * [盖瑞·温诺格兰德（Garry Winogrand）](./#garry-winogrand) 
+    * [托尼·雷-乔尼斯（Tony Ray-Jones）](./#tony-ray-jones) 
+* [埃德·拉斯查（Edward Ruscha）](./#edward-ruscha) 
+* [威廉·埃格尔斯顿（William Eggleston）](./#william-eggleston) 
 
 <h2 id="city">都市摄影</h2>
 
@@ -78,7 +78,7 @@ tags : [摄影史]
 
 <h2 id="street">街道摄影</h2>
 
-<h3 id="">盖瑞·温诺格兰德（Garry Winogrand）</h3>
+<h3 id="garry-winogrand">盖瑞·温诺格兰德（Garry Winogrand）</h3>
 
 ![盖瑞·温诺格兰德](http://gtms01.alicdn.com/tps/i1/TB13DcVHXXXXXXTaXXXsWSATVXX-487-313.jpg)
 
@@ -104,7 +104,7 @@ tags : [摄影史]
 
 * [10 Things Garry Winogrand Can Teach You About Street Photography](http://erickimphotography.com/blog/2012/08/20/10-things-garry-winogrand-can-teach-you-about-street-photography/)
 
-<h3 id="">托尼·雷-乔尼斯（Tony Ray-Jones）</h3>
+<h3 id="tony-ray-jones">托尼·雷-乔尼斯（Tony Ray-Jones）</h3>
 
 ![]()
 
@@ -124,13 +124,13 @@ tags : [摄影史]
 
 ![]()
 
-<h2 id="">埃德·拉斯查（Edward Ruscha）</h2>
+<h2 id="edward-ruscha">埃德·拉斯查（Edward Ruscha）</h2>
 
 埃德·拉斯查（[Edward Ruscha](http://en.wikipedia.org/wiki/Edward_Ruscha)），美国当代艺术家。美国波普艺术的开创者之一，观念艺术的先锋人物。这位大师在在1960年代拍摄的一系列摄影集耐人寻味。
 
     “那些艺术家用一些单纯而平庸的照片──无论是护照大头照、房地产广告还是教科书插图，创造了一个迷人恶趣的世界。他们运用伪纪实作品逐渐破坏摄影被认定的信赖感，显示了我们自以为看见的事物，其实是取决于我们想看的部分。”————现代艺术博物馆（Museum of Modern Art， MOMA）首席摄影策展人彼得•加拉西（Peter Galassi）
 
-<h2 id="">威廉·埃格尔斯顿（William Eggleston）</h2>
+<h2 id="william-eggleston">威廉·埃格尔斯顿（William Eggleston）</h2>
 
 ![威廉·埃格尔斯顿](http://gtms04.alicdn.com/tps/i4/TB1EX32HXXXXXczXVXXQRxn0VXX-640-645.jpg)
 
