@@ -31,7 +31,7 @@ tags : [摄影史]
 
 <h3 id="robert-frank">罗伯特·弗兰克（Robert Frank）</h3>
 
-![]()
+![](http://gtms03.alicdn.com/tps/i3/TB1hA8gHpXXXXbcXXXXJwlwTXXX-200-260.jpg)
 
 1950年后的30年，是**摄影旅行**的黄金时期。其中最有影响力的莫过于[罗伯特·弗兰克](http://baike.baidu.com/subview/1615618/10459700.htm)（[Robert Frank](http://en.wikipedia.org/wiki/Robert_Frank)）。
 
@@ -54,7 +54,7 @@ tags : [摄影史]
 
 <h3 id="william-klein">威廉·克莱因（William Klein）</h3>
 
-![威廉·克莱因](http://gtms03.alicdn.com/tps/i3/TB1jwf_GFXXXXXyaXXX4u3u.FXX-560-560.jpg)
+![威廉·克莱因](http://gtms02.alicdn.com/tps/i2/TB127RfHpXXXXbuXXXXj64lTXXX-200-200.jpg)
 
 说到弗兰克就不得不提与他同时代的另一个摄影大师[威廉·克莱因](http://baike.baidu.com/view/4037260.htm)（[William Klein](http://en.wikipedia.org/wiki/William_Klein_%28photographer%29)）。
 
@@ -68,7 +68,7 @@ tags : [摄影史]
 
 与弗兰克的摄影相对稳重，和缓，不事嚣张相比，威廉·克莱因更奔放、冲动。如果说弗兰克的摄影是对都市生活的各种滋味细细品味后的结果的话，克莱因的摄影则是一种对都市的不计后果的敌视与攻击。就他们的行动样式来说，弗兰克属于潜伏型，他的照片是在一种冷眼旁观后顺手拈来的收获；克莱因则属于主动出击型，他通过这种积极的出击去攫获他需要的某些东西。
 
-![2 kids](http://gtms04.alicdn.com/tps/i4/TB1j3tkHXXXXXahXFXXFTkZ.FXX-560-790.jpg)
+![2 kids](http://gtms03.alicdn.com/tps/i3/TB1SvtiHpXXXXaCXXXXpfA1NVXX-400-564.jpg)
 
 <h4 id="arthur-fellig">亚瑟·菲利格（Arthur Fellig）</h4>
 
@@ -106,7 +106,7 @@ tags : [摄影史]
 
 <h3 id="tony-ray-jones">托尼·雷-乔尼斯（Tony Ray-Jones）</h3>
 
-![]()
+![](http://gtms01.alicdn.com/tps/i1/TB19stkHpXXXXXyXXXXZ0UNYXXX-210-230.jpg)
 
 托尼·雷-乔尼斯（[Tony Ray-Jones](http://en.wikipedia.org/wiki/Tony_Ray-Jones)）因其古怪的英国社会生活图像出名的。他于1941年出生于英格兰，在美国读书和生活，随后开始了一系列旅行生活，包括英国的海滨度假地，城市，小镇，乡村，去探索古代遗存风俗和现代休闲生活之间的关系和重要性。他是在美国和摄影结下不解之缘，却将重点回归到了英国。尽管他在年仅30岁就去世了，但是已经形成了独特的视觉风格和审美样式，其中充满着机智，也显示出相当的成熟，同时所发生的影响不仅在当时，也延续了很长的时间。在英国，他占据了战后摄影的一个重要的空间。
 
@@ -122,7 +122,7 @@ tags : [摄影史]
 
     “雷一乔尼斯和其他第五大街摄影师拍摄大街生活，把相机作为人性的延伸。通过相片，我们能感觉到摄影师操控着镜头对准他所见的人间戏剧。要不然，相机只不过是呆板的，任意记录的仪器。”
 
-![]()
+![](http://gtms04.alicdn.com/tps/i4/TB1rAIVHXXXXXXiapXXjjvyIVXX-600-397.jpg)
 
 <h2 id="edward-ruscha">埃德·拉斯查（Edward Ruscha）</h2>
 
@@ -132,7 +132,7 @@ tags : [摄影史]
 
 <h2 id="william-eggleston">威廉·埃格尔斯顿（William Eggleston）</h2>
 
-![威廉·埃格尔斯顿](http://gtms04.alicdn.com/tps/i4/TB1EX32HXXXXXczXVXXQRxn0VXX-640-645.jpg)
+![威廉·埃格尔斯顿](http://gtms04.alicdn.com/tps/i4/TB1e0E2HXXXXXcFXVXX0T8lTXXX-200-201.jpg)
 
 威廉·埃格尔斯顿（William Eggleston），彩色摄影之父。从1960年代中期开始，埃格尔斯顿开始从事彩色摄影的实验。1965年，他尝试用彩色反转片拍摄，1967年，他开始转向彩色负片拍摄。
 
