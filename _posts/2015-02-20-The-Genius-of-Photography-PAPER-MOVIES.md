@@ -13,12 +13,14 @@ tags : [摄影史]
 
 50年代末之后的30年间，是摄影发展旅程上真正的黄金时期，本系列第四集将带领观众重温这趟旅程，看看这段时期最伟大的纸上电影，罗伯特·弗兰克在50年代驾车游遍美国，威廉·克莱因在纽约人行道上单打独斗，此外节目中也将检视彩色年代的来临。
 
+    摄影是前进的，即使技术还不允许。
+
 * [都市摄影](./#city)
     * [罗伯特·弗兰克（Robert Frank）](./#robert-frank) 
     * [威廉·克莱因（William Klein）](./#william-klein) 
         * [亚瑟·菲利格（Arthur Fellig）](./#arthur-fellig) 
 * [街头摄影](./#street)
-    * [盖瑞·温诺格兰（Garry Winogrand）](./#) 
+    * [盖瑞·温诺格兰德（Garry Winogrand）](./#) 
     * [托尼·雷-乔尼斯（Tony Ray-Jones）](./#) 
 * [彩色摄影](./#colorful)
     * [埃德·拉斯查（Edward Ruscha）](./#) 
@@ -49,7 +51,7 @@ tags : [摄影史]
 #### 链接
 
 * [罗伯特·弗兰克《美国人》](http://www.cpanet.org.cn/cms/html/shangtu/20100415/44741.html)
-* [摄影师付羽眼中的罗伯特·弗兰克](http://oldlensvision.lofter.com/post/69b7f_c1af2)
+* [一个中国摄影青年眼中的罗伯特·弗兰克](http://www.vkadoo.com/0052360CED7A11257F90CE353D229E26.wxhtml)
 
 <h3 id="william-klein">威廉·克莱因（William Klein）</h3>
 
@@ -75,15 +77,31 @@ tags : [摄影史]
 
 <h2 id="street">街道摄影</h2>
 
-<h3 id="">盖瑞·温诺格兰（Garry Winogrand）</h3>
+<h3 id="">盖瑞·温诺格兰德（Garry Winogrand）</h3>
 
-1960年代街道摄影师
+![]()
+
+1960年代，二战后的欧洲还处在百废待兴时期，摄影的主战场转移到了美国。其中纽约，这座蒸蒸日上的都市，吸引着很多摄影师走向街头，通过自己摄影来记录它时代的倩影。其中最有成就的摄影师，就是[盖瑞·温诺格兰德](http://baike.baidu.com/view/11611044.htm)（[Garry Winogrand](http://en.wikipedia.org/wiki/Garry_Winogrand)）。
+
+他总是使用一台徕卡M4相机，在美国的大街小巷里拍摄，在人们不注意的情况下进行抓拍。这种拍摄方式有别于那种传统的摆拍方式，也使他成为街头抓拍的鼻祖。他的街拍运用奇特拍摄方式形成的图像：在随意行走的、混乱的行人之间，在某一个瞬间，每一个人的姿态，人与人之间的空间组合，体现出人与人之间的微妙关系。 
+
+他并不乐于拍摄美的东西，而是更喜欢拍摄戏剧性的场景、富有张力的矛盾和有故事性的画面。事实上，他似乎以拍让观众觉得不舒服的东西为乐。他的照片里经常可以看到一种玩世不恭和反严肃的黑色幽默。
+
+    看到他的相片真是太好了，盖瑞.温诺格兰德的气息无处不在。我看见的不是风格技巧，而是灵魂的慷慨。我就想：“这就是对生命的欲望”。————Joel Meyerowitz
+
+![]()
+
+#### 链接
+
+* [10 Things Garry Winogrand Can Teach You About Street Photography](http://erickimphotography.com/blog/2012/08/20/10-things-garry-winogrand-can-teach-you-about-street-photography/)
 
 <h3 id="">托尼·雷-乔尼斯（Tony Ray-Jones）</h3>
 
 http://en.wikipedia.org/wiki/Tony_Ray-Jones
 
 英国摄影师，拍摄1970年代的海滩
+
+    雷一乔尼斯和其他第五大街摄影师拍摄大街生活，把相机作为人性的延伸。通过相片，我们能感觉到摄影师操控着镜头对准他所见的人间戏剧。要不然，相机只不过是呆板的，任意记录的仪器。
 
 <h2 id="colorful">彩色摄影</h2>
 
@@ -96,3 +114,5 @@ http://en.wikipedia.org/wiki/Edward_Ruscha
 <h3 id="">威廉·埃格尔斯顿（William Eggleston）</h3>
 
 彩色摄影
+
+    摄影师继续深入世界拍摄当今的生活，但他们有各自的动机与方式。彩色还是黑白，轻便的35毫米还是笨重的景观相机，胶卷还是数码。他们共同点在于他们独到的观察力，他们看到被我们忽略的事物再展现给我们看，引人深思。对我来说，摄影师是天使而不是神，他们的工作不是去创造，而是更好地理解已经存在的事物，更好地看世界。这样世界才会连贯，有意思，有结果，有意义。要做到这点摄影师不惜身受磨难，也不能像哲学家理论家那样，脱离现实。而且…我认为这就是…老实说，这就是摄影学赋予了她重要的意义。这些地方有灵性，我的工作就是发现它们的灵性。
