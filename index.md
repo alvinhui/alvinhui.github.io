@@ -14,7 +14,7 @@ tagline: 软件工程师，摄影爱好者，资深淘宝买家
 <ul>
     <li>
         <a href="/archive.html">
-            我的文章
+            博文列表
         </a>
     </li>
     <li>
@@ -24,7 +24,7 @@ tagline: 软件工程师，摄影爱好者，资深淘宝买家
     </li>
     <li>
         <a href="http://alvinhui.pp.163.com/">
-            我的摄影
+            摄影作品
         </a>
     </li>
 </ul>
