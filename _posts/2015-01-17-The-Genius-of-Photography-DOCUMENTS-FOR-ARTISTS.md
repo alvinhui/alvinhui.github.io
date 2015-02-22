@@ -2,7 +2,7 @@
 layout: post
 category : Photography
 title: "摄影艺术百年史（二）：大师群像"
-description: "摄影艺术百年史（二）：大师群像"
+description: "BBC之摄影演义，摄影艺术百年史（二）：大师群像"
 tags : [摄影史]
 ---
 {% include JB/setup %}
