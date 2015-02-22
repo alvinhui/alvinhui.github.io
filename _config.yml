@@ -8,8 +8,8 @@ highlighter: pygments
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Alvin's Blog
-tagline: Focus on the web technology
+title : Alvin的博客
+tagline: 关注互联网产业和技术、摄影、网购
 author :
   name : Alvin Hui
   email : alvinxu@outlook.com
