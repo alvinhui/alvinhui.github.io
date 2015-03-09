@@ -23,7 +23,7 @@ tagline: 软件工程师，摄影爱好者，资深淘宝买家
         </a>
     </li>
     <li>
-        <a href="http://alvinhui.pp.163.com/">
+        <a href="http://alvinhui.lofter.com/">
             摄影作品
         </a>
     </li>
