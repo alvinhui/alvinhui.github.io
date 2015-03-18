@@ -10,3 +10,9 @@ tags : [摄影技巧]
 [](http://www.canon.com.cn/specialsite/ds_abcbook/intermediate03.html)
 
 [](http://www.canon.com.cn/specialsite/shootingmode/1-1.html)
+
+决定景深的三要素：
+
+* 光圈
+* 对焦距离
+* 焦距
