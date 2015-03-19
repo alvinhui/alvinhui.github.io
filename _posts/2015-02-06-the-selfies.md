@@ -1,8 +1,8 @@
 ---
 layout: post
 category : Shopping
-title: "自拍杆选购经验谈"
-description: "教你如何选购自拍杆"
+title: "这样自拍才够炫"
+description: "教你如何选购自拍杆，自拍"
 tags : [购物]
 ---
 {% include JB/setup %}
@@ -15,6 +15,12 @@ tags : [购物]
     * [蓝牙按钮](./#bluetooth)
 * [品牌](./#banner)
 * [我的选择](./#choose)
+
+你曾经因为手不够长而饱受自拍困扰？你曾经因为一个人旅行找不到人帮你照相？这时候自拍神器——自拍杆或许可以帮到你：
+
+![自拍杆](http://gd1.alicdn.com/imgextra/i1/1703030603/TB2B.dbaFXXXXX0XXXXXXXXXXXX_!!1703030603.png)
+
+![自拍杆](http://gd1.alicdn.com/imgextra/i1/1703030603/TB2IcHMbpXXXXa2XXXXXXXXXXXX_!!1703030603.jpg)
 
 <h2 id="try">初探</h2>
 
