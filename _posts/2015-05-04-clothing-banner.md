@@ -17,6 +17,7 @@ tags : [购物]
 ### 欧美
 
 ![Zara](http://gtms04.alicdn.com/tps/i4/TB155ciHFXXXXaCaXXXSB5dIXXX-250-250.jpg)
+
 [Zara](http://www.zara.cn/cn/)，西班牙INDITEX集团旗下品牌。
 
 * 特点：产品更新速度快，设计上按照顾客需求设计款式、样式大面积抄袭奢侈品等高端品牌。
@@ -32,35 +33,41 @@ INDITEX旗下品牌另外还有Pull and Bear、Massimo Dutti、Bershka、Stradiv
 * [Oysho](http://www.oysho.com/)为INDITEX集团将ZARA革命性概念衍生到女士内衣及紧身衣的世界，以紧贴潮流的步伐节奏，时尚设计及高品质的女士内衣及紧身衣产品系列。除了紧身衣及内衣系列以外，Oysho还推陈出新了其他系列令品牌的产品选择更趋全面完善，例如授权商品系列、家居服、周末装，配饰以及鞋履系列。
 
 ![H&M](http://gtms02.alicdn.com/tps/i2/TB1GI60HpXXXXcdaXXXSB5dIXXX-250-250.jpg)
+
 [H&M](http://www2.hm.com/zh_cn/index.html)，于1947年由Erling Persson在瑞典创立。
 
 * 特点：价格便宜，质量一般，样式偏向年轻潮流，每季度都能淘到很好看的衣服，大家都熟悉。
 * 价位：牛仔裤 249～299；T 恤 99~149
 
 ![Gap](http://gtms01.alicdn.com/tps/i1/TB1tikkHFXXXXXmaXXXSB5dIXXX-250-250.jpg)
+
 [Gap](http://www.gap.cn/), 是美国最大的服装公司之一，创建于1969年。
 
 * 特点：简约百搭的设计和优质的面料以及版型，简约功能性为主导的潮流风格。
 * 价位：牛仔裤 399；T 恤 179
 
 ![Forever21](http://gtms01.alicdn.com/tps/i1/TB1_vBAHpXXXXccaFXXSB5dIXXX-250-250.jpg)
+
 [Forever21](http://www.forever21.cn/), 是美国当下最火热的女装品牌，也是美国的标志性快时尚品牌。
 
 * 特点：价格便宜，款式更新快，质量一般。
 * 价位：牛仔裤 159～199；T 恤 69～109
 
 ![C&A](http://gtms03.alicdn.com/tps/i3/TB1v93KHpXXXXcOaXXXSB5dIXXX-250-250.jpg)
+
 [C&A](http://www.canda.cn/)，是荷兰全球著名的时装零售品牌，以其适合多种场合，并为全家带来领先的时尚潮流产品而享誉全球。 
 
 * 价位：牛仔裤 199～249；T 恤 79～129
 
 ![Topshop](http://gtms02.alicdn.com/tps/i2/TB1uzA4HpXXXXcAaXXXJZCaIXXX-250-227.jpg)
+
 [Topshop](http://topshop.tmall.com/)，属于英国最大的服装零售商Arcadia集团。
 
 * 特点： 价格适中，英伦学院风。
 * 价位：牛仔裤 420；T 恤 199～249
 
 ![asos](http://gtms02.alicdn.com/tps/i2/TB16ckBHpXXXXcIaXXXSB5dIXXX-250-250.jpg)
+
 [asos](http://www.asos.cn/)，英文“as seen on screen”的简写，英国快销品牌。
 
 * 特点：价格适中，质量不错，样式覆盖面极广，衣服特点不如ZARA那么明显。
@@ -69,16 +76,19 @@ INDITEX旗下品牌另外还有Pull and Bear、Massimo Dutti、Bershka、Stradiv
 ### 亚洲
 
 ![UNIQLO](http://gtms01.alicdn.com/tps/i1/TB1aRN2HpXXXXbcapXXSB5dIXXX-250-250.jpg)
+
 [UNIQLO](http://www.uniqlo.cn/)，日本服装品牌，由日本迅销公司建立于1963年，当年是一家销售西服的小服装店，现已成为国际知名服装品牌。
 
 * 特点：在知乎上面好像是最受欢迎的服装品牌，风格休闲简单，就算不会搭配的人在里面随便拿两件也不会丑到哪里去，质量比欧美快销品牌好，价格合适。
 
 ![muji](http://gtms03.alicdn.com/tps/i3/TB19aU.HpXXXXb.apXXnqb22pXX-220-149.jpg)
+
 [muji](http://www.muji.com.cn/)创始于日本，其本意是“没有商标与优质”。
 
 * 特点：纯朴、简单、环保，价格略贵。
 
 ![earth music&ecology](http://gtms03.alicdn.com/tps/i3/TB1UYIoHFXXXXbfXVXXoZHbVVXX-309-103.jpg)
+
 [earth music&ecology](http://earthmusic.tmall.com/)，在日本和国内都受欢迎有名气的少女品牌。
 
 * 特点：并不是层层叠穿的完全森女，它更加简单，更加平易近人。在销售量上，这个品牌连续几年都是日本少女品牌的第一位，实在很受欢迎。 
