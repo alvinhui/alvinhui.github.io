@@ -8,13 +8,13 @@ highlighter: pygments
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Alvin的博客
+title : Alvin Hui
 tagline: 关注互联网产业和技术、摄影、网购
 author :
   name : Alvin Hui
   email : alvinxu@outlook.com
   github : alvinhui
-  twitter : none
+  weibo : 2010alvin
   feedburner : none
 
 # The production_url is only used when full-domain names are needed

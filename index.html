@@ -1,9 +1,44 @@
----
-layout: page
-title : Blogs
-header : 我的文章
----
-{% include JB/setup %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alvin Hui - 梧忌</title>
+    <style>
+        html{
+            height: 100%;
+        }
+        body{
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        img{
+            width: 100%;
+        }
+        ul{
+            position: fixed;
+            left: 100px;
+            top: 100px;
+            font-size: 24px;
+        }
 
-{% assign posts_collate = site.posts %}
-{% include JB/posts_collate %}
+        li{
+            margin-bottom: 12px;
+        }
+
+        a{
+            text-decoration: none;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <img src="http://gtms02.alicdn.com/tps/i2/TB1QEDMIXXXXXbNXVXXTh8J1VXX-1680-1146.jpg" />
+    <ul>
+        <li><a href="/archive.html">Posts</a></li>
+        <li><a href="https://github.com/alvinhui">Github</a></li>
+        <li><a href="http://alvinhui.lofter.com" target="_blank">Photography</a></li>
+    </ul>
+</body>
+</html>
