@@ -943,6 +943,9 @@ pre {
 	Smartphone
 */
 @media only screen and (min-width: 320px) and (max-width: 767px) {
+  header{
+    display: none;
+  }
   img {
     max-width: 100%;
   }
@@ -951,6 +954,9 @@ pre {
 	Tablet
 */
 @media only screen and (min-width: 768px) {
+  header{
+    display: none;
+  }
   .the-header .unit-head {
     padding: 0;
   }
