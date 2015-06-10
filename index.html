@@ -14,7 +14,8 @@
             overflow: hidden;
         }
         img{
-            width: 100%;
+            width: auto;
+            height: 100%;
         }
         ul{
             position: fixed;
@@ -30,6 +31,14 @@
         a{
             text-decoration: none;
             color: #000000;
+        }
+
+
+        @media only screen and (min-width: 768px) {
+            img{
+                width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
