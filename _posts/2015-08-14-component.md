@@ -497,34 +497,34 @@ TBC 和原有的系统并不冲突，只需要直接使用 `@ali/kissy-loader`  
 * 组件创建时，配置语言包：
 
     ```
-    var I18N = require('@ali/trade-util/lib/i18n');
+        var I18N = require('@ali/trade-util/lib/i18n');
 
-    I18N.register({
-        'zh-CN': {
-        'combinDo.note': '淘宝提醒您：'
-    },
-        'zh-TW': {
-        'combinDo.note': '淘寶提醒您：'
-    }
-    });
-
-    module.exports = React.createClass({
-        render: function(){
-            return <div>
-                {I18N.t('combinDo.note')}
-
-                .......
-            </div>;
+        I18N.register({
+            'zh-CN': {
+            'combinDo.note': '淘宝提醒您：'
+        },
+            'zh-TW': {
+            'combinDo.note': '淘寶提醒您：'
         }
-    });
+        });
+
+        module.exports = React.createClass({
+            render: function(){
+                return <div>
+                    {I18N.t('combinDo.note')}
+
+                    .......
+                </div>;
+            }
+        });
     ```
 * 应用启动时，指定语言：
 
     ```
-    var langs = ['zh-CN', 'zh-TW'];
-    var I18N = require('@ali/trade-util/lib/i18n');
-    var i18n = _.isString(window.i18n) && _.indexOf(langs, window.i18n)>-1 ? window.i18n : langs[0];
-    I18N.lang(i18n);
+        var langs = ['zh-CN', 'zh-TW'];
+        var I18N = require('@ali/trade-util/lib/i18n');
+        var i18n = _.isString(window.i18n) && _.indexOf(langs, window.i18n)>-1 ? window.i18n : langs[0];
+        I18N.lang(i18n);
     ```
 
 ### 工程化
