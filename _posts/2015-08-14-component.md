@@ -111,19 +111,19 @@ __订单管理平台化的产品特性要求我们技术需要提供一种平台
 
 第一层是公共样式部分，例如像以前的 [reset.css](http://baike.baidu.com/view/5186496.htm)。现在也会有这样的部分。我也将所有的标签进行了一些重置和默认赋值，把它们封装成 @ali/rc-trade-tag，调用方式如下：
 
-```
-var A = require('@ali/rc-trade-tag/lib/A');
+    ```
+    var A = require('@ali/rc-trade-tag/lib/A');
 
-//...
+    //...
 
-render(){
-return <div>
-<A href="">Link</A>
-</div>;
-}
+    render(){
+    return <div>
+    <A href="">Link</A>
+    </div>;
+    }
 
-//...
-```
+    //...
+    ```
 
 再之上是通用组件，它们不带有任何的业务逻辑，只负责展示或者交互的抽象。这一层就类似于 [Bootstrap](http://react-bootstrap.github.io) 了。调用方式如下：
 
