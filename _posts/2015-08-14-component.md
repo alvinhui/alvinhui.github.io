@@ -332,29 +332,23 @@ Component 会发出一个删除的 action ，IO 中监听该 action 并请求 Se
 
 * 新建一个 plugin：
 
-```javascript
-var _ = require('lodash');
+    ```
+    var _ = require('lodash');
 
-var time = 0;
-var webww = {
-    init: function(){
-        if(_.isObject(window.Light) && _.isFunction(window.Light.light)){
-            window.Light.light();
-            time = 0;
+    var time = 0;
+    var webww = {
+        init: function(){
+        if(_.isObject(window.Light) && _.isFunction(window.Light.light)){window.Light.light();time = 0;
         }else{
-            if(5>time){
-                setTimeout(function(){
-                    webww.init();
-
-                    time++;
-                }, 500);
-            }
+        if(5>time){
+            setTimeout(function(){webww.init();time++;}, 500);
         }
-    }
-};
+        }
+        }
+    };
 
-module.exports = webww;
-```
+    module.exports = webww;
+    ```
 * 列表渲染完成后及刷新时调用该 plugin:
 
     ```
