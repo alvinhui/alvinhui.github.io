@@ -259,18 +259,18 @@ __订单管理平台化的产品特性要求我们技术需要提供一种平台
 
 * 首先，为 `OrderStore` 设置一个是否选中的状态：`_selected`（为什么是下划线开头？因为在 Store 中的数据都是从服务端获取的，字段名都是服务端给出，所有前端自定义的状态字段都会以下划线开头用以区分）：
 
-![_selected](http://gtms04.alicdn.com/tps/i4/TB1Rw4NJXXXXXcdXFXXIWcvKVXX-264-51.png)
+    ![_selected](http://gtms04.alicdn.com/tps/i4/TB1Rw4NJXXXXXcdXFXXIWcvKVXX-264-51.png)
 * 然后 `OrderHead` 中的 input 通过读取 OrderStore 中的 `_selected` 来决定是否选中：
 
-![](http://gtms02.alicdn.com/tps/i2/TB1VTFNJXXXXXaYXFXXTG0wVpXX-495-81.png)
-![](http://gtms01.alicdn.com/tps/i1/TB1I_0RJXXXXXc3XpXXx.gV9XXX-832-29.png)
+    ![](http://gtms02.alicdn.com/tps/i2/TB1VTFNJXXXXXaYXFXXTG0wVpXX-495-81.png)
+    ![](http://gtms01.alicdn.com/tps/i1/TB1I_0RJXXXXXc3XpXXx.gV9XXX-832-29.png)
 * `OrdersOperate` 中“全选”动作触发一个 action （canSelectOrderIds 中存储的是当前列表所有可进行选择的 OrderID）：
 
-![](http://gtms02.alicdn.com/tps/i2/TB1dcdLJXXXXXahXVXXWeLo8FXX-789-65.png)
-![](http://gtms02.alicdn.com/tps/i2/TB19wFUJXXXXXa0XpXXyr0w_pXX-847-67.png)
+    ![](http://gtms02.alicdn.com/tps/i2/TB1dcdLJXXXXXahXVXXWeLo8FXX-789-65.png)
+    ![](http://gtms02.alicdn.com/tps/i2/TB19wFUJXXXXXa0XpXXyr0w_pXX-847-67.png)
 * `OrderStore` 中监听了这个 action ，根据传过来的 orderIds 和需要设置的值找出相关 Order 进行设置：
 
-![](http://gtms01.alicdn.com/tps/i1/TB1fFN3JXXXXXXgXXXXSxHCUXXX-506-70.png)
+    ![](http://gtms01.alicdn.com/tps/i1/TB1fFN3JXXXXXXgXXXXSxHCUXXX-506-70.png)
 
 由于 `OrderHead` 这个 Component 是通过读取 `OrderStore` 的数据来决定是否选中 input 的，所以 Store 的变化会触发 Component 的刷新。
 
@@ -355,7 +355,6 @@ Component 会发出一个删除的 action ，IO 中监听该 action 并请求 Se
 
     module.exports = webww;
     ```
-
 * 列表渲染完成后及刷新时调用该 plugin:
 
     ```
@@ -363,15 +362,15 @@ Component 会发出一个删除的 action ，IO 中监听该 action 并请求 Se
 
     React.createClass({
 
-    componentDidMount(){
-        webww.init();
-    },
+        componentDidMount(){
+            webww.init();
+        },
 
-    componentDidUpdate(){
-        webww.init();
-    },
+        componentDidUpdate(){
+            webww.init();
+        },
 
-    //...
+        //...
     });
     ```
 
@@ -438,7 +437,7 @@ TBC 和原有的系统并不冲突，只需要直接使用 `@ali/kissy-loader`  
     var share = require('@ali/trade-util/lib/TBC').getPlugin('share');
 
     share.then(function(share){
-    share.init(self.props.param);
+        share.init(self.props.param);
     });
     ```
 
