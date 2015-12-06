@@ -331,7 +331,8 @@ Component 会发出一个删除的 action ，IO 中监听该 action 并请求 Se
 发现并不 work 。后才知道这个模块并没有 exports 出来。再查看就知道自己需要曲线救国了：
 
 * 新建一个 plugin：
-    ```
+
+    ```javascript
     var _ = require('lodash');
 
     var time = 0;
@@ -355,6 +356,7 @@ Component 会发出一个删除的 action ，IO 中监听该 action 并请求 Se
     module.exports = webww;
     ```
 * 列表渲染完成后及刷新时调用该 plugin:
+
     ```
     var webww = require('../plugins/webww');
 
