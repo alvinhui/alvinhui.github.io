@@ -117,9 +117,9 @@ __订单管理平台化的产品特性要求我们技术需要提供一种平台
     //...
 
     render(){
-    return <div>
-    <A href="">Link</A>
-    </div>;
+        return <div>
+            <A href="">Link</A>
+        </div>;
     }
 
     //...
@@ -127,26 +127,26 @@ __订单管理平台化的产品特性要求我们技术需要提供一种平台
 
 再之上是通用组件，它们不带有任何的业务逻辑，只负责展示或者交互的抽象。这一层就类似于 [Bootstrap](http://react-bootstrap.github.io) 了。调用方式如下：
 
-```
-var Dialog = require('@ali/rc-trade-common/lib/Dialog');
+    ```
+    var Dialog = require('@ali/rc-trade-common/lib/Dialog');
 
-//...
+    //...
 
-render(){
-return <div>
-<Dialog
-ref='dialog'
-visible={this.state.visible}
-onClose={this.handleClose}
-style={{width: 360}}
->
-test
-</Dialog>
-</div>;
-}
+    render(){
+        return <div>
+            <Dialog
+                ref='dialog'
+                visible={this.state.visible}
+                onClose={this.handleClose}
+                style={{width: 360}}
+            >
+                test
+            </Dialog>
+        </div>;
+    }
 
-//...
-```
+    //...
+    ```
 
 最上层就是是业务组件，它是稳定的业务逻辑的抽象。它的意义在于，有些业务逻辑是在页面中或者我们整个应用中是通用的，复用性很高；另一方面，业务组件的抽象可以让不同的业务方自己去管理这些组件。
 
@@ -162,43 +162,43 @@ test
 
 一种做法是使用 [Inline Styles](https://facebook.github.io/react/tips/inline-styles.html)。但它不是万能的，它面临着另外一些问题，例如无法使用伪类选择器：
 
-```
-a{
-color: blue;
-}
-a:hover{
-//....
-}
+    ```
+    a{
+        color: blue;
+    }
+    a:hover{
+        //....
+    }
 
-<a style={{color: 'blue'}}>
-...
-</a>
-```
+    <a style={{color: 'blue'}}>
+        ...
+    </a>
+    ```
 
 为了能够使用伪类选择器，我在社区中狩猎到了 [Radium](https://github.com/FormidableLabs/radium) ，它可以让 Inline Style 的写法支持伪类选择器：
 
-```
-var Radium = require('radium');
-var React = require('react');
+    ```
+    var Radium = require('radium');
+    var React = require('react');
 
-@Radium
-class Button extends React.Component {
-render() {
-return <button style={styles.base}>
-{this.props.children}
-</button>;
-}
-}
+    @Radium
+    class Button extends React.Component {
+        render() {
+            return <button style={styles.base}>
+                {this.props.children}
+            </button>;
+        }
+    }
 
-var styles = {
-base: {
-color: '#fff',
-':hover': {
-backgroundColor: '#0074d9'
-}
-}
-};
-```
+    var styles = {
+        base: {
+            color: '#fff',
+                ':hover': {
+                backgroundColor: '#0074d9'
+            }
+        }
+    };
+    ```
 
 我们曾经在周会上讨论过这个库，认为它有三个问题：
 
@@ -222,9 +222,9 @@ backgroundColor: '#0074d9'
 
 比如说，性别选择的下拉框，它是一个非常通用化的功能，照理说是很适合被当做组件来提供的。但是究竟如何封装它，我们就有些犯难了。这个组件里除了界面，还有数据，这些数据应当内置在组件里吗？理论上从组件的封装性来说，是都应当在里面的，于是就这么造了一个组件：
 
-```
-<GenderSelect></GenderSelect>
-```
+    ```
+    <GenderSelect></GenderSelect>
+    ```
 
 这个组件非常美好，只需直接放在任意的界面中，就能显示带有性别数据的下拉框了。性别的数据很自然地是放在组件的实现内部，一个写死的数组中。这个例子太简单了，我们改一下，改成交易状态的下拉框。
 
@@ -277,14 +277,14 @@ backgroundColor: '#0074d9'
 __Flux 只是 Facebook 提出的一套模式思路，它并没有具体的实现。我们自己实现了一套 Flux 的 API ，命名为 Relax(@ali/relax)。__
 
 
-```
-╔═════════╗       ╔════════╗       ╔═════════════════╗
-║ Actions ║──────>║ Stores ║──────>║ View Components ║
-╚═════════╝       ╚════════╝       ╚═════════════════╝
-^                                      │
-└──────────────────────────────────────┘
+    ```
+    ╔═════════╗       ╔════════╗       ╔═════════════════╗
+    ║ Actions ║──────>║ Stores ║──────>║ View Components ║
+    ╚═════════╝       ╚════════╝       ╚═════════════════╝
+        ^                                      │
+        └──────────────────────────────────────┘
 
-```
+    ```
 
 #### 前后端如何进行通讯？
 
@@ -322,56 +322,58 @@ Component 会发出一个删除的 action ，IO 中监听该 action 并请求 Se
 
 正当我踌躇满志地：
 
-```
-TB.Global.use('fn-webww', function(G, webww) {
-webww.init();
-});
-```
+    ```
+    TB.Global.use('fn-webww', function(G, webww) {
+        webww.init();
+    });
+    ```
+
 发现并不 work 。后才知道这个模块并没有 exports 出来。再查看就知道自己需要曲线救国了：
 
 * 新建一个 plugin：
 
-```
-var _ = require('lodash');
+    ```
+    var _ = require('lodash');
 
-var time = 0;
-var webww = {
-init: function(){
-if(_.isObject(window.Light) && _.isFunction(window.Light.light)){
-window.Light.light();
-time = 0;
-}else{
-if(5>time){
-setTimeout(function(){
-webww.init();
+    var time = 0;
+    var webww = {
+        init: function(){
+            if(_.isObject(window.Light) && _.isFunction(window.Light.light)){
+                window.Light.light();
+                time = 0;
+            }else{
+                if(5>time){
+                    setTimeout(function(){
+                        webww.init();
 
-time++;
-}, 500);
-}
-}
-}
-};
+                        time++;
+                    }, 500);
+                }
+            }
+        }
+    };
 
-module.exports = webww;
-```
+    module.exports = webww;
+    ```
+
 * 列表渲染完成后及刷新时调用该 plugin:
 
-```
-var webww = require('../plugins/webww');
+    ```
+    var webww = require('../plugins/webww');
 
-React.createClass({
+    React.createClass({
 
-componentDidMount(){
-webww.init();
-},
+    componentDidMount(){
+        webww.init();
+    },
 
-componentDidUpdate(){
-webww.init();
-},
+    componentDidUpdate(){
+        webww.init();
+    },
 
-//...
-});
-```
+    //...
+    });
+    ```
 
 #### TBC 插件
 
@@ -388,57 +390,57 @@ TBC 和原有的系统并不冲突，只需要直接使用 `@ali/kissy-loader`  
 
 实现的代码非常简单：
 
-```
-var _ = require('lodash');
-var RSVP = require('rsvp');
-var loader = require('@ali/kissy-loader');
+    ```
+    var _ = require('lodash');
+    var RSVP = require('rsvp');
+    var loader = require('@ali/kissy-loader');
 
-var ROOT = 'tbc';
-var INDEX = 'index';
+    var ROOT = 'tbc';
+    var INDEX = 'index';
 
-var config = {
-share: '2.0.3'
-};
+    var config = {
+        share: '2.0.3'
+    };
 
-var TBC = {};
+    var TBC = {};
 
-var getUrl = function(name, index){
-return [ROOT, name, config[name], index || INDEX].join('/');
-};
+    var getUrl = function(name, index){
+        return [ROOT, name, config[name], index || INDEX].join('/');
+    };
 
-var getPlugin = function(name, index){
-return new RSVP.Promise(function(resolve){
-if( ! TBC[name]){
-loader.use(getUrl(name, index), function(S, O){
-TBC[name] = O;
-resolve(O);
-});
-}else{
-resolve(TBC[name]);
-}
-});
-};
+    var getPlugin = function(name, index){
+        return new RSVP.Promise(function(resolve){
+            if( ! TBC[name]){
+                loader.use(getUrl(name, index), function(S, O){
+                    TBC[name] = O;
+                    resolve(O);
+                });
+            }else{
+                resolve(TBC[name]);
+            }
+        });
+    };
 
-module.exports = {
-getPlugin: function(name, index){
-if(_.indexOf(_.keys(config), name)>-1){
-return getPlugin(name, index);
-}else{
-//@TODO:log 记录该错误
-}
-}
-};
-```
+    module.exports = {
+        getPlugin: function(name, index){
+            if(_.indexOf(_.keys(config), name)>-1){
+                return getPlugin(name, index);
+            }else{
+                //@TODO:log 记录该错误
+            }
+        }
+    };
+    ```
 
 在调用端，使用方式如下：
 
-```
-var share = require('@ali/trade-util/lib/TBC').getPlugin('share');
+    ```
+    var share = require('@ali/trade-util/lib/TBC').getPlugin('share');
 
-share.then(function(share){
-share.init(self.props.param);
-});
-```
+    share.then(function(share){
+    share.init(self.props.param);
+    });
+    ```
 
 #### 第三方插件
 
@@ -452,31 +454,31 @@ share.init(self.props.param);
 
 * 新建一个 plugin：
 
-```
-var loader = require('@ali/kissy-loader');
+    ```
+    var loader = require('@ali/kissy-loader');
 
-module.exports = {
-init(){
-loader.use('tb/support/1.8.0/robot/js/kissy_robot_recommend',function(S, robot) {
-robot.init();
-});
-}
-};
-```
+    module.exports = {
+        init(){
+            loader.use('tb/support/1.8.0/robot/js/kissy_robot_recommend',function(S, robot) {
+                robot.init();
+            });
+        }
+    };
+    ```
 * 页面渲染完成后调用：
 
-```
-var robot = require('../plugins/robot');
+    ```
+    var robot = require('../plugins/robot');
 
-var App = React.createClass({
+    var App = React.createClass({
 
-componentDidMount(){
-robot.init();
-},
+        componentDidMount(){
+            robot.init();
+        },
 
-//...
-});
-```
+        //...
+    });
+    ```
 
 ### 多语言
 
@@ -495,36 +497,36 @@ robot.init();
 * 语言管理库：`@ali/trade-util/lib/i18n` （该工具由@锂锌 提供）
 * 组件创建时，配置语言包：
 
-```
-var I18N = require('@ali/trade-util/lib/i18n');
+    ```
+    var I18N = require('@ali/trade-util/lib/i18n');
 
-I18N.register({
-'zh-CN': {
-'combinDo.note': '淘宝提醒您：'
-},
-'zh-TW': {
-'combinDo.note': '淘寶提醒您：'
-}
-});
+    I18N.register({
+        'zh-CN': {
+        'combinDo.note': '淘宝提醒您：'
+    },
+        'zh-TW': {
+        'combinDo.note': '淘寶提醒您：'
+    }
+    });
 
-module.exports = React.createClass({
-render: function(){
-return <div>
-{I18N.t('combinDo.note')}
+    module.exports = React.createClass({
+        render: function(){
+            return <div>
+                {I18N.t('combinDo.note')}
 
-.......
-</div>;
-}
-});
-```
+                .......
+            </div>;
+        }
+    });
+    ```
 * 应用启动时，指定语言：
 
-```
-var langs = ['zh-CN', 'zh-TW'];
-var I18N = require('@ali/trade-util/lib/i18n');
-var i18n = _.isString(window.i18n) && _.indexOf(langs, window.i18n)>-1 ? window.i18n : langs[0];
-I18N.lang(i18n);
-```
+    ```
+    var langs = ['zh-CN', 'zh-TW'];
+    var I18N = require('@ali/trade-util/lib/i18n');
+    var i18n = _.isString(window.i18n) && _.indexOf(langs, window.i18n)>-1 ? window.i18n : langs[0];
+    I18N.lang(i18n);
+    ```
 
 ### 工程化
 
