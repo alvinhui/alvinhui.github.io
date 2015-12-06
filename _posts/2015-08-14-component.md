@@ -441,11 +441,11 @@ TBC 和原有的系统并不冲突，只需要直接使用 `@ali/kissy-loader`  
     var loader = require('@ali/kissy-loader');
 
     module.exports = {
-        init(){
-            loader.use('tb/support/1.8.0/robot/js/kissy_robot_recommend',function(S, robot) {
-                robot.init();
-            });
-        }
+    init(){
+    loader.use('tb/support/1.8.0/robot/js/kissy_robot_recommend',function(S, robot) {
+    robot.init();
+    });
+    }
     };
     ```
 * 页面渲染完成后调用：
