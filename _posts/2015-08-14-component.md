@@ -331,7 +331,6 @@ Component 会发出一个删除的 action ，IO 中监听该 action 并请求 Se
 发现并不 work 。后才知道这个模块并没有 exports 出来。再查看就知道自己需要曲线救国了：
 
 * 新建一个 plugin：
-
     ```
     var _ = require('lodash');
 
@@ -356,7 +355,6 @@ Component 会发出一个删除的 action ，IO 中监听该 action 并请求 Se
     module.exports = webww;
     ```
 * 列表渲染完成后及刷新时调用该 plugin:
-
     ```
     var webww = require('../plugins/webww');
 
@@ -496,35 +494,35 @@ TBC 和原有的系统并不冲突，只需要直接使用 `@ali/kissy-loader`  
 * 语言管理库：`@ali/trade-util/lib/i18n` （该工具由@锂锌 提供）
 * 组件创建时，配置语言包：
 
-    ```
-        var I18N = require('@ali/trade-util/lib/i18n');
+    ```javascript
+    var I18N = require('@ali/trade-util/lib/i18n');
 
-        I18N.register({
-            'zh-CN': {
-            'combinDo.note': '淘宝提醒您：'
-        },
-            'zh-TW': {
-            'combinDo.note': '淘寶提醒您：'
+    I18N.register({
+        'zh-CN': {
+        'combinDo.note': '淘宝提醒您：'
+    },
+        'zh-TW': {
+        'combinDo.note': '淘寶提醒您：'
+    }
+    });
+
+    module.exports = React.createClass({
+        render: function(){
+            return <div>
+                {I18N.t('combinDo.note')}
+
+                .......
+            </div>;
         }
-        });
-
-        module.exports = React.createClass({
-            render: function(){
-                return <div>
-                    {I18N.t('combinDo.note')}
-
-                    .......
-                </div>;
-            }
-        });
+    });
     ```
 * 应用启动时，指定语言：
 
-    ```
-        var langs = ['zh-CN', 'zh-TW'];
-        var I18N = require('@ali/trade-util/lib/i18n');
-        var i18n = _.isString(window.i18n) && _.indexOf(langs, window.i18n)>-1 ? window.i18n : langs[0];
-        I18N.lang(i18n);
+    ```javascript
+    var langs = ['zh-CN', 'zh-TW'];
+    var I18N = require('@ali/trade-util/lib/i18n');
+    var i18n = _.isString(window.i18n) && _.indexOf(langs, window.i18n)>-1 ? window.i18n : langs[0];
+    I18N.lang(i18n);
     ```
 
 ### 工程化
