@@ -78,16 +78,13 @@ module.exports = runServer;
 窗口内有 8 个输出，它们分别是（见括号数字）：
 
 1. createServer
-
     * Building Dependency Graph（1）
-
         1. Crawling File System（2）
         2. Building in-memory fs for JavaScript（4）
         3. Building Haste Map（5）
     * Loading bundles layout（3）
 2. processRequest
 3. request:/index.android.bundle?platform=android&dev=true（6）
-
     1. find dependencies（7）
     2. transform（8）
 
@@ -332,19 +329,19 @@ RN android 的编译打包和普通 android 应用没有区别，android 的开�
 
 1. App 程序主入口 [MainActivity](https://github.com/facebook/react-native/blob/0.14.0/local-cli/generator-android/templates/package/MainActivity.java#L29) 在 debug 模式时开启 DeveloperSupport：
 
-````
-ReactInstanceManager.builder().setUseDeveloperSupport(BuildConfig.DEBUG)
-```
+    ````
+    ReactInstanceManager.builder().setUseDeveloperSupport(BuildConfig.DEBUG)
+    ```
 2. [ReactInstanceManager](https://github.com/facebook/react-native/blob/0.14.0/ReactAndroid/src/main/java/com/facebook/react/ReactInstanceManager.java#L196)（构建 React 的运行环境，发送事件到 JS， 驱动整个 React 的运转。 通过 builder 可以创建不同的 React 环境：例如内置 JS 文件路径， 开发环境 dev 的 JS 名字，是否支持调试等）：创建 DevSupportManager：
 
-```
-mDevSupportManager = new DevSupportManager(...);
-```
+    ```
+    mDevSupportManager = new DevSupportManager(...);
+    ```
 3. [ReactRootView](https://github.com/facebook/react-native/blob/0.14.0/ReactAndroid/src/main/java/com/facebook/react/ReactRootView.java#L294)（Android 标准的 FrameLayout 对象，另外一个功能是提供 React 入口）：初始化 React 世界：
 
-```
-mReactInstanceManager.attachMeasuredRootView(this)
-```
+    ```
+    mReactInstanceManager.attachMeasuredRootView(this)
+    ```
 4. ReactInstanceManager 根据当前 DeveloperSupport 是否开启来决定从哪里加载 JS（[createReactContextInBackground](https://github.com/facebook/react-native/blob/0.14.0/ReactAndroid/src/main/java/com/facebook/react/ReactInstanceManager.java#L232)）：
 
 ```
