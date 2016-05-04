@@ -217,12 +217,12 @@ Reload JS 通过重新发送请求就能做到了，那在 Dev Settings 中设�
 最终执行的命令是：
 
 ```
-java -Xdock:name=Gradle -Xdock:icon=<Project_Dir>/android/media/gradle.icns -Dorg.gradle.appname=gradlew -classpath <Project_Dir>/android/gradle/wrapper/gradle-wrapper.jar org.gradle.wrapper.GradleWrapperMain installDebug
+java -Xdock:name=Gradle -Xdock:icon=Project_Dir/android/media/gradle.icns -Dorg.gradle.appname=gradlew -classpath Project_Dir/android/gradle/wrapper/gradle-wrapper.jar org.gradle.wrapper.GradleWrapperMain installDebug
 ```
 
 原来，RN 中打包编译是由 [Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html) 来实现的。Gradle Wrapper 是一种方便的使用 [Gradle](https://github.com/gradle/gradle) 的方法，他包括了为支持 Windows 的批处理脚本和支持类 Unix 的 shell 脚本。这些脚本在不安装 Gradle 时候，也可以用 Gradle。
 
-通过 [<Project_Dir>/android/gradle/wrapper/gradle-wrapper.properties](https://github.com/facebook/react-native/blob/0.14.0/local-cli/generator-android/templates/bin/gradle/wrapper/gradle-wrapper.properties) 我们还可以知道 RN 使用的是 2.4 版本的 Gradle 。
+通过 [Project_Dir/android/gradle/wrapper/gradle-wrapper.properties](https://github.com/facebook/react-native/blob/0.14.0/local-cli/generator-android/templates/bin/gradle/wrapper/gradle-wrapper.properties) 我们还可以知道 RN 使用的是 2.4 版本的 Gradle 。
 
 接下来针对 Gradle 做一个简单的介绍。
 
@@ -232,7 +232,7 @@ java -Xdock:name=Gradle -Xdock:icon=<Project_Dir>/android/media/gradle.icns -Dor
 
     Gradle is a build tool with a focus on build automation and support for multi-language development.
 
-Gradle 遵循约定优于配置的原则，它的主要配置文件是 build.gradle 。打开 `<Project_Dir>/android/` 文件夹，就可以看到这个配置文件：
+Gradle 遵循约定优于配置的原则，它的主要配置文件是 build.gradle 。打开 `Project_Dir/android/` 文件夹，就可以看到这个配置文件：
 
 ```
 ├── app
@@ -260,7 +260,7 @@ Gradle 里的任何东西都是基于这两个基础概念：
 
 ![gralde projects](https://img.alicdn.com/tps/TB1DQ3JKpXXXXX8XFXXXXXXXXXX-651-295.png)
 
-可见我们有 2 个 project ，一个是根项目 `AwesomeProject`，另一个是其子项目 `app` 。 这是在 [<Project_Dir>/android/settings.gradle](https://github.com/facebook/react-native/blob/0.14.0/local-cli/generator-android/templates/src/settings.gradle)配置的。 Gradle 将会根据 project 文件夹内的 build.gradle 依次执行构建。
+可见我们有 2 个 project ，一个是根项目 `AwesomeProject`，另一个是其子项目 `app` 。 这是在 [Project_Dir/android/settings.gradle](https://github.com/facebook/react-native/blob/0.14.0/local-cli/generator-android/templates/src/settings.gradle)配置的。 Gradle 将会根据 project 文件夹内的 build.gradle 依次执行构建。
 
 接下来看看我们有哪些 tasks，运行 `gralde tasks`：
 
@@ -270,7 +270,7 @@ tasks 比较多，不一一展开，重点是，找到了我们此次运行的 t
 
 这个 tasks 来自于哪里？它是在哪里定义的？你会发现，你搜遍你的项目文件夹，也没有找到这个 task 定义的地方。
 
-原来，Gradle 有一个[插件机制](https://docs.gradle.org/current/userguide/plugins.html)，[<Project_Dir>/android/app/build.gradle](https://github.com/facebook/react-native/blob/0.14.0/local-cli/generator-android/templates/src/app/build.gradle#L1) 中有这一行代码：
+原来，Gradle 有一个[插件机制](https://docs.gradle.org/current/userguide/plugins.html)，[Project_Dir/android/app/build.gradle](https://github.com/facebook/react-native/blob/0.14.0/local-cli/generator-android/templates/src/app/build.gradle#L1) 中有这一行代码：
 
 ```
 apply plugin: "com.android.application"
@@ -284,12 +284,12 @@ gradle 命令会在当前目录中查找一个叫 build.gradle 的文件。我�
 
 我们的 android 项目有两个 build.gradle 对应着两个 project，分别是：
 
-* [<Project_Dir>/android/build.gradle](https://github.com/facebook/react-native/blob/0.14.0/local-cli/generator-android/templates/src/build.gradle)
-* [<Project_Dir>/android/app/build.gradle](https://github.com/facebook/react-native/blob/0.14.0/local-cli/generator-android/templates/src/app/build.gradle)
+* [Project_Dir/android/build.gradle](https://github.com/facebook/react-native/blob/0.14.0/local-cli/generator-android/templates/src/build.gradle)
+* [Project_Dir/android/app/build.gradle](https://github.com/facebook/react-native/blob/0.14.0/local-cli/generator-android/templates/src/app/build.gradle)
 
 关于这 build.gradle 内配置项的介绍，请阅读：[《Configuring Gradle Builds》](http://developer.android.com/intl/zh-cn/tools/building/configuring-gradle.html) 。这里我们需要了解的是，我们的 JS 资源打包时如何进行配置的。
 
-<Project_Dir>/android/app/build.gradle 中[加载了](https://github.com/facebook/react-native/blob/0.14.0/local-cli/generator-android/templates/src/app/build.gradle#L50) [<Project_Dir>/android/app/react.gradle](https://github.com/facebook/react-native/blob/0.14.0/local-cli/generator-android/templates/src/app/react.gradle#L65)，正是这个文件内的配置把 bundleDebugJsAndAssets 的逻辑添加进了 android build process ：
+Project_Dir/android/app/build.gradle 中[加载了](https://github.com/facebook/react-native/blob/0.14.0/local-cli/generator-android/templates/src/app/build.gradle#L50) [Project_Dir/android/app/react.gradle](https://github.com/facebook/react-native/blob/0.14.0/local-cli/generator-android/templates/src/app/react.gradle#L65)，正是这个文件内的配置把 bundleDebugJsAndAssets 的逻辑添加进了 android build process ：
 
 ```
 gradle.projectsEvaluated {
@@ -319,7 +319,7 @@ RN android 的编译打包和普通 android 应用没有区别，android 的开�
 
 （ 图片来源：http://developer.android.com/sdk/installing/studio-build.html ）
 
-打包成功后的 APK 文件在 <Project_Dir>/android/app/build/outputs/ ，然后 Gradle 会查找当前的虚拟设备，把该 APK 安装到上面。
+打包成功后的 APK 文件在 Project_Dir/android/app/build/outputs/ ，然后 Gradle 会查找当前的虚拟设备，把该 APK 安装到上面。
 
 ### Native 入口
 
