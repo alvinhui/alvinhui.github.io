@@ -1,4 +1,6 @@
-# Alvin's blog
+# 梧忌的博客
 
-这是一个基于 [jekyll](http://jekyllrb.com/), 使用 [jekyllbootstrap](http://jekyllbootstrap.com/) 风格建立的[个人网站](http://alvinhui.github.io)源码库。
+每一个博客都有它的[过去](https://github.com/alvinhui/alvinhui.github.io/tree/master/_posts)和[现在](https://github.com/alvinhui/alvinhui.github.io/issues)
+
+https://github.com/alvinhui/alvinhui.github.io/issues
 
