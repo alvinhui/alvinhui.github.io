@@ -1010,16 +1010,16 @@ pre {
   }
   .body .unit-body {
     border-top: 0 none;
-    margin-right: 350px;
+    /* margin-right: 350px; */
     padding: 26px 52px;
   }
   .the-footer {
     background-color: transparent;
     color: #2d2d2d;
-    position: relative;
-    top: auto;
+    /* position: relative;
+    top: auto; */
     display: block;
-    float: right;
+    /* float: right; */
     padding: 0 0 0 26px;
     width: 320px;
   }
@@ -1069,14 +1069,14 @@ pre {
     -o-box-shadow: #ffffff 0px 0px 2px;
     float: left;
     width: 81%;
-    margin-right: -450px;
+    /* margin-right: -450px; */
   }
   .body .unit-body {
     border-right: 1px solid rgba(0, 0, 0, 0.2);
     -webkit-box-shadow: #ffffff 0px 0px 2px;
     -moz-box-shadow: #ffffff 0px 0px 2px;
     -o-box-shadow: #ffffff 0px 0px 2px;
-    margin-right: 350px;
+    /* margin-right: 350px; */
     padding: 26px 52px;
     min-height: 1050px;
   }
@@ -1084,7 +1084,7 @@ pre {
     position: relative;
     top: auto;
     display: block;
-    float: right;
+    /* float: right; */
     padding: 26px 0 0 26px;
     width: 320px;
   }
