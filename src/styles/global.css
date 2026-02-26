@@ -1,0 +1,137 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #e25608;
+  --color-primary-light: #f99157;
+  --color-primary-dark: #b8450a;
+  --color-surface: #fafafa;
+  --color-surface-dark: #111111;
+  --color-text: #1a1a1a;
+  --color-text-dark: #e5e5e5;
+  --color-muted: #6b7280;
+  --color-muted-dark: #9ca3af;
+  --color-border: #e5e7eb;
+  --color-border-dark: #2d2d2d;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-surface text-text antialiased;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, "Noto Sans", "PingFang SC", "Hiragino Sans GB",
+      "Microsoft YaHei", sans-serif;
+  }
+
+  .dark body {
+    @apply bg-surface-dark text-text-dark;
+  }
+
+  article.prose {
+    @apply leading-relaxed;
+  }
+
+  article.prose h1,
+  article.prose h2,
+  article.prose h3,
+  article.prose h4 {
+    @apply font-bold text-text mt-10 mb-4;
+  }
+
+  .dark article.prose h1,
+  .dark article.prose h2,
+  .dark article.prose h3,
+  .dark article.prose h4 {
+    @apply text-text-dark;
+  }
+
+  article.prose h2 {
+    @apply text-2xl border-b border-border pb-2;
+  }
+
+  .dark article.prose h2 {
+    @apply border-border-dark;
+  }
+
+  article.prose h3 {
+    @apply text-xl;
+  }
+
+  article.prose h4 {
+    @apply text-lg;
+  }
+
+  article.prose p {
+    @apply my-4 leading-7;
+  }
+
+  article.prose a {
+    @apply text-primary underline decoration-primary/40 underline-offset-2 hover:decoration-primary transition-colors;
+  }
+
+  article.prose ul,
+  article.prose ol {
+    @apply my-4 pl-6;
+  }
+
+  article.prose ul {
+    @apply list-disc;
+  }
+
+  article.prose ol {
+    @apply list-decimal;
+  }
+
+  article.prose li {
+    @apply my-1 leading-7;
+  }
+
+  article.prose blockquote {
+    @apply border-l-4 border-primary/40 pl-4 my-4 italic text-muted;
+  }
+
+  .dark article.prose blockquote {
+    @apply text-muted-dark;
+  }
+
+  article.prose pre {
+    @apply rounded-lg p-4 my-6 overflow-x-auto text-sm;
+  }
+
+  article.prose code:not(pre code) {
+    @apply bg-primary/10 text-primary-dark px-1.5 py-0.5 rounded text-sm font-mono;
+  }
+
+  .dark article.prose code:not(pre code) {
+    @apply bg-primary/20 text-primary-light;
+  }
+
+  article.prose img {
+    @apply rounded-lg mx-auto my-6 max-w-full;
+  }
+
+  article.prose table {
+    @apply w-full my-6 text-sm;
+  }
+
+  article.prose th {
+    @apply border-b-2 border-border px-4 py-2 text-left font-semibold;
+  }
+
+  article.prose td {
+    @apply border-b border-border px-4 py-2;
+  }
+
+  article.prose hr {
+    @apply my-8 border-border;
+  }
+
+  .dark article.prose th,
+  .dark article.prose td,
+  .dark article.prose hr {
+    @apply border-border-dark;
+  }
+}

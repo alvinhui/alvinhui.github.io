@@ -1,0 +1,63 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import { formatDate, normalizeCategory, getCategoryDisplayName } from '../lib/utils';
+
+interface Props {
+  title: string;
+  description?: string;
+  date: Date;
+  category?: string;
+  tags?: string[];
+}
+
+const { title, description, date, category, tags } = Astro.props;
+---
+
+<BaseLayout title={title} description={description}>
+  <article class="prose max-w-none">
+    <header class="mb-8 border-b border-border dark:border-border-dark pb-6">
+      <h1 class="text-3xl sm:text-4xl font-bold text-text dark:text-text-dark !mt-0 !mb-4">
+        {title}
+      </h1>
+      <div class="flex flex-wrap items-center gap-3 text-sm text-muted dark:text-muted-dark">
+        <time datetime={date.toISOString()}>
+          {formatDate(date)}
+        </time>
+        {category && (
+          <a
+            href={`/categories/${normalizeCategory(category)}/`}
+            class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary/10 text-primary hover:bg-primary/20 transition-colors no-underline!"
+          >
+            {getCategoryDisplayName(normalizeCategory(category))}
+          </a>
+        )}
+      </div>
+      {tags && tags.length > 0 && (
+        <div class="flex flex-wrap gap-2 mt-3">
+          {tags.map((tag) => (
+            <a
+              href={`/tags/${tag}/`}
+              class="text-xs px-2 py-1 rounded-md bg-gray-100 dark:bg-gray-800 text-muted dark:text-muted-dark hover:text-primary hover:bg-primary/10 transition-colors no-underline!"
+            >
+              #{tag}
+            </a>
+          ))}
+        </div>
+      )}
+    </header>
+
+    <slot />
+
+    <footer class="mt-12 pt-6 border-t border-border dark:border-border-dark">
+      <a
+        href="/archive/"
+        class="inline-flex items-center gap-2 text-sm text-muted dark:text-muted-dark hover:text-primary transition-colors no-underline!"
+      >
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+        返回文章列表
+      </a>
+    </footer>
+  </article>
+</BaseLayout>

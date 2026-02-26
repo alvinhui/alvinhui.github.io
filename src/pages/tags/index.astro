@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog');
+
+const tagCounts: Record<string, number> = {};
+for (const post of posts) {
+  for (const tag of post.data.tags || []) {
+    tagCounts[tag] = (tagCounts[tag] || 0) + 1;
+  }
+}
+
+const tags = Object.entries(tagCounts)
+  .sort(([, a], [, b]) => b - a);
+
+const maxCount = Math.max(...tags.map(([, c]) => c));
+---
+
+<BaseLayout title="标签">
+  <h1 class="text-3xl font-bold text-text dark:text-text-dark mb-2">标签</h1>
+  <p class="text-muted dark:text-muted-dark mb-8">共 {tags.length} 个标签</p>
+
+  <div class="flex flex-wrap gap-2">
+    {tags.map(([tag, count]) => {
+      const ratio = count / maxCount;
+      const sizeClass = ratio > 0.6 ? 'text-lg px-4 py-2' : ratio > 0.3 ? 'text-base px-3 py-1.5' : 'text-sm px-2.5 py-1';
+      return (
+        <a
+          href={`/tags/${tag}/`}
+          class:list={[
+            'rounded-lg border border-border dark:border-border-dark hover:border-primary/40 hover:text-primary hover:bg-primary/5 transition-all font-medium text-text dark:text-text-dark',
+            sizeClass,
+          ]}
+        >
+          #{tag}
+          <span class="text-xs text-muted dark:text-muted-dark ml-1">({count})</span>
+        </a>
+      );
+    })}
+  </div>
+</BaseLayout>

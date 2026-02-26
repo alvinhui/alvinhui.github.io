@@ -1,0 +1,45 @@
+---
+import { formatDate, normalizeCategory, getCategoryDisplayName } from '../lib/utils';
+
+interface Props {
+  title: string;
+  date: Date;
+  category?: string;
+  tags?: string[];
+  href: string;
+}
+
+const { title, date, category, tags, href } = Astro.props;
+---
+
+<a href={href} class="group block p-5 rounded-xl border border-border dark:border-border-dark hover:border-primary/40 hover:shadow-md transition-all duration-200">
+  <div class="flex items-start justify-between gap-4">
+    <div class="flex-1 min-w-0">
+      <h3 class="text-lg font-semibold text-text dark:text-text-dark group-hover:text-primary transition-colors truncate">
+        {title}
+      </h3>
+      <div class="flex flex-wrap items-center gap-2 mt-2">
+        <time class="text-sm text-muted dark:text-muted-dark" datetime={date.toISOString()}>
+          {formatDate(date)}
+        </time>
+        {category && (
+          <span class="text-xs px-2 py-0.5 rounded-full bg-primary/10 text-primary font-medium">
+            {getCategoryDisplayName(normalizeCategory(category))}
+          </span>
+        )}
+      </div>
+      {tags && tags.length > 0 && (
+        <div class="flex flex-wrap gap-1.5 mt-2">
+          {tags.map((tag) => (
+            <span class="text-xs text-muted dark:text-muted-dark">
+              #{tag}
+            </span>
+          ))}
+        </div>
+      )}
+    </div>
+    <svg class="w-5 h-5 text-muted dark:text-muted-dark group-hover:text-primary transition-colors shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+    </svg>
+  </div>
+</a>

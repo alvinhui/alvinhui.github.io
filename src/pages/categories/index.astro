@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { normalizeCategory, getCategoryDisplayName } from '../../lib/utils';
+
+const posts = await getCollection('blog');
+
+const categoryCounts: Record<string, number> = {};
+for (const post of posts) {
+  const cat = normalizeCategory(post.data.category || '未分类');
+  categoryCounts[cat] = (categoryCounts[cat] || 0) + 1;
+}
+
+const categories = Object.entries(categoryCounts)
+  .sort(([, a], [, b]) => b - a);
+---
+
+<BaseLayout title="分类">
+  <h1 class="text-3xl font-bold text-text dark:text-text-dark mb-2">分类</h1>
+  <p class="text-muted dark:text-muted-dark mb-8">共 {categories.length} 个分类</p>
+
+  <div class="flex flex-wrap gap-3">
+    {categories.map(([cat, count]) => (
+      <a
+        href={`/categories/${cat}/`}
+        class="group flex items-center gap-2 px-4 py-2.5 rounded-xl border border-border dark:border-border-dark hover:border-primary/40 hover:shadow-md transition-all"
+      >
+        <span class="font-medium text-text dark:text-text-dark group-hover:text-primary transition-colors">
+          {getCategoryDisplayName(cat)}
+        </span>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-800 text-muted dark:text-muted-dark">
+          {count}
+        </span>
+      </a>
+    ))}
+  </div>
+</BaseLayout>

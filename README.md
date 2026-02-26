@@ -1,24 +1,35 @@
 # 许文涛的博客
 
-这是一个基于 [Jekyll](http://jekyllrb.com/)，使用 [Jekyll-Bootstrap](http://jekyllbootstrap.com/) 风格建立的[个人网站](http://alvinhui.github.io)源码库。
+基于 [Astro](https://astro.build/) + [Tailwind CSS](https://tailwindcss.com/) 构建的[个人网站](https://alvinhui.github.io)。
 
-## 本地启动
+## 本地开发
 
 ### 环境要求
 
-- [Ruby](https://www.ruby-lang.org/)（>= 2.5）
-- [RubyGems](https://rubygems.org/)
+- [Node.js](https://nodejs.org/) >= 18
 
 ### 安装依赖
 
 ```bash
-gem install jekyll rouge
+npm install
 ```
 
 ### 启动开发服务器
 
 ```bash
-jekyll serve --watch
+npm run dev
 ```
 
-启动后访问 http://127.0.0.1:4000 预览网站。`--watch` 参数会在文件修改后自动重新生成页面。
+启动后访问 http://localhost:4321 预览网站。
+
+### 构建
+
+```bash
+npm run build
+```
+
+构建产物输出到 `dist/` 目录。
+
+## 部署
+
+推送到 `main` 分支后，GitHub Actions 会自动构建并部署到 GitHub Pages。

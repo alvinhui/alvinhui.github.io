@@ -1,0 +1,33 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PostCard from '../components/PostCard.astro';
+import { getCollection } from 'astro:content';
+import { parseDateFromId, getSlugFromId } from '../lib/utils';
+
+const posts = (await getCollection('blog'))
+  .sort((a, b) => parseDateFromId(b.id).getTime() - parseDateFromId(a.id).getTime());
+---
+
+<BaseLayout title="许文涛">
+  <section class="mb-12">
+    <div class="mb-8">
+      <h1 class="text-4xl font-bold text-text dark:text-text-dark mb-2">你好，我是许文涛</h1>
+      <p class="text-lg text-muted dark:text-muted-dark">摄影爱好者，前端工程师。</p>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="text-2xl font-bold text-text dark:text-text-dark mb-6">最新文章</h2>
+    <div class="space-y-3">
+      {posts.map((post) => (
+        <PostCard
+          title={post.data.title}
+          date={parseDateFromId(post.id)}
+          category={post.data.category}
+          tags={post.data.tags}
+          href={`/blog/${getSlugFromId(post.id)}/`}
+        />
+      ))}
+    </div>
+  </section>
+</BaseLayout>

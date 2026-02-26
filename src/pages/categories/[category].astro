@@ -1,0 +1,46 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostCard from '../../components/PostCard.astro';
+import { getCollection } from 'astro:content';
+import { parseDateFromId, normalizeCategory, getCategoryDisplayName, getSlugFromId } from '../../lib/utils';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  const categories = new Set<string>();
+  for (const post of posts) {
+    categories.add(normalizeCategory(post.data.category || '未分类'));
+  }
+  return Array.from(categories).map((category) => ({
+    params: { category },
+    props: {
+      category,
+      posts: posts
+        .filter((p) => normalizeCategory(p.data.category || '未分类') === category)
+        .sort((a, b) => parseDateFromId(b.id).getTime() - parseDateFromId(a.id).getTime()),
+    },
+  }));
+}
+
+const { category, posts } = Astro.props;
+const displayName = getCategoryDisplayName(category);
+---
+
+<BaseLayout title={displayName}>
+  <div class="mb-8">
+    <a href="/categories/" class="text-sm text-muted dark:text-muted-dark hover:text-primary transition-colors">&larr; 所有分类</a>
+    <h1 class="text-3xl font-bold text-text dark:text-text-dark mt-2 mb-1">{displayName}</h1>
+    <p class="text-muted dark:text-muted-dark">{posts.length} 篇文章</p>
+  </div>
+
+  <div class="space-y-3">
+    {posts.map((post) => (
+      <PostCard
+        title={post.data.title}
+        date={parseDateFromId(post.id)}
+        category={post.data.category}
+        tags={post.data.tags}
+        href={`/blog/${getSlugFromId(post.id)}/`}
+      />
+    ))}
+  </div>
+</BaseLayout>

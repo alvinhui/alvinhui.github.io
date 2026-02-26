@@ -1,0 +1,52 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { parseDateFromId, formatDate, getSlugFromId } from '../lib/utils';
+
+const posts = (await getCollection('blog'))
+  .sort((a, b) => parseDateFromId(b.id).getTime() - parseDateFromId(a.id).getTime());
+
+const postsByYear: Record<string, typeof posts> = {};
+for (const post of posts) {
+  const year = parseDateFromId(post.id).getFullYear().toString();
+  if (!postsByYear[year]) postsByYear[year] = [];
+  postsByYear[year].push(post);
+}
+
+const years = Object.keys(postsByYear).sort((a, b) => Number(b) - Number(a));
+---
+
+<BaseLayout title="归档">
+  <h1 class="text-3xl font-bold text-text dark:text-text-dark mb-2">归档</h1>
+  <p class="text-muted dark:text-muted-dark mb-8">共 {posts.length} 篇文章</p>
+
+  {years.map((year) => (
+    <section class="mb-10">
+      <h2 class="text-xl font-bold text-text dark:text-text-dark mb-4 flex items-center gap-3">
+        {year}
+        <span class="text-sm font-normal text-muted dark:text-muted-dark">({postsByYear[year].length} 篇)</span>
+      </h2>
+      <ul class="space-y-3 border-l-2 border-border dark:border-border-dark pl-6">
+        {postsByYear[year].map((post) => {
+          const date = parseDateFromId(post.id);
+          return (
+            <li class="relative">
+              <div class="absolute -left-[1.9rem] top-2 w-3 h-3 rounded-full bg-border dark:bg-border-dark border-2 border-surface dark:border-surface-dark" />
+              <a
+                href={`/blog/${getSlugFromId(post.id)}/`}
+                class="group flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4"
+              >
+                <time class="text-sm text-muted dark:text-muted-dark shrink-0 w-28" datetime={date.toISOString()}>
+                  {formatDate(date)}
+                </time>
+                <span class="font-medium text-text dark:text-text-dark group-hover:text-primary transition-colors">
+                  {post.data.title}
+                </span>
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+    </section>
+  ))}
+</BaseLayout>

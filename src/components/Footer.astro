@@ -1,0 +1,31 @@
+---
+const year = new Date().getFullYear();
+
+const links = [
+  { label: 'GitHub', href: 'https://github.com/alvinhui' },
+  { label: '知乎', href: 'https://www.zhihu.com/people/alvinhui/' },
+  { label: '豆瓣', href: 'https://www.douban.com/people/alvinhui/' },
+];
+---
+
+<footer class="border-t border-border dark:border-border-dark mt-16">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 py-8">
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-4">
+        {links.map(({ label, href }) => (
+          <a
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-sm text-muted dark:text-muted-dark hover:text-primary transition-colors"
+          >
+            {label}
+          </a>
+        ))}
+      </div>
+      <p class="text-sm text-muted dark:text-muted-dark">
+        &copy; {year} 许文涛 &middot; Powered by <a href="https://astro.build" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors">Astro</a>
+      </p>
+    </div>
+  </div>
+</footer>
