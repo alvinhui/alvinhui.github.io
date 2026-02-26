@@ -1,0 +1,96 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { parseDateFromId, formatDate } from '../../lib/utils';
+
+const imageFiles = import.meta.glob<{ default: ImageMetadata }>(
+  '/src/content/image/**/*.{jpg,jpeg,png,gif,webp}',
+  { eager: true }
+);
+
+interface Album {
+  folder: string;
+  name: string;
+  date: Date;
+  cover: ImageMetadata;
+  count: number;
+}
+
+const albumMap = new Map<string, Album>();
+
+for (const [path, mod] of Object.entries(imageFiles)) {
+  const parts = path.replace('/src/content/image/', '').split('/');
+  if (parts.length < 2) continue;
+  const folder = parts[0];
+
+  if (!albumMap.has(folder)) {
+    const dateMatch = folder.match(/^(\d{4}-\d{2}-\d{2})-(.+)$/);
+    const name = dateMatch ? dateMatch[2] : folder;
+    const date = parseDateFromId(folder);
+    albumMap.set(folder, { folder, name, date, cover: mod.default, count: 1 });
+  } else {
+    albumMap.get(folder)!.count++;
+  }
+}
+
+const albums = Array.from(albumMap.values()).sort(
+  (a, b) => b.date.getTime() - a.date.getTime()
+);
+
+const albumsByYear: Record<string, Album[]> = {};
+for (const album of albums) {
+  const year = album.date.getFullYear().toString();
+  if (!albumsByYear[year]) albumsByYear[year] = [];
+  albumsByYear[year].push(album);
+}
+
+const years = Object.keys(albumsByYear).sort((a, b) => Number(b) - Number(a));
+const totalCount = albums.reduce((sum, a) => sum + a.count, 0);
+---
+
+<BaseLayout title="相册">
+  <h1 class="text-3xl font-bold text-text dark:text-text-dark mb-2">相册</h1>
+  <p class="text-muted dark:text-muted-dark mb-8">共 {albums.length} 个相册，{totalCount} 张照片</p>
+
+  {years.map((year) => (
+    <section class="mb-12">
+      <h2 class="text-xl font-bold text-text dark:text-text-dark mb-6 flex items-center gap-3">
+        {year}
+        <span class="text-sm font-normal text-muted dark:text-muted-dark">({albumsByYear[year].length} 个相册)</span>
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {albumsByYear[year].map((album) => (
+          <a
+            href={`/albums/${album.folder}/`}
+            class="group block rounded-xl overflow-hidden border border-border dark:border-border-dark hover:border-primary/40 hover:shadow-lg transition-all duration-300"
+          >
+            <div class="aspect-[4/3] overflow-hidden bg-gray-100 dark:bg-gray-800">
+              <img
+                src={album.cover.src}
+                width={album.cover.width}
+                height={album.cover.height}
+                alt={album.name}
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-text dark:text-text-dark group-hover:text-primary transition-colors">
+                {album.name}
+              </h3>
+              <div class="flex items-center justify-between mt-2">
+                <time class="text-sm text-muted dark:text-muted-dark" datetime={album.date.toISOString()}>
+                  {formatDate(album.date)}
+                </time>
+                <span class="text-sm text-muted dark:text-muted-dark">{album.count} 张</span>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+  ))}
+
+  {albums.length === 0 && (
+    <p class="text-center text-muted dark:text-muted-dark py-16">暂无相册</p>
+  )}
+</BaseLayout>

@@ -1,0 +1,187 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { parseDateFromId, formatDate } from '../../lib/utils';
+
+const imageFiles = import.meta.glob<{ default: ImageMetadata }>(
+  '/src/content/image/**/*.{jpg,jpeg,png,gif,webp}',
+  { eager: true }
+);
+
+interface AlbumInfo {
+  folder: string;
+  name: string;
+  date: Date;
+  images: ImageMetadata[];
+}
+
+const albumMap = new Map<string, AlbumInfo>();
+
+for (const [path, mod] of Object.entries(imageFiles)) {
+  const parts = path.replace('/src/content/image/', '').split('/');
+  if (parts.length < 2) continue;
+  const folder = parts[0];
+
+  if (!albumMap.has(folder)) {
+    const dateMatch = folder.match(/^(\d{4}-\d{2}-\d{2})-(.+)$/);
+    const name = dateMatch ? dateMatch[2] : folder;
+    const date = parseDateFromId(folder);
+    albumMap.set(folder, { folder, name, date, images: [mod.default] });
+  } else {
+    albumMap.get(folder)!.images.push(mod.default);
+  }
+}
+
+export function getStaticPaths() {
+  const imageFiles = import.meta.glob<{ default: ImageMetadata }>(
+    '/src/content/image/**/*.{jpg,jpeg,png,gif,webp}',
+    { eager: true }
+  );
+
+  const folders = new Set<string>();
+  for (const path of Object.keys(imageFiles)) {
+    const parts = path.replace('/src/content/image/', '').split('/');
+    if (parts.length >= 2) folders.add(parts[0]);
+  }
+
+  return Array.from(folders).map((folder) => ({
+    params: { album: folder },
+  }));
+}
+
+const { album: albumFolder } = Astro.params;
+const albumData = albumMap.get(albumFolder!);
+
+if (!albumData) {
+  return Astro.redirect('/albums/');
+}
+---
+
+<BaseLayout title={albumData.name}>
+  <section>
+    <div class="mb-8">
+      <a
+        href="/albums/"
+        class="inline-flex items-center gap-1 text-sm text-muted dark:text-muted-dark hover:text-primary transition-colors mb-4"
+      >
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+        返回相册
+      </a>
+      <h1 class="text-3xl font-bold text-text dark:text-text-dark">{albumData.name}</h1>
+      <div class="flex items-center gap-3 mt-2">
+        <time class="text-sm text-muted dark:text-muted-dark" datetime={albumData.date.toISOString()}>
+          {formatDate(albumData.date)}
+        </time>
+        <span class="text-sm text-muted dark:text-muted-dark">{albumData.images.length} 张照片</span>
+      </div>
+    </div>
+
+    <div class="space-y-6">
+      {albumData.images.map((img, idx) => (
+        <div
+          class="cursor-zoom-in"
+          data-lightbox-trigger
+          data-index={idx}
+        >
+          <img
+            src={img.src}
+            width={img.width}
+            height={img.height}
+            alt={`${albumData.name} - ${idx + 1}`}
+            class="w-full rounded-lg hover:shadow-lg transition-shadow duration-300"
+            loading="lazy"
+          />
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div
+    id="lightbox"
+    class="fixed inset-0 z-[100] bg-black/90 hidden items-center justify-center"
+    role="dialog"
+    aria-modal="true"
+    aria-label="照片查看器"
+  >
+    <button
+      id="lightbox-close"
+      class="absolute top-4 right-4 z-10 p-2 text-white/70 hover:text-white transition-colors"
+      aria-label="关闭"
+    >
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+
+    <button
+      id="lightbox-prev"
+      class="absolute left-4 top-1/2 -translate-y-1/2 z-10 p-2 text-white/70 hover:text-white transition-colors"
+      aria-label="上一张"
+    >
+      <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+
+    <button
+      id="lightbox-next"
+      class="absolute right-4 top-1/2 -translate-y-1/2 z-10 p-2 text-white/70 hover:text-white transition-colors"
+      aria-label="下一张"
+    >
+      <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+
+    <div id="lightbox-counter" class="absolute bottom-4 left-1/2 -translate-x-1/2 text-white/70 text-sm"></div>
+
+    <img id="lightbox-img" class="max-h-[90vh] max-w-[90vw] object-contain" alt="" />
+  </div>
+</BaseLayout>
+
+<script define:vars={{ images: albumData.images.map(img => img.src) }}>
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxCounter = document.getElementById('lightbox-counter');
+  const triggers = document.querySelectorAll('[data-lightbox-trigger]');
+  let currentIndex = 0;
+  const total = images.length;
+
+  function show(index) {
+    currentIndex = ((index % total) + total) % total;
+    lightboxImg.src = images[currentIndex];
+    lightboxCounter.textContent = `${currentIndex + 1} / ${total}`;
+    lightbox.classList.remove('hidden');
+    lightbox.classList.add('flex');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function hide() {
+    lightbox.classList.add('hidden');
+    lightbox.classList.remove('flex');
+    document.body.style.overflow = '';
+  }
+
+  triggers.forEach((trigger) => {
+    trigger.addEventListener('click', () => {
+      show(parseInt(trigger.dataset.index, 10));
+    });
+  });
+
+  document.getElementById('lightbox-close').addEventListener('click', hide);
+  document.getElementById('lightbox-prev').addEventListener('click', () => show(currentIndex - 1));
+  document.getElementById('lightbox-next').addEventListener('click', () => show(currentIndex + 1));
+
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) hide();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (lightbox.classList.contains('hidden')) return;
+    if (e.key === 'Escape') hide();
+    if (e.key === 'ArrowLeft') show(currentIndex - 1);
+    if (e.key === 'ArrowRight') show(currentIndex + 1);
+  });
+</script>
