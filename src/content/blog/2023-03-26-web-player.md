@@ -512,7 +512,7 @@ Chrome 在 v64 版本开始支持 [AudioWorkletProcessor](https://developer.mozi
 - [为 Chromium 实现 HEVC 硬解 - 原理/实测指南](https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247495926&idx=1&sn=cfc8161d565b96c47b2211002c2e5c33)
 - [为 Chrome / Edge 启用 HEVC 硬解码的教程](https://github.com/StaZhu/enable-chromium-hevc-hardware-decoding/blob/main/README.zh_CN.md)
 - [Chrome 在 107 版本支持 H.265 的硬解](https://chromestatus.com/feature/5186511939567616)
-- [Web 端 H.265 播放器研发解密](https://ata.alibaba-inc.com/articles/136015)
-- [Web 端 H.265 播放器性能优化记录](https://ata.alibaba-inc.com/articles/259842)
+- Web 端 H.265 播放器研发解密
+- Web 端 H.265 播放器性能优化记录
 
 > 题图来自：[What is H.266 and Why Is It Better than H.265?](https://www.maketecheasier.com/h265-vs-h264/)
