@@ -1,5 +1,5 @@
 ---
-category : Node.js
+category : nodejs
 title: "社区类应用的权限设计以及管理 —— 以 NodeBB 为例"
 description: "社区类应用的权限设计以及管理 —— 以 NodeBB 为例"
 tags : [Node.js]
