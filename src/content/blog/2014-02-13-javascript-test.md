@@ -1,8 +1,8 @@
 ---
 category: NodeJs
-title: "淘宝开发者社区上云记"
-description: "淘宝开发者社区上云记"
-tags : [Node.js]
+title: "一套 Javascript 测试题"
+description: "对一套 javascript 测试题进行讲解"
+tags : [编程语言, 试题]
 ---
 
 前些天阮一峰老师在微博转发的一套 Javascript 测试题传得挺火。我初次回答正确率仅为65%，恼羞成怒，痛定思痛，总结了一下。
