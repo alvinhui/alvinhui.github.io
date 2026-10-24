@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { formatDate } from '../../../lib/utils';
-import { getAlbums, groupAlbumsByYear } from '../../../lib/albums';
+import { getAlbums, getPhotoThumb, groupAlbumsByYear } from '../../../lib/albums';
 
 export function getStaticPaths() {
   const albums = getAlbums();
@@ -20,16 +20,21 @@ if (yearAlbums.length === 0) {
   return Astro.redirect('/albums/');
 }
 
-const albumPayload = yearAlbums.map((album) => ({
-  folder: album.folder,
-  name: album.name,
-  dateISO: album.date.toISOString(),
-  dateLabel: formatDate(album.date),
-  count: album.count,
-  coverSrc: album.cover.src,
-  coverWidth: album.cover.width,
-  coverHeight: album.cover.height,
-}));
+const albumPayload = await Promise.all(
+  yearAlbums.map(async (album) => {
+    const cover = await getPhotoThumb(album.cover);
+    return {
+      folder: album.folder,
+      name: album.name,
+      dateISO: album.date.toISOString(),
+      dateLabel: formatDate(album.date),
+      count: album.count,
+      coverSrc: cover.src,
+      coverWidth: cover.width,
+      coverHeight: cover.height,
+    };
+  })
+);
 ---
 
 <BaseLayout title={`${year} 年相册`}>

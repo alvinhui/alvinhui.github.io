@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { formatDate } from '../../lib/utils';
-import { getAlbums, groupAlbumsByYear } from '../../lib/albums';
+import { getAlbums, getPhotoThumb, groupAlbumsByYear } from '../../lib/albums';
 
 const PREVIEW_LIMIT = 3;
 
@@ -11,19 +11,26 @@ const years = Object.keys(albumsByYear).sort((a, b) => Number(b) - Number(a));
 const totalCount = albums.reduce((sum, a) => sum + a.count, 0);
 
 const albumsByYearPayload = Object.fromEntries(
-  years.map((year) => [
-    year,
-    albumsByYear[year].map((album) => ({
-      folder: album.folder,
-      name: album.name,
-      dateISO: album.date.toISOString(),
-      dateLabel: formatDate(album.date),
-      count: album.count,
-      coverSrc: album.cover.src,
-      coverWidth: album.cover.width,
-      coverHeight: album.cover.height,
-    })),
-  ])
+  await Promise.all(
+    years.map(async (year) => [
+      year,
+      await Promise.all(
+        albumsByYear[year].map(async (album) => {
+          const cover = await getPhotoThumb(album.cover);
+          return {
+            folder: album.folder,
+            name: album.name,
+            dateISO: album.date.toISOString(),
+            dateLabel: formatDate(album.date),
+            count: album.count,
+            coverSrc: cover.src,
+            coverWidth: cover.width,
+            coverHeight: cover.height,
+          };
+        })
+      ),
+    ])
+  )
 );
 ---
 

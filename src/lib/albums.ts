@@ -1,4 +1,8 @@
+import { getImage } from 'astro:assets';
 import { parseDateFromId } from './utils';
+
+/** List / album-page display width (CSS ~full content column; 2x for retina). */
+export const PHOTO_THUMB_WIDTH = 1200;
 
 export interface Album {
   folder: string;
@@ -6,6 +10,12 @@ export interface Album {
   date: Date;
   cover: ImageMetadata;
   count: number;
+}
+
+export interface AlbumCoverThumb {
+  src: string;
+  width: number;
+  height: number;
 }
 
 export function getAlbums(): Album[] {
@@ -44,4 +54,25 @@ export function groupAlbumsByYear(albums: Album[]): Record<string, Album[]> {
     albumsByYear[year].push(album);
   }
   return albumsByYear;
+}
+
+/** Build-time WebP thumbnail for list covers / album page grid (not full originals). */
+export async function getPhotoThumb(
+  image: ImageMetadata,
+  width = PHOTO_THUMB_WIDTH
+): Promise<AlbumCoverThumb> {
+  const optimized = await getImage({
+    src: image,
+    width,
+    format: 'webp',
+    quality: 75,
+  });
+
+  return {
+    src: optimized.src,
+    width: Number(optimized.attributes.width ?? width),
+    height: Number(
+      optimized.attributes.height ?? Math.round(width * (image.height / image.width))
+    ),
+  };
 }

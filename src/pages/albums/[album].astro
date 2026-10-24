@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getPhotoThumb } from '../../lib/albums';
 import { parseDateFromId, formatDate } from '../../lib/utils';
 
 const imageFiles = import.meta.glob<{ default: ImageMetadata }>(
@@ -54,6 +55,16 @@ const albumData = albumMap.get(albumFolder!);
 if (!albumData) {
   return Astro.redirect('/albums/');
 }
+
+const photos = await Promise.all(
+  albumData.images.map(async (img) => {
+    const thumb = await getPhotoThumb(img);
+    return {
+      thumb,
+      fullSrc: img.src,
+    };
+  })
+);
 ---
 
 <BaseLayout title={albumData.name}>
@@ -73,21 +84,21 @@ if (!albumData) {
         <time class="text-sm text-muted dark:text-muted-dark" datetime={albumData.date.toISOString()}>
           {formatDate(albumData.date)}
         </time>
-        <span class="text-sm text-muted dark:text-muted-dark">{albumData.images.length} 张照片</span>
+        <span class="text-sm text-muted dark:text-muted-dark">{photos.length} 张照片</span>
       </div>
     </div>
 
     <div class="space-y-6">
-      {albumData.images.map((img, idx) => (
+      {photos.map((photo, idx) => (
         <div
           class="cursor-zoom-in"
           data-lightbox-trigger
           data-index={idx}
         >
           <img
-            src={img.src}
-            width={img.width}
-            height={img.height}
+            src={photo.thumb.src}
+            width={photo.thumb.width}
+            height={photo.thumb.height}
             alt={`${albumData.name} - ${idx + 1}`}
             class="w-full rounded-lg hover:shadow-lg transition-shadow duration-300"
             loading="lazy"
@@ -141,7 +152,7 @@ if (!albumData) {
   </div>
 </BaseLayout>
 
-<script define:vars={{ images: albumData.images.map(img => img.src) }}>
+<script define:vars={{ images: photos.map((p) => p.fullSrc) }}>
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightbox-img');
   const lightboxCounter = document.getElementById('lightbox-counter');
