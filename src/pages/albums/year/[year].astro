@@ -1,0 +1,186 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { formatDate } from '../../../lib/utils';
+import { getAlbums, groupAlbumsByYear } from '../../../lib/albums';
+
+export function getStaticPaths() {
+  const albums = getAlbums();
+  const albumsByYear = groupAlbumsByYear(albums);
+  return Object.keys(albumsByYear).map((year) => ({
+    params: { year },
+  }));
+}
+
+const { year } = Astro.params;
+const albums = getAlbums();
+const albumsByYear = groupAlbumsByYear(albums);
+const yearAlbums = albumsByYear[year!] ?? [];
+
+if (yearAlbums.length === 0) {
+  return Astro.redirect('/albums/');
+}
+
+const albumPayload = yearAlbums.map((album) => ({
+  folder: album.folder,
+  name: album.name,
+  dateISO: album.date.toISOString(),
+  dateLabel: formatDate(album.date),
+  count: album.count,
+  coverSrc: album.cover.src,
+  coverWidth: album.cover.width,
+  coverHeight: album.cover.height,
+}));
+---
+
+<BaseLayout title={`${year} 年相册`}>
+  <section>
+    <div class="mb-8">
+      <a
+        href="/albums/"
+        class="inline-flex items-center gap-1 text-sm text-muted dark:text-muted-dark hover:text-primary transition-colors mb-4"
+      >
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+        返回相册
+      </a>
+      <h1 class="text-3xl font-bold text-text dark:text-text-dark text-center">{year}</h1>
+      <p class="text-muted dark:text-muted-dark mt-2 text-center">{yearAlbums.length} 个相册</p>
+    </div>
+
+    <div id="year-album-list" class="space-y-20"></div>
+    <div id="year-album-sentinel" class="h-8" aria-hidden="true"></div>
+    <p
+      id="year-album-end"
+      class="hidden text-center text-sm text-muted dark:text-muted-dark py-6"
+    >
+      已加载全部相册
+    </p>
+  </section>
+
+  <template id="year-album-item-template">
+    <a
+      href="#"
+      class="group block w-full bg-white dark:bg-[#1a1a1a] border border-border dark:border-border-dark border-b-[3px] border-b-black dark:border-b-white hover:shadow-[0_-2px_0_0_#e5e7eb,-2px_0_0_0_#e5e7eb,2px_0_0_0_#e5e7eb] dark:hover:shadow-[0_-2px_0_0_#2d2d2d,-2px_0_0_0_#2d2d2d,2px_0_0_0_#2d2d2d] transition-shadow duration-200 pb-6"
+    >
+      <div class="px-10 pt-6 sm:px-16 sm:pt-10">
+        <img
+          src=""
+          alt=""
+          width="1"
+          height="1"
+          loading="lazy"
+          class="w-full h-auto block"
+        />
+      </div>
+      <div class="px-10 sm:px-16 mt-5 text-center">
+        <h2 class="text-base font-normal text-text dark:text-text-dark group-hover:text-primary transition-colors"></h2>
+        <div class="mt-3 mb-3 w-full border-t border-dashed border-border dark:border-border-dark"></div>
+        <div class="flex items-center justify-center gap-3 text-sm text-muted dark:text-muted-dark">
+          <time datetime=""></time>
+          <span aria-hidden="true">·</span>
+          <span data-count></span>
+        </div>
+      </div>
+    </a>
+  </template>
+</BaseLayout>
+
+<script define:vars={{ albums: albumPayload }}>
+  const list = document.getElementById('year-album-list');
+  const sentinel = document.getElementById('year-album-sentinel');
+  const endHint = document.getElementById('year-album-end');
+  const template = document.getElementById('year-album-item-template');
+  if (!list || !sentinel || !endHint || !(template instanceof HTMLTemplateElement)) return;
+
+  const GAP = 80;
+  const CHROME = 40 + 20 + 72;
+  let rendered = 0;
+
+  function estimateHeight(album, width) {
+    const padX = width >= 640 ? 128 : 80;
+    const contentWidth = Math.max(1, width - padX);
+    if (!album.coverWidth) return contentWidth * 0.75 + CHROME;
+    return contentWidth * (album.coverHeight / album.coverWidth) + CHROME;
+  }
+
+  function nextBatchSize() {
+    const width = list.clientWidth || 800;
+    let count = 0;
+    let height = 0;
+    const target = window.innerHeight;
+
+    for (let i = rendered; i < albums.length; i++) {
+      height += estimateHeight(albums[i], width) + GAP;
+      count++;
+      if (height >= target) break;
+    }
+
+    return Math.max(1, count);
+  }
+
+  function createItem(album) {
+    const node = template.content.firstElementChild.cloneNode(true);
+    node.href = `/albums/${album.folder}/`;
+
+    const img = node.querySelector('img');
+    img.src = album.coverSrc;
+    img.width = album.coverWidth;
+    img.height = album.coverHeight;
+    img.alt = album.name;
+
+    node.querySelector('h2').textContent = album.name;
+
+    const time = node.querySelector('time');
+    time.dateTime = album.dateISO;
+    time.textContent = album.dateLabel;
+
+    node.querySelector('[data-count]').textContent = `${album.count} 张`;
+
+    return node;
+  }
+
+  function renderMore() {
+    if (rendered >= albums.length) {
+      finish();
+      return;
+    }
+
+    const fragment = document.createDocumentFragment();
+    const end = Math.min(rendered + nextBatchSize(), albums.length);
+
+    for (let i = rendered; i < end; i++) {
+      fragment.appendChild(createItem(albums[i]));
+    }
+
+    list.appendChild(fragment);
+    rendered = end;
+
+    if (rendered >= albums.length) {
+      finish();
+    }
+  }
+
+  function finish() {
+    sentinel.remove();
+    endHint.classList.remove('hidden');
+    observer.disconnect();
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      if (entries.some((entry) => entry.isIntersecting)) {
+        renderMore();
+      }
+    },
+    { rootMargin: '200px 0px' }
+  );
+
+  renderMore();
+  if (rendered < albums.length) {
+    observer.observe(sentinel);
+  } else {
+    endHint.classList.remove('hidden');
+    sentinel.remove();
+  }
+</script>
