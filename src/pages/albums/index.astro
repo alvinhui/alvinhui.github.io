@@ -3,12 +3,28 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import { formatDate } from '../../lib/utils';
 import { getAlbums, groupAlbumsByYear } from '../../lib/albums';
 
-const PREVIEW_LIMIT = 6;
+const PREVIEW_LIMIT = 3;
 
 const albums = getAlbums();
 const albumsByYear = groupAlbumsByYear(albums);
 const years = Object.keys(albumsByYear).sort((a, b) => Number(b) - Number(a));
 const totalCount = albums.reduce((sum, a) => sum + a.count, 0);
+
+const albumsByYearPayload = Object.fromEntries(
+  years.map((year) => [
+    year,
+    albumsByYear[year].map((album) => ({
+      folder: album.folder,
+      name: album.name,
+      dateISO: album.date.toISOString(),
+      dateLabel: formatDate(album.date),
+      count: album.count,
+      coverSrc: album.cover.src,
+      coverWidth: album.cover.width,
+      coverHeight: album.cover.height,
+    })),
+  ])
+);
 ---
 
 <BaseLayout title="相册">
@@ -17,7 +33,6 @@ const totalCount = albums.reduce((sum, a) => sum + a.count, 0);
 
   {years.map((year) => {
     const yearAlbums = albumsByYear[year];
-    const preview = yearAlbums.slice(0, PREVIEW_LIMIT);
     const hasMore = yearAlbums.length > PREVIEW_LIMIT;
 
     return (
@@ -32,41 +47,22 @@ const totalCount = albums.reduce((sum, a) => sum + a.count, 0);
               href={`/albums/year/${year}/`}
               class="ml-auto text-sm font-normal text-primary hover:underline"
             >
-              更多 >
+              更多
             </a>
           )}
         </h2>
-        <div class="space-y-20">
-          {preview.map((album) => (
-            <a
-              href={`/albums/${album.folder}/`}
-              class="group block w-full bg-white dark:bg-[#1a1a1a] border border-border dark:border-border-dark border-b-[3px] border-b-black dark:border-b-white hover:shadow-[0_-2px_0_0_#e5e7eb,-2px_0_0_0_#e5e7eb,2px_0_0_0_#e5e7eb] dark:hover:shadow-[0_-2px_0_0_#2d2d2d,-2px_0_0_0_#2d2d2d,2px_0_0_0_#2d2d2d] transition-shadow duration-200 pb-6"
-            >
-              <div class="px-10 pt-6 sm:px-16 sm:pt-10">
-                <img
-                  src={album.cover.src}
-                  width={album.cover.width}
-                  height={album.cover.height}
-                  alt={album.name}
-                  class="w-full h-auto block"
-                  loading="lazy"
-                />
-              </div>
-              <div class="px-10 sm:px-16 mt-5 text-center">
-                <h3 class="text-base font-normal text-text dark:text-text-dark group-hover:text-primary transition-colors">
-                  {album.name}
-                </h3>
-                <div class="mt-3 mb-3 w-full border-t border-dashed border-border dark:border-border-dark"></div>
-                <div class="flex items-center justify-center gap-3 text-sm text-muted dark:text-muted-dark">
-                  <time datetime={album.date.toISOString()}>
-                    {formatDate(album.date)}
-                  </time>
-                  <span aria-hidden="true">·</span>
-                  <span>{album.count} 张</span>
-                </div>
-              </div>
-            </a>
-          ))}
+        <div class="space-y-20" data-year-album-list={year}></div>
+        <div
+          class:list={['mt-12 text-center', !hasMore && 'hidden']}
+          data-year-more={year}
+        >
+          <a
+            href={`/albums/year/${year}/`}
+            class="inline-flex items-center gap-2 text-base text-text dark:text-text-dark hover:text-primary transition-colors"
+          >
+            还有 <span data-remaining>{Math.max(0, yearAlbums.length - PREVIEW_LIMIT)}</span> 个相册
+            <span aria-hidden="true">→</span>
+          </a>
         </div>
       </section>
     );
@@ -93,9 +89,93 @@ const totalCount = albums.reduce((sum, a) => sum + a.count, 0);
       ))}
     </nav>
   )}
+
+  <template id="album-card-template">
+    <a
+      href="#"
+      class="group block w-full bg-white dark:bg-[#1a1a1a] border border-border dark:border-border-dark border-b-[3px] border-b-black dark:border-b-white hover:shadow-[0_-2px_0_0_#e5e7eb,-2px_0_0_0_#e5e7eb,2px_0_0_0_#e5e7eb] dark:hover:shadow-[0_-2px_0_0_#2d2d2d,-2px_0_0_0_#2d2d2d,2px_0_0_0_#2d2d2d] transition-shadow duration-200 pb-6"
+    >
+      <div class="px-10 pt-6 sm:px-16 sm:pt-10">
+        <img
+          src=""
+          alt=""
+          width="1"
+          height="1"
+          loading="lazy"
+          class="w-full h-auto block"
+        />
+      </div>
+      <div class="px-10 sm:px-16 mt-5 text-center">
+        <h3 class="text-base font-normal text-text dark:text-text-dark group-hover:text-primary transition-colors"></h3>
+        <div class="mt-3 mb-3 w-full border-t border-dashed border-border dark:border-border-dark"></div>
+        <div class="flex items-center justify-center gap-3 text-sm text-muted dark:text-muted-dark">
+          <time datetime=""></time>
+          <span aria-hidden="true">·</span>
+          <span data-count></span>
+        </div>
+      </div>
+    </a>
+  </template>
 </BaseLayout>
 
-<script>
+<script define:vars={{ albumsByYearPayload, PREVIEW_LIMIT }}>
+  const template = document.getElementById('album-card-template');
+
+  function shuffle(list) {
+    const arr = list.slice();
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }
+
+  function createCard(album) {
+    const node = template.content.firstElementChild.cloneNode(true);
+    node.href = `/albums/${album.folder}/`;
+
+    const img = node.querySelector('img');
+    img.src = album.coverSrc;
+    img.width = album.coverWidth;
+    img.height = album.coverHeight;
+    img.alt = album.name;
+
+    node.querySelector('h3').textContent = album.name;
+
+    const time = node.querySelector('time');
+    time.dateTime = album.dateISO;
+    time.textContent = album.dateLabel;
+
+    node.querySelector('[data-count]').textContent = `${album.count} 张`;
+    return node;
+  }
+
+  if (template instanceof HTMLTemplateElement) {
+    for (const [year, yearAlbums] of Object.entries(albumsByYearPayload)) {
+      const list = document.querySelector(`[data-year-album-list="${year}"]`);
+      const more = document.querySelector(`[data-year-more="${year}"]`);
+      if (!list) continue;
+
+      const picked = shuffle(yearAlbums).slice(0, PREVIEW_LIMIT);
+      const fragment = document.createDocumentFragment();
+      for (const album of picked) {
+        fragment.appendChild(createCard(album));
+      }
+      list.appendChild(fragment);
+
+      const remaining = yearAlbums.length - picked.length;
+      if (more) {
+        if (remaining > 0) {
+          more.classList.remove('hidden');
+          const remainingEl = more.querySelector('[data-remaining]');
+          if (remainingEl) remainingEl.textContent = String(remaining);
+        } else {
+          more.classList.add('hidden');
+        }
+      }
+    }
+  }
+
   const sections = Array.from(document.querySelectorAll('[data-year-section]'));
   const links = Array.from(document.querySelectorAll('[data-year-link]'));
 
